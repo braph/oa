@@ -1,0 +1,3705 @@
+{
+ "label": "www.joz3d.net",
+ "variables": {
+  "activeaction": {
+   "name": "activeaction",
+   "description": "Variable holds a command to be executed upon connecting to a server.",
+   "default": ""
+  },
+  "arch": {
+   "name": "arch",
+   "description": "Architecture/operating system.",
+   "default": "win98"
+  },
+  "bot_aasoptimize": {
+   "name": "bot_aasoptimize",
+   "description": "Optimize the .aas file when one is written - MrElusive.",
+   "default": "0"
+  },
+  "bot_challenge": {
+   "name": "bot_challenge",
+   "description": "Make the bot a bit more challenging - MrElusive.",
+   "default": "0"
+  },
+  "bot_debug": {
+   "name": "bot_debug",
+   "description": "Toggle debugging tool for bot code.",
+   "default": "0"
+  },
+  "bot_developer": {
+   "name": "bot_developer",
+   "description": "Toggle developer mode for bots.",
+   "default": "0"
+  },
+  "bot_enable": {
+   "name": "bot_enable",
+   "description": "Enable and disable adding of bots to the map/game.",
+   "default": "0"
+  },
+  "bot_fastchat": {
+   "name": "bot_fastchat",
+   "description": "Toggle between frequent and less frequent bot chat strings 1 = more often.",
+   "default": "0"
+  },
+  "bot_forceclustering": {
+   "name": "bot_forceclustering",
+   "description": "Force recalculating the aas clusters - MrElusive.",
+   "default": "0"
+  },
+  "bot_forcereachability": {
+   "name": "bot_forcereachability",
+   "description": "Force recalculating the aas reachabilities - MrElusive.",
+   "default": "0"
+  },
+  "bot_forcewrite": {
+   "name": "bot_forcewrite",
+   "description": "Force writing out a new .aas file - MrElusive.",
+   "default": "0"
+  },
+  "bot_grapple": {
+   "name": "bot_grapple",
+   "description": "Toggle determines weather the bots will use the grappling hook.",
+   "default": "0"
+  },
+  "bot_groundonly": {
+   "name": "bot_groundonly",
+   "description": "This is a debug cvar to show areas which does not work in the retail version special thanks to - MrElusive.",
+   "default": "1"
+  },
+  "bot_interbreedbots": {
+   "name": "bot_interbreedbots",
+   "description": "Number of bots used for goal fuzzy logic interbreeding - MrElusive.",
+   "default": "10"
+  },
+  "bot_interbreedchar": {
+   "name": "bot_interbreedchar",
+   "description": "Bot character to be used with goal fuzzy logic interbreeding - MrElusive.",
+   "default": ""
+  },
+  "bot_interbreedcycle": {
+   "name": "bot_interbreedcycle",
+   "description": "Number of matches between interbreeding - MrElusive.",
+   "default": "20"
+  },
+  "bot_interbreedwrite": {
+   "name": "bot_interbreedwrite",
+   "description": "File to write interbreeded goal fuzzy logic to - MrElusive.",
+   "default": ""
+  },
+  "bot_maxdebugpolys": {
+   "name": "bot_maxdebugpolys",
+   "description": "Max number of polygons available for visualizing things when debugging MrElusive.",
+   "default": "128"
+  },
+  "bot_memorydump": {
+   "name": "bot_memorydump",
+   "description": "Possibly displays memory allocation/use for bots used for debugging?.",
+   "default": "0"
+  },
+  "bot_minplayers": {
+   "name": "bot_minplayers",
+   "description": "This is used to ensure a minimum numbers of players are playing on a server bots are added/removed to get the specified number of players in the game special thanks to - MrElusive.",
+   "default": "0"
+  },
+  "bot_nochat": {
+   "name": "bot_nochat",
+   "description": "Toggle determines weather bots will chat or not 0 = bots will chat.",
+   "default": "0"
+  },
+  "bot_pause": {
+   "name": "bot_pause",
+   "description": "Debug command to pause the bots - MrElusive.",
+   "default": "0"
+  },
+  "bot_predictobstacles": {
+   "name": "bot_predictobstacles",
+   "description": "Possibly tells bot's to predict an obstacle and turn before running into it.",
+   "default": "1"
+  },
+  "bot_reachability": {
+   "name": "bot_reachability",
+   "description": "This is a debug cvar which does not work in the retail version - MrElusive.",
+   "default": "0"
+  },
+  "bot_reloadcharacters": {
+   "name": "bot_reloadcharacters",
+   "description": "This cvar if set to 1 disabled bot character file caching. used when creating bot characters while keeping Q3A running. kicking and re-adding a bot will reload the bot character files - MrElusive.",
+   "default": "0"
+  },
+  "bot_report": {
+   "name": "bot_report",
+   "description": "Debug command to have the bots report what they are doing in CTF MrElusive.",
+   "default": "0"
+  },
+  "bot_rocketjump": {
+   "name": "bot_rocketjump",
+   "description": "Toggle determines weather the bots will use the rocket jump technique.",
+   "default": "1"
+  },
+  "bot_saveroutingcache": {
+   "name": "bot_saveroutingcache",
+   "description": "Possibly allows the BOT AI to save routes for custom maps in memory.",
+   "default": "0"
+  },
+  "bot_testclusters": {
+   "name": "bot_testclusters",
+   "description": "Possibly a debug variable for testing BOT's on new terrain maps.",
+   "default": "0"
+  },
+  "bot_testichat": {
+   "name": "bot_testichat",
+   "description": "Used to test the initial bot chats. set this to 1 and add a bot. the bot will spit out all initial chats. - MrElusive.",
+   "default": "0"
+  },
+  "bot_testrchat": {
+   "name": "bot_testrchat",
+   "description": "Used to test the reply chats. set this to 1 and add one bot. the bot will always reply and dump all possible replies - MrElusive.",
+   "default": "0"
+  },
+  "bot_testsolid": {
+   "name": "bot_testsolid",
+   "description": "Test for \"solid areas\" in the .aas file (read the q3r manual) - MrElusive.",
+   "default": "0"
+  },
+  "bot_thinktime": {
+   "name": "bot_thinktime",
+   "description": "This is the time in milliseconds between two AI frames. - MrElusiveset the amount of time a bot thinks about a move before making it AI...(c:.",
+   "default": "100"
+  },
+  "bot_usehook": {
+   "name": "bot_usehook",
+   "description": "Toggle determines weather the bots will use the grappling hook.",
+   "default": "0"
+  },
+  "bot_visualizejumppads": {
+   "name": "bot_visualizejumppads",
+   "description": "Visualizes the default arch of a jumppad (read the q3r manual) - MrElusive.",
+   "default": "0"
+  },
+  "capturelimit": {
+   "name": "capturelimit",
+   "description": "Set # of times a team must grab the others flag before the win is declared.",
+   "default": "8"
+  },
+  "cg_animspeed": {
+   "name": "cg_animspeed",
+   "description": "Toggle linear interpolation between successive frames in a player animation. 0 = no interpolation 1 = it does interpolate - Coriolis + WhatEver.",
+   "default": "1"
+  },
+  "cg_autoswitch": {
+   "name": "cg_autoswitch",
+   "description": "Auto-switch weapons (on pick-up).",
+   "default": "1"
+  },
+  "cg_bobpitch": {
+   "name": "cg_bobpitch",
+   "description": "Set amount player view bobs forward/back while moving.",
+   "default": "0.002"
+  },
+  "cg_bobroll": {
+   "name": "cg_bobroll",
+   "description": "Set amount player view rolls side to side while moving.",
+   "default": "0.002"
+  },
+  "cg_bobup": {
+   "name": "cg_bobup",
+   "description": "Set amount player view bobs up/down while moving.",
+   "default": "0.005"
+  },
+  "cg_brassTime": {
+   "name": "cg_brassTime",
+   "description": "Set amount of time a shell casing gets displayed if set to 0 the game engine will skip all shell eject code.",
+   "default": "1250"
+  },
+  "cg_cameraOrbit": {
+   "name": "cg_cameraOrbit",
+   "description": "Change the step or increment units of the orbit rotation from one angle how much of a step to next angle.",
+   "default": "0"
+  },
+  "cg_cameraOrbitDelay": {
+   "name": "cg_cameraOrbitDelay",
+   "description": "Change the rate at wich the camara moves to the next orbit position the higher the number the slower.",
+   "default": "50"
+  },
+  "cg_centertime": {
+   "name": "cg_centertime",
+   "description": "Set display time for center screen messages (0 off).",
+   "default": "3"
+  },
+  "cg_crosshairHealth": {
+   "name": "cg_crosshairHealth",
+   "description": "Show health by the cross hairs (only works with #10 now?) - LOKi.",
+   "default": "1"
+  },
+  "cg_crosshairSize": {
+   "name": "cg_crosshairSize",
+   "description": "Crosshair size...incase you have crosshair envy (c:.",
+   "default": "24"
+  },
+  "cg_crosshairX": {
+   "name": "cg_crosshairX",
+   "description": "Set X coordinates of the crosshair if cg_crosshairSize not 0.",
+   "default": "0"
+  },
+  "cg_crosshairY": {
+   "name": "cg_crosshairY",
+   "description": "Set Y coordinates of the crosshair if cg_crosshairSize not 0.",
+   "default": "0"
+  },
+  "cg_debuganim": {
+   "name": "cg_debuganim",
+   "description": "Toggle model animation debug mode.",
+   "default": "0"
+  },
+  "cg_debugevents": {
+   "name": "cg_debugevents",
+   "description": "Toggle event debug mode.",
+   "default": "0"
+  },
+  "cg_debugposition": {
+   "name": "cg_debugposition",
+   "description": "Toggle player position debug mode.",
+   "default": "0"
+  },
+  "cg_deferPlayers": {
+   "name": "cg_deferPlayers",
+   "description": "The loading of player models will not take place until the next map, or when you die, or toggle the scoreboard (tab) this prevents the \"hitch\" effect when a player using a new model or skin joins the game after you. if you join the game after them the models and skins will download as you join?.",
+   "default": "1"
+  },
+  "cg_demoLook": {
+   "name": "cg_demoLook",
+   "description": "Possibly to change the look of a recorded demo?.",
+   "default": "0"
+  },
+  "cg_draw2D": {
+   "name": "cg_draw2D",
+   "description": "Toggle the drawing of 2D items or text on the status display.",
+   "default": "1"
+  },
+  "cg_draw3dIcons": {
+   "name": "cg_draw3dIcons",
+   "description": "Toggle the drawing of 3D icons on the HUD off and on draw 2D icon for ammo if cg_draw3dicons 0 \"John Carmack\".",
+   "default": "1"
+  },
+  "cg_drawAmmoWarning": {
+   "name": "cg_drawAmmoWarning",
+   "description": "Toggle low-ammo warning display.",
+   "default": "1"
+  },
+  "cg_drawAttacker": {
+   "name": "cg_drawAttacker",
+   "description": "Toggle the display of last know assailant.",
+   "default": "1"
+  },
+  "cg_drawCrosshair": {
+   "name": "cg_drawCrosshair",
+   "description": "Select crosshair (change to zero if you have really good aim ha! ha!) 10 crosshairs to select from (cg_drawCrosshair 1 - 10) \"John Carmack\".",
+   "default": "1"
+  },
+  "cg_drawCrosshairNames": {
+   "name": "cg_drawCrosshairNames",
+   "description": "Toggle displaying of the name of the player you're aiming at.",
+   "default": "1"
+  },
+  "cg_drawFPS": {
+   "name": "cg_drawFPS",
+   "description": "Toggle Frames Per Second display (when set to one \"0\" is default).",
+   "default": "0"
+  },
+  "cg_drawFriend": {
+   "name": "cg_drawFriend",
+   "description": "Toggle the display of triangle shaped icon over the heads of your team mates.",
+   "default": "1"
+  },
+  "cg_drawGun": {
+   "name": "cg_drawGun",
+   "description": "Toggle determines if the weapon you're holding is visible or not.",
+   "default": "1"
+  },
+  "cg_drawIcons": {
+   "name": "cg_drawIcons",
+   "description": "Toggle the drawing of any icons on the HUD and scoreboard.",
+   "default": "1"
+  },
+  "cg_drawRewards": {
+   "name": "cg_drawRewards",
+   "description": "Toggle display of award icons above the \"you fragged...\" message - LOKi.",
+   "default": "1"
+  },
+  "cg_drawKiller": {
+   "name": "cg_drawKiller",
+   "description": "Toggle display of player's name and picture that fragged you last.",
+   "default": "1"
+  },
+  "cg_drawSnapshot": {
+   "name": "cg_drawSnapshot",
+   "description": "Toggle the display of snapshots counter (# of snaps since game start).",
+   "default": "0"
+  },
+  "cg_drawStatus": {
+   "name": "cg_drawStatus",
+   "description": "Draw the HUD. (toggle weather or not health and score are displayed).",
+   "default": "1"
+  },
+  "cg_drawTeamOverlay": {
+   "name": "cg_drawTeamOverlay",
+   "description": "Set the drawing location of the team status overlay 1=top right 2=bottom right 3=bottom left of the screen it shows team player names, location, ammo (and what type weapon), and frag count for each player - LOKi.",
+   "default": "0"
+  },
+  "cg_drawTimer": {
+   "name": "cg_drawTimer",
+   "description": "Show timer on HUD. shows time since map start counts up - LOKi.",
+   "default": "1"
+  },
+  "cg_errordecay": {
+   "name": "cg_errordecay",
+   "description": "Helps to smooth animation during player prediction while experiencing packet loss or snapshot errors. \"detect prediction errors and allow them to be decayed off over several frames to ease the jerk.\" from the source code comments cg_predict.c.",
+   "default": "100"
+  },
+  "cg_extrapolate": {
+   "name": "cg_extrapolate",
+   "description": "Toggle blending of animations from one to the next (like a segue) - Andre.",
+   "default": "1"
+  },
+  "cg_footsteps": {
+   "name": "cg_footsteps",
+   "description": "Toggle the footstep sounds of all players (cheat protected) - LOKi.",
+   "default": "1"
+  },
+  "cg_forceModel": {
+   "name": "cg_forceModel",
+   "description": "Force model selection, also forces player sounds \"John Carmack\".",
+   "default": "0"
+  },
+  "cg_fov": {
+   "name": "cg_fov",
+   "description": "Field of view/vision \"90\" is default higher numbers give peripheral vision.",
+   "default": "90"
+  },
+  "cg_gibs": {
+   "name": "cg_gibs",
+   "description": "Toggle the display of animated gibs (explosions flying body parts!).",
+   "default": "1"
+  },
+  "cg_gun": {
+   "name": "cg_gun",
+   "description": "Toggle determines if the weapon your holding is visible or not.",
+   "default": "1"
+  },
+  "cg_gunX": {
+   "name": "cg_gunX",
+   "description": "Set X coordinates of viewable weapon if cg_drawGun is set to 1.",
+   "default": "0"
+  },
+  "cg_gunY": {
+   "name": "cg_gunY",
+   "description": "Set Y coordinates of viewable weapon if cg_drawGun is set to 1.",
+   "default": "0"
+  },
+  "cg_gunZ": {
+   "name": "cg_gunZ",
+   "description": "Set Z coordinates of viewable weapon if cg_drawGun is set to 1 moves the gun model forward or backward in relation to the player models hold.",
+   "default": "0"
+  },
+  "cg_ignore": {
+   "name": "cg_ignore",
+   "description": "Used for debugging possibly like the notarget command.",
+   "default": "0"
+  },
+  "cg_lagometer": {
+   "name": "cg_lagometer",
+   "description": "Toggle the display of Lag-O-Meter on the HUD 1=netgraph 0=frag counter which changes color to reflect what place your in as well Section 6 of the Q3Test_Instructions_Readme.txt has a more detailed description of this tool. Simply put the top graph (blue/yellow): A vertical line is painted for every rendered frame. if the line is blue and going down from the baseline that indicates a steady transition of frames from one to the next. A yellow line going up from the baseline means the frames are not being fully rendered in time. The bottom graph (green/yellow/red): A vertical line is painted for every received snapshot. If the line is green it indicates properly received snapshots, with the height of the bar proportional to the ping. If the bar is yellow it indicates that the snapshot was held back because it hit the rate limit. If the line is red it means the snapshot was dropped by the network...Lots of thanx goes out to hacker, Erik, TeoH, and Wilka.",
+   "default": "1"
+  },
+  "cg_markoffset": {
+   "name": "cg_markoffset",
+   "description": "Set marks (decals) offset. some video cards display the marks with the wrong offset, so you will be able to see the square decal that encapsulates the effect because the offset rises above the wall surface. change the offset the square goes away.",
+   "default": "1"
+  },
+  "cg_marks": {
+   "name": "cg_marks",
+   "description": "Toggle the marks the projectiles leave on the wall (bullet holes, etc).",
+   "default": "1"
+  },
+  "cg_noplayeranims": {
+   "name": "cg_noplayeranims",
+   "description": "Toggle player model animations. (the animation frame displayed when this is disabled is rather odd, though.).",
+   "default": "0"
+  },
+  "cg_nopredict": {
+   "name": "cg_nopredict",
+   "description": "Toggle client-side player prediction. (disabling causes the client to wait for updates from the server before updating the player location.).",
+   "default": "0"
+  },
+  "cg_noProjectileTrail": {
+   "name": "cg_noProjectileTrail",
+   "description": "Toggle the display of smoke trail effect behind rockets - Jax_Gator Dekard.",
+   "default": "0"
+  },
+  "cg_noTaunt": {
+   "name": "cg_noTaunt",
+   "description": "Possibly turn off the ability to hear voice taunts.",
+   "default": "0"
+  },
+  "cg_noVoiceChats": {
+   "name": "cg_noVoiceChats",
+   "description": "Possibly turn off the ability to hear voice chats.",
+   "default": "0"
+  },
+  "cg_noVoiceText": {
+   "name": "cg_noVoiceText",
+   "description": "Possibly turn off the display of the voice chat text copied to the console.",
+   "default": "0"
+  },
+  "cg_oldPlasma": {
+   "name": "cg_oldPlasma",
+   "description": "Toggle the use of old or new particle style plasma gun effect - 20 20.",
+   "default": "1"
+  },
+  "cg_oldRail": {
+   "name": "cg_oldRail",
+   "description": "Toggle the use of old or new spiral style rail trail effect - 20 20.",
+   "default": "0"
+  },
+  "cg_oldRocket": {
+   "name": "cg_oldRocket",
+   "description": "Toggle the use of old or new style rocket trail effect - 20 20.",
+   "default": "1"
+  },
+  "cg_predictItems": {
+   "name": "cg_predictItems",
+   "description": "Toggle client-side item prediction. 0 option to not do local prediction of item pickup - John Carmack.",
+   "default": "1"
+  },
+  "cg_railTrailTime": {
+   "name": "cg_railTrailTime",
+   "description": "Set how long the railgun's trails last.",
+   "default": "400"
+  },
+  "cg_runpitch": {
+   "name": "cg_runpitch",
+   "description": "Set amount player view bobs up and down while running.",
+   "default": "0.002"
+  },
+  "cg_runroll": {
+   "name": "cg_runroll",
+   "description": "Set amount player view rolls side to side while running (in 3rd person only?).",
+   "default": "0.005"
+  },
+  "cg_scorePlums": {
+   "name": "cg_scorePlums",
+   "description": "Toggle the display of the floating scoring number balloons when a player scores a point or points (including negative points) in any game type, the awarded point value floats up from the target like a balloon and slowly fades out.",
+   "default": "1"
+  },
+  "cg_shadows": {
+   "name": "cg_shadows",
+   "description": "Set shadow detail level (0 = OFF, 1 = basic discs, 2 = stencil buffered 3 = simple stencil buffered(if r_stencilebits is not=0)) - Andre Lucas.",
+   "default": "0"
+  },
+  "cg_showcrosshair": {
+   "name": "cg_showcrosshair",
+   "description": "Appeared in version 1.06 then removed in 1.07 now back in 1.08 then removed again in 1.09 hmm (replaced with multi-crosshairs).",
+   "default": "1"
+  },
+  "cg_showmiss": {
+   "name": "cg_showmiss",
+   "description": "Toggle the display of missed packets or predictions on the HUD.",
+   "default": "0"
+  },
+  "cg_simpleItems": {
+   "name": "cg_simpleItems",
+   "description": "Toggle the use of 2D sprite objects in place of the 3D animated objects makes some objects more \"simple\" (faster to render) - hacker.",
+   "default": "0"
+  },
+  "cg_smoothClients": {
+   "name": "cg_smoothClients",
+   "description": "When g_smoothClients is enabled on the server and you enable cg_smoothClients then players in your view will be predicted and will appear more smooth even if they are on a bad network connection. however small prediction errors might appear.",
+   "default": "0"
+  },
+  "cg_stats": {
+   "name": "cg_stats",
+   "description": "Toggles display of client frames in sequence missed frames are not shown.",
+   "default": "0"
+  },
+  "cg_stereoSeparation": {
+   "name": "cg_stereoSeparation",
+   "description": "The amount of stereo separation (for 3D glasses!) You ever take off your glasses at a 3D movie, remember how the images were separated into 3 colors? that's what this does.",
+   "default": "0.4"
+  },
+  "cg_swingSpeed": {
+   "name": "cg_swingSpeed",
+   "description": "Set speed player model rotates to match position (1 is no delay, 0 will never turn).",
+   "default": "0.3"
+  },
+  "cg_teamChatHeight": {
+   "name": "cg_teamChatHeight",
+   "description": "Set number of lines or strings of text that remain on screen in team play chat mode (messagemode2) values are 1 - 8 - LOKi.",
+   "default": "8"
+  },
+  "cg_teamChatsOnly": {
+   "name": "cg_teamChatsOnly",
+   "description": "When this is set to a one only chats from team mates will be displayed.",
+   "default": "0"
+  },
+  "cg_teamChatTime": {
+   "name": "cg_teamChatTime",
+   "description": "Set how long messages from teammates are displayed on the screen.",
+   "default": "3000"
+  },
+  "cg_thirdPerson": {
+   "name": "cg_thirdPerson",
+   "description": "Toggle the use of and third person view.",
+   "default": "0"
+  },
+  "cg_thirdPersonAngle": {
+   "name": "cg_thirdPersonAngle",
+   "description": "Change the angle of perspective you view your player (180 changes view to the front of the model).",
+   "default": "0"
+  },
+  "cg_thirdPersonRange": {
+   "name": "cg_thirdPersonRange",
+   "description": "Change the distance you view your player from when in 3rd person view.",
+   "default": "40"
+  },
+  "cg_tracerchance": {
+   "name": "cg_tracerchance",
+   "description": "Set frequency of tracer bullets (1 is all tracers).",
+   "default": "0.4"
+  },
+  "cg_tracerlength": {
+   "name": "cg_tracerlength",
+   "description": "Set length of tracer bullets.",
+   "default": "100"
+  },
+  "cg_tracerwidth": {
+   "name": "cg_tracerwidth",
+   "description": "Set width of tracer bullets.",
+   "default": "1"
+  },
+  "cg_trueLightning": {
+   "name": "cg_trueLightning",
+   "description": "Settings of the new shaft style. from the OSP readme...specifies the \"lag\" imposed on the rendering of the lightning gun shaft. a value of 0.0 is just like the baseq3 version \"feel\" of the LG. a value of 1.0 imposes no lag at all (shaft is always rendered on the crosshairs). a value of 0.5 is a good mix of the two to reduce the wet-noodle effect, while still maintaining consistency of where the server actually sees the shaft. I would like to thank all the readers who submitted good descriptions of this new variable to me, there were a ton, but the ones who had it correct are listed here.",
+   "default": "0"
+  },
+  "cg_viewsize": {
+   "name": "cg_viewsize",
+   "description": "Changes view port size 30 - 100 (you probably wouldn't want less than 100).",
+   "default": "100"
+  },
+  "cg_zoomfov": {
+   "name": "cg_zoomfov",
+   "description": "What the zoomed in field of view will be any thing more than 30 would not be sniper friendly.",
+   "default": "22.5"
+  },
+  "cheats": {
+   "name": "cheats",
+   "description": "Enable cheating commands (give all) (serverside only).",
+   "default": "0"
+  },
+  "cl_allowDownload": {
+   "name": "cl_allowDownload",
+   "description": "Toggle automatic downloading of maps, models, sounds, and textures.",
+   "default": "1"
+  },
+  "cl_anglespeedkey": {
+   "name": "cl_anglespeedkey",
+   "description": "Set the speed that the direction keys (not mouse) change the view angle.",
+   "default": "1.5"
+  },
+  "cl_anonymous": {
+   "name": "cl_anonymous",
+   "description": "Possibly to toggle anonymous connection to a server.",
+   "default": "0"
+  },
+  "cl_avidemo": {
+   "name": "cl_avidemo",
+   "description": "Toggle recording of a slideshow of screenshots records into the snapshot folder and appears to have overwritten some snapshots I had in there )c:.",
+   "default": "0"
+  },
+  "cl_cdkey": {
+   "name": "cl_cdkey",
+   "description": "Variable to hold the CD key number to prevent bootleg/warez.",
+   "default": "123456789"
+  },
+  "cl_currentServerAddress": {
+   "name": "cl_currentServerAddress",
+   "description": "Variable holds the IP address of the currently connected server.",
+   "default": null
+  },
+  "cl_conXOffset": {
+   "name": "cl_conXOffset",
+   "description": "Offset the console message display 0 - top left 999 - extreme top right (off the page).",
+   "default": "0"
+  },
+  "cl_debugMove": {
+   "name": "cl_debugMove",
+   "description": "Used for debugging cl_debugmove [1/2] from John Carmack's plan file.",
+   "default": "0"
+  },
+  "cl_downloadName": {
+   "name": "cl_downloadName",
+   "description": "Variable holds filename of file currently downloading.",
+   "default": ""
+  },
+  "cl_freelook": {
+   "name": "cl_freelook",
+   "description": "Toggle the use of freelook with the mouse (your ability to look up and down).",
+   "default": "1"
+  },
+  "cl_freezeDemo": {
+   "name": "cl_freezeDemo",
+   "description": "Stops a demo play back and freeze on one frame.",
+   "default": "0"
+  },
+  "cl_maxpackets": {
+   "name": "cl_maxpackets",
+   "description": "Set the transmission packet size or how many packets are sent to client.",
+   "default": "30"
+  },
+  "cl_maxPing": {
+   "name": "cl_maxPing",
+   "description": "Controls which servers are displayed in the in-game server browser - ata.",
+   "default": "800"
+  },
+  "cl_motd": {
+   "name": "cl_motd",
+   "description": "Toggle the display of \"Message of the day\" When Quake 3 Arena starts a map up, it sends the GL_RENDERER string to the Message Of The Day server at id. This responds back with a message of the day to the client. If you wish to switch this option off, set CL_MOTD to 0.",
+   "default": "1"
+  },
+  "cl_motdString": {
+   "name": "cl_motdString",
+   "description": "Possibly a MOTD from id's master server it is a read only variable.",
+   "default": ""
+  },
+  "cl_mouseAccel": {
+   "name": "cl_mouseAccel",
+   "description": "Toggle the use of mouse acceleration the mouse speeds up or becomes more sensitive as it continues in one direction.",
+   "default": "0"
+  },
+  "cl_nodelta": {
+   "name": "cl_nodelta",
+   "description": "Disable delta compression (slows net performance, only use if net errors happen otherwise not recommended).",
+   "default": "0"
+  },
+  "cl_noprint": {
+   "name": "cl_noprint",
+   "description": "Printout messages to your screen or to the console (tired of all the chatter?).",
+   "default": "0"
+  },
+  "cl_packetdup": {
+   "name": "cl_packetdup",
+   "description": "Default was 2 but changed to 1 since version 1.09.",
+   "default": "1"
+  },
+  "cl_paused": {
+   "name": "cl_paused",
+   "description": "Variable holds the status of the paused flag on the client side.",
+   "default": "0"
+  },
+  "cl_pitchspeed": {
+   "name": "cl_pitchspeed",
+   "description": "Set the pitch rate when +lookup and/or +lookdown are active.",
+   "default": "140"
+  },
+  "cl_run": {
+   "name": "cl_run",
+   "description": "Always run...play without it I dare you! (c:.",
+   "default": "1"
+  },
+  "cl_running": {
+   "name": "cl_running",
+   "description": "Variable which shows weather or not a client game is running or weather we are in server/client mode (read only).",
+   "default": "1"
+  },
+  "cl_serverStatusResendTime": {
+   "name": "cl_serverStatusResendTime",
+   "description": "Possibly allows the admin to change the rate of the heartbeats to the master server(s).",
+   "default": "750"
+  },
+  "cl_showmouserate": {
+   "name": "cl_showmouserate",
+   "description": "Show the mouse rate of mouse samples per frame (USB 1/per frame).",
+   "default": "0"
+  },
+  "cl_shownet": {
+   "name": "cl_shownet",
+   "description": "Display network quality info.",
+   "default": "0"
+  },
+  "cl_showSend": {
+   "name": "cl_showSend",
+   "description": "Network debugging tool \"John Carmack\".",
+   "default": "0"
+  },
+  "cl_showTimeDelta": {
+   "name": "cl_showTimeDelta",
+   "description": "Display time delta between server updates.",
+   "default": "0"
+  },
+  "cl_timeNudge": {
+   "name": "cl_timeNudge",
+   "description": "Effectively adds local lag to try to make sure you interpolate instead of extrapolate (try 100 for a really laggy server).",
+   "default": "0"
+  },
+  "cl_timeout": {
+   "name": "cl_timeout",
+   "description": "Seconds to wait before you are removed from the server when you lag out.",
+   "default": "125"
+  },
+  "cl_updateInfoString": {
+   "name": "cl_updateInfoString",
+   "description": "\"challenge\\14985\\motd\\This is used by id when new versions come out\".",
+   "default": ""
+  },
+  "cl_yawspeed": {
+   "name": "cl_yawspeed",
+   "description": "Set the yaw rate when +left and/or +right are active.",
+   "default": "140"
+  },
+  "cm_curveClipHack": {
+   "name": "cm_curveClipHack",
+   "description": "Must have been a cheat!!! removed now.",
+   "default": "0"
+  },
+  "cm_noAreas": {
+   "name": "cm_noAreas",
+   "description": "Toggle the ability of the player bounding box to clip through areas?.",
+   "default": "0"
+  },
+  "cm_noCurves": {
+   "name": "cm_noCurves",
+   "description": "Toggle the ability of the player bounding box to clip through curved surfaces.",
+   "default": "0"
+  },
+  "cm_playerCurveClip": {
+   "name": "cm_playerCurveClip",
+   "description": "Toggles the ability of the player bounding box to respect curved surfaces.",
+   "default": "1"
+  },
+  "color": {
+   "name": "color",
+   "description": "Rail trail color blue/green/cyan/red/magenta/yellow/white respectively 1/2/3/4/5/6/7.",
+   "default": "1"
+  },
+  "color1": {
+   "name": "color1",
+   "description": "Spiral rail trail color spiral core - special thanks to schiz Jax_Gator Dekard blue/green/cyan/red/magenta/yellow/white respectively 1/2/3/4/5/6/7.",
+   "default": "2"
+  },
+  "color2": {
+   "name": "color2",
+   "description": "Spiral rail trail color spiral ring - special thanks to schiz Jax_Gator Dekard blue/green/cyan/red/magenta/yellow/white respectively 1/2/3/4/5/6/7.",
+   "default": "5"
+  },
+  "com_blood": {
+   "name": "com_blood",
+   "description": "Toggle the blood mist effect in the gib animations. 0 option for no gibs and no blood on hits \"John Carmack\".",
+   "default": "1"
+  },
+  "com_buildScript": {
+   "name": "com_buildScript",
+   "description": "Possibly used for the loading and caching of game data like a list of things to be loaded and caches the data for quicker reloading.",
+   "default": "0"
+  },
+  "com_cameraMode": {
+   "name": "com_cameraMode",
+   "description": "Seems to toggle the view of your player model off and on when in 3D camera view.",
+   "default": "0"
+  },
+  "com_dropsim": {
+   "name": "com_dropsim",
+   "description": "For testing simulates packet loss during communication drops.",
+   "default": "0"
+  },
+  "com_hunkMegs": {
+   "name": "com_hunkMegs",
+   "description": "Set the amount of memory you want quake3.exe to reserve for game play dedicated server memory optimizations. Tips: com_hunkMegs 4 sv_maxclients 3 bot_enable 0 \"John Carmack\".",
+   "default": "20"
+  },
+  "com_introplayed": {
+   "name": "com_introplayed",
+   "description": "Toggle displaying of intro cinematic once it has been seen this variable keeps it from playing each time, to see it again set this to zero.",
+   "default": "1"
+  },
+  "com_maxfps": {
+   "name": "com_maxfps",
+   "description": "Set max frames per second you receive from server (maxfps was removed).",
+   "default": "100"
+  },
+  "com_showtrace": {
+   "name": "com_showtrace",
+   "description": "Toggle display of packet traces. 0=disables,1=toggles.",
+   "default": "0"
+  },
+  "com_soundMegs": {
+   "name": "com_soundMegs",
+   "description": "Com_soundmegs and com_zonemegs can be adjusted to provide better performance on systems with more than 64mb of memory. the default configuration is set to allow the game to run on a 64 MB system. on a 128 MB system we would run with the following:com_hunkMegs - 64 com_soundMegs - 16 com_zoneMegs - 24.",
+   "default": "8"
+  },
+  "com_speeds": {
+   "name": "com_speeds",
+   "description": "Toggle display of frame counter, all, sv, cl, gm, rf, and bk whatever they are.",
+   "default": "0"
+  },
+  "com_zoneMegs": {
+   "name": "com_zoneMegs",
+   "description": "Com_soundmegs and com_zonemegs can be adjusted to provide better performance on systems with more than 64mb of memory. the default configuration is set to allow the game to run on a 64 MB system. on a 128 MB system we would run with the following:com_hunkMegs - 64 com_soundMegs - 16 com_zoneMegs - 24.",
+   "default": "16"
+  },
+  "con_notifytime": {
+   "name": "con_notifytime",
+   "description": "Defines how long messages (from players or the system) are on the screen.",
+   "default": "3"
+  },
+  "conback": {
+   "name": "conback",
+   "description": "Select console background file \"gfx/2d/conback.tga\".",
+   "default": ""
+  },
+  "crosshairhealth": {
+   "name": "crosshairhealth",
+   "description": "Show health by the cross hairs.",
+   "default": "1"
+  },
+  "crosshairsize": {
+   "name": "crosshairsize",
+   "description": "Crosshair size...incase you have crosshair envy (c:.",
+   "default": "24"
+  },
+  "d_bot": {
+   "name": "d_bot",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": ""
+  },
+  "d_botai": {
+   "name": "d_botai",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": "0"
+  },
+  "d_botaiming": {
+   "name": "d_botaiming",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": "0"
+  },
+  "d_botfreeze": {
+   "name": "d_botfreeze",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": "0"
+  },
+  "d_break": {
+   "name": "d_break",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": "0"
+  },
+  "d_noroam": {
+   "name": "d_noroam",
+   "description": "All d_ commands have been removed to disable bots most likely.",
+   "default": "0"
+  },
+  "dedicated": {
+   "name": "dedicated",
+   "description": "Set console to server only 0 is a listen, 1 is lan, and 2 is internet (command line cvar causes engine not to load 3D game just a server console C:\\Q3TEST\\quake3.exe +set dedicated 2) - Dekard.",
+   "default": "0"
+  },
+  "developer": {
+   "name": "developer",
+   "description": "Enable developer mode (more verbose messages).",
+   "default": "0"
+  },
+  "dmflags": {
+   "name": "dmflags",
+   "description": "Set deathmatch flags originally I posted the values of Quake 2 dmflags but have since tested them and most of them don't work.",
+   "default": "0"
+  },
+  "disable_<item": {
+   "name": "disable_<item",
+   "description": "This command allows the administrator of a server to disable a particular item from the map. as an example: \"/set disable_weapon_bfg 1\" will make it so that the bfg does not show up. changing the value back to 0 and executing a /map_restart command will bring the disabled item back. - K2 disable.cfg enable.cfg configs by zYmO.",
+   "default": "name>"
+  },
+  "disable.cfg": {
+   "name": "disable.cfg",
+   "description": "Enable.cfg.",
+   "default": null
+  },
+  "fixedtime": {
+   "name": "fixedtime",
+   "description": "Toggle the rendering of every frame the game will wait until each frame is completely rendered before sending the next frame.",
+   "default": "0"
+  },
+  "fov": {
+   "name": "fov",
+   "description": "Field of view/vision \"90\" is default higher numbers give peripheral vision.",
+   "default": "90"
+  },
+  "fraglimit": {
+   "name": "fraglimit",
+   "description": "Set fraglimit on a server (0 is no limit).",
+   "default": "20"
+  },
+  "freelook": {
+   "name": "freelook",
+   "description": "Steer aim and control head movement with the mouse a must (c:.",
+   "default": "1"
+  },
+  "fs_basegame": {
+   "name": "fs_basegame",
+   "description": "Allows people to base mods upon mods syntax to follow.",
+   "default": ""
+  },
+  "fs_basepath": {
+   "name": "fs_basepath",
+   "description": "Set base path root C:\\Program Files\\Quake III Arena for files to be downloaded from this path may change for TC's and MOD's.",
+   "default": ""
+  },
+  "fs_cdpath": {
+   "name": "fs_cdpath",
+   "description": "Possibly a variable to use when the full CD was copied to the HDD.",
+   "default": ""
+  },
+  "fs_copyfiles": {
+   "name": "fs_copyfiles",
+   "description": "Toggle if files can be copied from servers or if client will download.",
+   "default": "0"
+  },
+  "fs_debug": {
+   "name": "fs_debug",
+   "description": "Possibly enables file server debug mode for download/uploads or something.",
+   "default": "0"
+  },
+  "fs_game": {
+   "name": "fs_game",
+   "description": "Set gamedir set the game folder/dir default is baseq3 (other for MODS).",
+   "default": ""
+  },
+  "fs_homepath": {
+   "name": "fs_homepath",
+   "description": "Possibly for TC's and MODS the default is the path to quake3.exe.",
+   "default": null
+  },
+  "fs_openedList": {
+   "name": "fs_openedList",
+   "description": "Variable holds a list of all the pk3 files the client found.",
+   "default": ""
+  },
+  "fs_referencedList": {
+   "name": "fs_referencedList",
+   "description": "Variable holds a list of all the pk3 files the client loaded data from.",
+   "default": ""
+  },
+  "fs_restrict": {
+   "name": "fs_restrict",
+   "description": "Demoversion if set to 1 restricts game to 4 arenas like the Q3A demo.",
+   "default": ""
+  },
+  "g_aimTest": {
+   "name": "g_aimTest",
+   "description": "Removed possibly was a cheat (bot like aiming).",
+   "default": "0"
+  },
+  "g_allowVote": {
+   "name": "g_allowVote",
+   "description": "Toggle the use of voting on a server.",
+   "default": "1"
+  },
+  "g_arenaName": {
+   "name": "g_arenaName",
+   "description": "Possibly toggles the display of the name of the current arena?.",
+   "default": "0"
+  },
+  "g_arenaRank": {
+   "name": "g_arenaRank",
+   "description": "Possibly a variable to hold the value for your rank in the current series.",
+   "default": ""
+  },
+  "g_arenaScores": {
+   "name": "g_arenaScores",
+   "description": "Possibly a variable to hold the value of previous arena series scores.",
+   "default": ""
+  },
+  "g_arenasFile": {
+   "name": "g_arenasFile",
+   "description": "Sets the file name to use for map rotation and bot names and game type for each arena default scripts/arenas.txt within the PK3 file.",
+   "default": ""
+  },
+  "g_banIPs": {
+   "name": "g_banIPs",
+   "description": "Ban specified TCP/IP address from connecting to your server.",
+   "default": ""
+  },
+  "g_blueTeam": {
+   "name": "g_blueTeam",
+   "description": "Set the icon for the blue team (example Pagans).",
+   "default": ""
+  },
+  "g_botsFile": {
+   "name": "g_botsFile",
+   "description": "Sets the file name to use for setting up the bots configuration and characters for each bot default scripts/bots.txt within the PK3 file.",
+   "default": ""
+  },
+  "g_debugAlloc": {
+   "name": "g_debugAlloc",
+   "description": "Possibly debugging tool for memory allocation?.",
+   "default": "0"
+  },
+  "g_debugDamage": {
+   "name": "g_debugDamage",
+   "description": "Debugging tool for damage effects?.",
+   "default": "0"
+  },
+  "g_debugMove": {
+   "name": "g_debugMove",
+   "description": "Debugging tool for brush/entity movements?.",
+   "default": "0"
+  },
+  "g_doWarmup": {
+   "name": "g_doWarmup",
+   "description": "Toggle the use of a warmup period before a match game.",
+   "default": "0"
+  },
+  "g_enableBreath": {
+   "name": "g_enableBreath",
+   "description": "Enable breath in cold maps you can see the players breath - Dekard.",
+   "default": "0"
+  },
+  "g_enableDust": {
+   "name": "g_enableDust",
+   "description": "Enable dust to be kicked up from feet in areas that have that map entity - Dekard.",
+   "default": "0"
+  },
+  "g_filterBan": {
+   "name": "g_filterBan",
+   "description": "Toggle the banning of players that match a certain criteria/filter?.",
+   "default": "1"
+  },
+  "g_forcerespawn": {
+   "name": "g_forcerespawn",
+   "description": "Set the respawn time in seconds, 0 = don't force respawn.",
+   "default": "10"
+  },
+  "g_friendlyFire": {
+   "name": "g_friendlyFire",
+   "description": "Toggle damage caused by friendly fire 1 = can kill or injure teammate.",
+   "default": "0"
+  },
+  "g_gametype": {
+   "name": "g_gametype",
+   "description": "0- Free For All 1 - Tournament 2 - Single Player 3 - Team Deathmatch 4 - Capture the Flag to start a dedicated server in tournament mode, you would use: quake3.exe +set dedicated 2 +set sv_zone tournaments +set g_gametype 1 +map q3tourney2, \"Graeme Devine\" thanks also to TheKiller 5 - One Flag CTF 6 - Overload 7 - Harvester (Team Arena only).",
+   "default": "0"
+  },
+  "0": {
+   "name": "0",
+   "description": "1- Tournament.",
+   "default": "- Free For All"
+  },
+  "3": {
+   "name": "3",
+   "description": "4- Capture the Flag.",
+   "default": "- Team Deathmatch"
+  },
+  "to": {
+   "name": "to",
+   "description": "5- One Flag CTF.",
+   "default": "start a dedicated server in tournament mode, you would use: quake3.exe +set dedicated 2 +set sv_zone tournaments +set g_gametype 1 +map q3tourney2, \"Graeme Devine\" thanks also to TheKiller 5 - One Flag CTF 6 - Overload 7 - Harvester (Team Arena only)"
+  },
+  "5": {
+   "name": "5",
+   "description": "6- Overload.",
+   "default": "- One Flag CTF"
+  },
+  "g_gravity": {
+   "name": "g_gravity",
+   "description": "Set the gravity level. (this is normally set by a property of the map loaded).",
+   "default": "800"
+  },
+  "g_inactivity": {
+   "name": "g_inactivity",
+   "description": "Set the amount of time a player can remain inactive before kicked.",
+   "default": "0"
+  },
+  "g_knockback": {
+   "name": "g_knockback",
+   "description": "The knockback from a weapon, higher number = greater knockback.",
+   "default": "1000"
+  },
+  "g_listEntity": {
+   "name": "g_listEntity",
+   "description": "Toggles the display of map entities shows them by number.",
+   "default": "0"
+  },
+  "g_log": {
+   "name": "g_log",
+   "description": "Toggles logging of game data or statistics John Carmack made g_log a filename instead of a 0/1 in this version.",
+   "default": "1"
+  },
+  "g_logSync": {
+   "name": "g_logSync",
+   "description": "Toggle the logging to append to the existing file and not overwrite.",
+   "default": "0"
+  },
+  "g_maxGameClients": {
+   "name": "g_maxGameClients",
+   "description": "Set maximum # of players who may join the game the remainder of clients are forced to spectate - Holesinswiss.",
+   "default": "0"
+  },
+  "g_motd": {
+   "name": "g_motd",
+   "description": "Set message of the day to \"X\" (see \"cl_motd\" to display it).",
+   "default": ""
+  },
+  "g_needpass": {
+   "name": "g_needpass",
+   "description": "Variable alerts the client that a password is needed to join your server.",
+   "default": "0"
+  },
+  "g_password": {
+   "name": "g_password",
+   "description": "Set the serverside password players use to get on the server.",
+   "default": ""
+  },
+  "g_podiumDist": {
+   "name": "g_podiumDist",
+   "description": "Sets the draw distance of the podium object player models stand on after a single player bot match - LOKi.",
+   "default": "80"
+  },
+  "g_podiumDrop": {
+   "name": "g_podiumDrop",
+   "description": "Sets the height of the podium object player models stand on after a single player bot match - LOKi.",
+   "default": "70"
+  },
+  "g_quadfactor": {
+   "name": "g_quadfactor",
+   "description": "Allows the admin to set the amount of damage the quad damage will do.",
+   "default": "3"
+  },
+  "g_redTeam": {
+   "name": "g_redTeam",
+   "description": "Set the team icon for the red team (example Stroggs).",
+   "default": ""
+  },
+  "g_restarted": {
+   "name": "g_restarted",
+   "description": "Read only variable that is toggled when the game has been restarted in match mode this sets an event trap for if warmup is needed.",
+   "default": "0"
+  },
+  "g_singlePlayer": {
+   "name": "g_singlePlayer",
+   "description": "Possibly to allow 3rd party's to make TC's for single player style games?.",
+   "default": "0"
+  },
+  "g_smoothClients": {
+   "name": "g_smoothClients",
+   "description": "Enable players to use the smooth clients option on the server (cg_smoothClients).",
+   "default": "1"
+  },
+  "g_spAwards": {
+   "name": "g_spAwards",
+   "description": "Variable holds the names of the award icons that have been earned in the tier levels in single player mode.",
+   "default": ""
+  },
+  "g_speed": {
+   "name": "g_speed",
+   "description": "How fast you move in Q3Test. The greater the number, the greater the velocity.",
+   "default": "320"
+  },
+  "g_spScores1": {
+   "name": "g_spScores1",
+   "description": "Holds your scores on skill level 1 in single player games - Dr Qube.",
+   "default": ""
+  },
+  "g_spScores2": {
+   "name": "g_spScores2",
+   "description": "Holds your scores on skill level 2 in single player games - Dr Qube.",
+   "default": ""
+  },
+  "g_spScores3": {
+   "name": "g_spScores3",
+   "description": "Holds your scores on skill level 3 in single player games - Dr Qube.",
+   "default": ""
+  },
+  "g_spScores4": {
+   "name": "g_spScores4",
+   "description": "Holds your scores on skill level 4 in single player games - Dr Qube.",
+   "default": ""
+  },
+  "g_spScores5": {
+   "name": "g_spScores5",
+   "description": "Holds your scores on skill level 5 in single player games - Dr Qube.",
+   "default": ""
+  },
+  "g_spSkill": {
+   "name": "g_spSkill",
+   "description": "Holds your current skill level for single player 1 = I can win 2 = bring it on 3 = hurt me plenty 4 = hardcore and 5 = nightmare.",
+   "default": "2"
+  },
+  "g_spVideos": {
+   "name": "g_spVideos",
+   "description": "Variable holds the names of the cinematic videos that are unlocked at the end of each tier completion.",
+   "default": ""
+  },
+  "g_syncronousClients": {
+   "name": "g_syncronousClients",
+   "description": "Toggle synching of all client movements (1 required to record server demo) show \"snc\" on lagometer \"John Carmack\".",
+   "default": "0"
+  },
+  "g_teamAutoJoin": {
+   "name": "g_teamAutoJoin",
+   "description": "Toggle the automatic joining of the smallest or loosing team.",
+   "default": "0"
+  },
+  "g_teamForceBalance": {
+   "name": "g_teamForceBalance",
+   "description": "Toggle the forcing of teams to be as even as possible on a server.",
+   "default": "0"
+  },
+  "g_warmup": {
+   "name": "g_warmup",
+   "description": "The warmup time for tournament play is set with g_warmup. A tournament game is implicitly a one on one match, and further players are automatically entered as spectators (note, when the game starts, all clients, including the spectators respawn). You can follow the players by using Steam follow1T, Steam follow2T, and you can be a scoreboard by using Steam scoreboardT., \"Graeme Devine\".",
+   "default": ""
+  },
+  "g_weaponrespawn": {
+   "name": "g_weaponrespawn",
+   "description": "Set time before a picked up weapon will respawn again 0 = weapons stay.",
+   "default": "5"
+  },
+  "gamedate": {
+   "name": "gamedate",
+   "description": "Aug 20 2001.",
+   "default": ""
+  },
+  "gamename": {
+   "name": "gamename",
+   "description": "Display the game name for TC's basedir would be other than baseq3.",
+   "default": "baseq3"
+  },
+  "gl_pixelformat": {
+   "name": "gl_pixelformat",
+   "description": "Color(16) depth(16) stencil(8) sets up how many bits for each pixel item 8, 16, or 32 bit?.",
+   "default": ""
+  },
+  "gl_renderer": {
+   "name": "gl_renderer",
+   "description": "Variable holds the GL Renderer driver information \"RIVA 128/RIVA 128 ZX (PCI)\".",
+   "default": ""
+  },
+  "gl_vendor": {
+   "name": "gl_vendor",
+   "description": "Variable holds the brand of your chipmaker \"NVIDIA Corporation\".",
+   "default": ""
+  },
+  "gl_version": {
+   "name": "gl_version",
+   "description": "Variable holds the driver version number \"1.1.0\".",
+   "default": ""
+  },
+  "graphheight": {
+   "name": "graphheight",
+   "description": "Set height, in pixels?, for graph displays.",
+   "default": "32"
+  },
+  "graphscale": {
+   "name": "graphscale",
+   "description": "Set scale multiplier for graph displays.",
+   "default": "1"
+  },
+  "graphshift": {
+   "name": "graphshift",
+   "description": "Set offset for graph displays.",
+   "default": "0"
+  },
+  "gun_frame": {
+   "name": "gun_frame",
+   "description": "Turns off weapon animation and displays specified frame in the weapons animation sequence 0=animate 1 and up step through frames...(c:.",
+   "default": "0"
+  },
+  "gun_x": {
+   "name": "gun_x",
+   "description": "Set the x location of the gun model (one is up and down one is side to side).",
+   "default": "0"
+  },
+  "gun_y": {
+   "name": "gun_y",
+   "description": "Set the y location of the gun model (one is up and down one is side to side).",
+   "default": "0"
+  },
+  "gun_z": {
+   "name": "gun_z",
+   "description": "Set the z location of the gun model (possibly angle?).",
+   "default": "0"
+  },
+  "handicap": {
+   "name": "handicap",
+   "description": "Set player handicap (max health), valid values 1 - 99.",
+   "default": "100"
+  },
+  "headmodel": {
+   "name": "headmodel",
+   "description": "Changes only the head of the model to another model Example: If you are playing as the Grunt model, /headmodel \"sarge\" will stick Sarge's head on Grunt's body selecting a new model will load both the model and its matching head.",
+   "default": ""
+  },
+  "host_speeds": {
+   "name": "host_speeds",
+   "description": "Toggle the display of timing information sv=server cl=client gm=gametime rf=render time all=total time.",
+   "default": "0"
+  },
+  "in_debugjoystick": {
+   "name": "in_debugjoystick",
+   "description": "Possibly to set the debug level of direct input.",
+   "default": "0"
+  },
+  "in_joyBallScale": {
+   "name": "in_joyBallScale",
+   "description": "Possibly sets the scale of a joyball rotation to player model rotation?.",
+   "default": "0.02"
+  },
+  "in_joyBall": {
+   "name": "in_joyBall",
+   "description": "Possibly to allow support for trackball style joy sticks and orb's.",
+   "default": "0"
+  },
+  "in_joystick": {
+   "name": "in_joystick",
+   "description": "Toggle the initialization of the joystick (command line).",
+   "default": "0"
+  },
+  "in_midi": {
+   "name": "in_midi",
+   "description": "Toggle the use of a midi port as an input device r-d-x.",
+   "default": "0"
+  },
+  "in_midichannel": {
+   "name": "in_midichannel",
+   "description": "Toggle the use of a midi channel as an input device r-d-x.",
+   "default": "1"
+  },
+  "in_mididevice": {
+   "name": "in_mididevice",
+   "description": "Toggle the use of a midi device as an input device r-d-x.",
+   "default": "0"
+  },
+  "in_midiport": {
+   "name": "in_midiport",
+   "description": "Toggle the use of a midi port as an input device r-d-x.",
+   "default": "1"
+  },
+  "in_mouse": {
+   "name": "in_mouse",
+   "description": "Toggle initialization of the mouse as an input device (command line).",
+   "default": "1"
+  },
+  "journal": {
+   "name": "journal",
+   "description": "Possibly logs console events but is read only and can not be toggled.",
+   "default": "0"
+  },
+  "joy_advanced": {
+   "name": "joy_advanced",
+   "description": "Applies game controller axis mapping settings < maddog.",
+   "default": "0"
+  },
+  "joy_advaxisr": {
+   "name": "joy_advaxisr",
+   "description": "Bind an action to the joystick r axis.",
+   "default": "0"
+  },
+  "joy_advaxisu": {
+   "name": "joy_advaxisu",
+   "description": "Bind an action to the joystick u axis.",
+   "default": "0"
+  },
+  "joy_advaxisv": {
+   "name": "joy_advaxisv",
+   "description": "Bind an action to the joystick v axis.",
+   "default": "0"
+  },
+  "joy_advaxisx": {
+   "name": "joy_advaxisx",
+   "description": "Bind an action to the joystick x axis.",
+   "default": "0"
+  },
+  "joy_advaxisy": {
+   "name": "joy_advaxisy",
+   "description": "Bind an action to the joystick y axis.",
+   "default": "0"
+  },
+  "joy_advaxisz": {
+   "name": "joy_advaxisz",
+   "description": "Bind an action to the joystick z axis.",
+   "default": "0"
+  },
+  "joy_forwardsensitivity": {
+   "name": "joy_forwardsensitivity",
+   "description": "Set forward/back sensitivity (negative is inverted).",
+   "default": "-1"
+  },
+  "joy_forwardthreshold": {
+   "name": "joy_forwardthreshold",
+   "description": "Set forward/back dead zone.",
+   "default": "0.15"
+  },
+  "joy_name": {
+   "name": "joy_name",
+   "description": "Set joystick name.",
+   "default": "joystick"
+  },
+  "joy_pitchsensitivity": {
+   "name": "joy_pitchsensitivity",
+   "description": "Set pitch sensitivity (negative is inverted).",
+   "default": "1"
+  },
+  "joy_pitchthreshold": {
+   "name": "joy_pitchthreshold",
+   "description": "Set pitch dead zone.",
+   "default": "0.15"
+  },
+  "joy_sidesensitivity": {
+   "name": "joy_sidesensitivity",
+   "description": "Set side sensitivity (negative is inverted).",
+   "default": "-1"
+  },
+  "joy_sidethreshold": {
+   "name": "joy_sidethreshold",
+   "description": "Set side dead zone.",
+   "default": "0.15"
+  },
+  "joy_threshold": {
+   "name": "joy_threshold",
+   "description": "Possibly an overall threshold setting all other joy variables removed in 1.08.",
+   "default": "0.15"
+  },
+  "joy_upsensitivity": {
+   "name": "joy_upsensitivity",
+   "description": "Set up/down sensitivity (negative is inverted).",
+   "default": "-1"
+  },
+  "joy_upthreshold": {
+   "name": "joy_upthreshold",
+   "description": "Set up/down dead zone.",
+   "default": "0.15"
+  },
+  "joy_yawsensitivity": {
+   "name": "joy_yawsensitivity",
+   "description": "Set yaw sensitivity (negative is inverted).",
+   "default": "-1"
+  },
+  "joy_yawthreshold": {
+   "name": "joy_yawthreshold",
+   "description": "Set yaw dead zone.",
+   "default": "0.15"
+  },
+  "logfile": {
+   "name": "logfile",
+   "description": "Enable console logging 0=no log 1=buffered 2=continuous 3=append so as not to overwrite old logs.",
+   "default": "0"
+  },
+  "m_filter": {
+   "name": "m_filter",
+   "description": "Toggle use of mouse \"smoothing\".",
+   "default": "1"
+  },
+  "m_forward": {
+   "name": "m_forward",
+   "description": "Set the back and forth movement distance of the player in relation to how much the mouse moves.",
+   "default": "0.25"
+  },
+  "m_pitch": {
+   "name": "m_pitch",
+   "description": "Set the up and down movement distance of the player in relation to how much the mouse moves.",
+   "default": "0.022"
+  },
+  "m_side": {
+   "name": "m_side",
+   "description": "Set the strafe movement distance of the player in relation to how much the mouse moves.",
+   "default": "0.25"
+  },
+  "m_yaw": {
+   "name": "m_yaw",
+   "description": "Set the speed at which the player's screen moves left and right while using the mouse.",
+   "default": "0.022"
+  },
+  "mapname": {
+   "name": "mapname",
+   "description": "Display the name of the current map being used.",
+   "default": ""
+  },
+  "memorydump": {
+   "name": "memorydump",
+   "description": "Possibly used for debugging memory allocation/use?.",
+   "default": "0"
+  },
+  "maxfps": {
+   "name": "maxfps",
+   "description": "Set the max frames per second the server should send you.",
+   "default": "0"
+  },
+  "model": {
+   "name": "model",
+   "description": "Set the model used to represent your player Hey John a 3D Keen model would be nice (c:.",
+   "default": "visor/blue"
+  },
+  "name": {
+   "name": "name",
+   "description": "Pick your own be original (no Player).",
+   "default": "Commander Keen"
+  },
+  "net_ip": {
+   "name": "net_ip",
+   "description": "Variable holds the IP of the local machine (or the \"hosts\" name) passed from the OS environment.",
+   "default": "localhost"
+  },
+  "net_noipx": {
+   "name": "net_noipx",
+   "description": "Toggle the use of IPX/SPX network protocol (command line only).",
+   "default": "0"
+  },
+  "net_noudp": {
+   "name": "net_noudp",
+   "description": "Toggle the use of TCP/IP network protocol (command line only).",
+   "default": "0"
+  },
+  "net_port": {
+   "name": "net_port",
+   "description": "Set port number server will use if you want to run more than one instance of Q3A server on the same machine.",
+   "default": "27960"
+  },
+  "net_qport": {
+   "name": "net_qport",
+   "description": "Set internal network port. this allows more than one person to play from behind a NAT router by using only one IP address - Questy.",
+   "default": "16392"
+  },
+  "net_socksEnabled": {
+   "name": "net_socksEnabled",
+   "description": "Toggle the use of network socks 5 protocol enabling firewall access (only settable at init time from the OS command line) - Graeme Devine.",
+   "default": "0"
+  },
+  "net_socksPassword": {
+   "name": "net_socksPassword",
+   "description": "Variable holds password for socks firewall access supports no authentication and username/password authentication method (RFC-1929); it does NOT support GSS-API method (RFC-1961) authentication (only settable at init time from the OS command line) - Graeme Devine.",
+   "default": ""
+  },
+  "net_socksPort": {
+   "name": "net_socksPort",
+   "description": "Set proxy and/or firewall port default is 1080 (only settable at init time from the OS command line) - Graeme Devine.",
+   "default": "1080"
+  },
+  "net_socksServer": {
+   "name": "net_socksServer",
+   "description": "Set the address (name or IP number) of the SOCKS server (firewall machine), NOT a Q3ATEST server. (only settable at init time from the OS command line) - Graeme Devine.",
+   "default": ""
+  },
+  "net_socksUsername": {
+   "name": "net_socksUsername",
+   "description": "Variable holds username for socks firewall supports no authentication and username/password authentication method (RFC-1929); it does NOT support GSS-API method (RFC-1961) authentication (only settable at init time from the OS command line) - Graeme Devine.",
+   "default": ""
+  },
+  "nextmap": {
+   "name": "nextmap",
+   "description": "Variable holds the name of the next map in the server rotation myserver.cfg.",
+   "default": ""
+  },
+  "nohealth": {
+   "name": "nohealth",
+   "description": "Toggle the use of health items on next map or do it now from the command line.",
+   "default": "0"
+  },
+  "password": {
+   "name": "password",
+   "description": "Set password for entering a password protected server.",
+   "default": ""
+  },
+  "port": {
+   "name": "port",
+   "description": "Set port number server will use if you want to run more than one instance of Q3A server on the same machine.",
+   "default": "27960"
+  },
+  "paused": {
+   "name": "paused",
+   "description": "Possible to allow the game to pause while in single player mode.",
+   "default": "0"
+  },
+  "pmove_fixed": {
+   "name": "pmove_fixed",
+   "description": "Typically the player physics advances in small time steps. when this option is enabled all players will use fixed frequency player physics, the time between two advances of the phsysics will be the same for all players. the actual time between two advances of the player physics can be set with the pmove_msec variable. enabling this option will make the player physics the same for all players independent from their framerate. should do what you want for prediction and should even out the machine dependent rates. - Robert Duffy.",
+   "default": "0"
+  },
+  "pmove_msec": {
+   "name": "pmove_msec",
+   "description": "Set the time in milliseconds between two advances of the player physics. should do what you want for prediction and should even out the machine dependent rates. - Robert Duffy.",
+   "default": "8"
+  },
+  "protocol": {
+   "name": "protocol",
+   "description": "Display network protocol version. Useful for backward compatibility with servers with otherwise incompatible versions < maddog read only.",
+   "default": "66"
+  },
+  "qport": {
+   "name": "qport",
+   "description": "Set internal network port. this allows more than one person to play from behind a NAT router by using only one IP address - Questy.",
+   "default": "59337"
+  },
+  "r_allowExtensions": {
+   "name": "r_allowExtensions",
+   "description": "Use all of the OpenGL extensions your card is capable of.",
+   "default": "1"
+  },
+  "r_allowSoftwareGL": {
+   "name": "r_allowSoftwareGL",
+   "description": "Toggle the use of the default software OpenGL driver supplied by the Operating System < maddog.",
+   "default": "0"
+  },
+  "r_ambientScale": {
+   "name": "r_ambientScale",
+   "description": "Set the scale or intensity of ambient light.",
+   "default": "0.5"
+  },
+  "r_clear": {
+   "name": "r_clear",
+   "description": "Toggle the clearing of the screen between frames.",
+   "default": "0"
+  },
+  "r_colorbits": {
+   "name": "r_colorbits",
+   "description": "Set number of bits used for each color from 0 to 32 bit.",
+   "default": "16"
+  },
+  "r_colorMipLevels": {
+   "name": "r_colorMipLevels",
+   "description": "\"texture visualization tool\" John Carmack.",
+   "default": "0"
+  },
+  "r_customaspect": {
+   "name": "r_customaspect",
+   "description": "Toggle the use of custom screen resolution/sizes.",
+   "default": "1"
+  },
+  "r_customheight": {
+   "name": "r_customheight",
+   "description": "Custom resolution (Height).",
+   "default": "1024"
+  },
+  "r_customwidth": {
+   "name": "r_customwidth",
+   "description": "Custom resolution (Width).",
+   "default": "1600"
+  },
+  "r_debuglight": {
+   "name": "r_debuglight",
+   "description": "Possibly toggle debugging of lighting effects.",
+   "default": "0"
+  },
+  "r_debugSort": {
+   "name": "r_debugSort",
+   "description": "Possibly toggle debugging of sorting of list like scoreboard.",
+   "default": "0"
+  },
+  "r_debugSurface": {
+   "name": "r_debugSurface",
+   "description": "Possibly used for debugging the curve rendering and possibly for map debugging.",
+   "default": "0"
+  },
+  "r_debugSurfaceUpdate": {
+   "name": "r_debugSurfaceUpdate",
+   "description": "Possibly used for debugging the curve rendering and possibly for map debugging.",
+   "default": "1"
+  },
+  "r_depthbits": {
+   "name": "r_depthbits",
+   "description": "Set number of bits used for color depth from 0 to 24 bit.",
+   "default": "16"
+  },
+  "r_detailtextures": {
+   "name": "r_detailtextures",
+   "description": "Toggle the use of detailed textures, when disabled every stage of a shader is rendered except those with the keyword \"detail\". when enabled detail stages are also rendered. in proper use the detail stages are supposed to enhance the texture's visual quality when viewed close up. more information is available in the shader manual included in the GTK Radiant install. - Rroff.",
+   "default": "1"
+  },
+  "r_directedScale": {
+   "name": "r_directedScale",
+   "description": "Set scale/intensity of light shinning directly upon objects.",
+   "default": "1"
+  },
+  "r_displayRefresh": {
+   "name": "r_displayRefresh",
+   "description": "Monitor refresh rate in game (will change desktop settings too in Windows 98 anyway).",
+   "default": "0"
+  },
+  "r_dlightBacks": {
+   "name": "r_dlightBacks",
+   "description": "\"brighter areas are changed more by dlights than dark areas. I don't feel TOO bad about that, because its not like the dlight is much of a proper lighting simulation even in the best case...\"John Carmack.",
+   "default": "1"
+  },
+  "r_drawBuffer": {
+   "name": "r_drawBuffer",
+   "description": "Set which frame buffer to draw into. basically you draw into a \"back\" buffer while simultaneously showing a \"front\" buffer. next frame you \"swap\" these. the benefit is that you won't \"see\" the actual painting of the image take place. - Questy/Carl.",
+   "default": "GL_BACK"
+  },
+  "r_drawentities": {
+   "name": "r_drawentities",
+   "description": "Toggle display of brush entities.",
+   "default": "1"
+  },
+  "r_drawstrips": {
+   "name": "r_drawstrips",
+   "description": "Toggle triangle strips rendering method.",
+   "default": "1"
+  },
+  "r_drawSun": {
+   "name": "r_drawSun",
+   "description": "Set to zero if you do not want to render sunlight into the equation of lighting effects.",
+   "default": "1"
+  },
+  "r_drawworld": {
+   "name": "r_drawworld",
+   "description": "Toggle rendering of map architecture.",
+   "default": "1"
+  },
+  "r_dynamiclight": {
+   "name": "r_dynamiclight",
+   "description": "Toggle dynamic lighting (different \"dynamic\" method of rendering lights).",
+   "default": "0"
+  },
+  "r_ext_compiled_vertex_array": {
+   "name": "r_ext_compiled_vertex_array",
+   "description": "Toggle hardware compiled vertex array rendering method default is 1.",
+   "default": ""
+  },
+  "r_ext_compress_textures": {
+   "name": "r_ext_compress_textures",
+   "description": "Toggle compression of textures.",
+   "default": "1"
+  },
+  "r_ext_compressed_textures": {
+   "name": "r_ext_compressed_textures",
+   "description": "Toggle compression of textures (1.27g changed to past tense compressed).",
+   "default": "1"
+  },
+  "r_ext_gamma_control": {
+   "name": "r_ext_gamma_control",
+   "description": "Enable external gamma control settings.",
+   "default": "1"
+  },
+  "r_ext_multitexture": {
+   "name": "r_ext_multitexture",
+   "description": "Toggle hardware mutitexturing if set to zero is a direct FPS benefit.",
+   "default": "1"
+  },
+  "r_ext_swapinterval": {
+   "name": "r_ext_swapinterval",
+   "description": "Toggle hardware frame swapping.",
+   "default": "1"
+  },
+  "r_ext_texenv_add": {
+   "name": "r_ext_texenv_add",
+   "description": "Possible duplicate cvar or an extension to the r_ext_texture_add variable.",
+   "default": "1"
+  },
+  "r_ext_texture_env_add": {
+   "name": "r_ext_texture_env_add",
+   "description": "Toggle additive blending in multitexturing. If not present, OpenGL limits you to multiplicative blending only, so additive will require an extra pass. - Questy/Carl.",
+   "default": "1"
+  },
+  "r_facePlaneCull": {
+   "name": "r_facePlaneCull",
+   "description": "Toggle culling of brush faces not in view (0 will slow FPS).",
+   "default": "1"
+  },
+  "r_fastsky": {
+   "name": "r_fastsky",
+   "description": "Toggle fast rendering of sky if set to 1 (0 is default and will slow FPS when outdoors 1 will disable your ability to see through portals)...Thanx hacker.",
+   "default": "1"
+  },
+  "r_finish": {
+   "name": "r_finish",
+   "description": "Toggle synchronization of rendered frames (engine will wait for GL calls to finish).",
+   "default": "1"
+  },
+  "r_fixtjunctions": {
+   "name": "r_fixtjunctions",
+   "description": "Toggle fixing of a problem with a certain type of vertex in models that can make gaps appear between polygons - Andre Lucas.",
+   "default": "1"
+  },
+  "r_flareFade": {
+   "name": "r_flareFade",
+   "description": "Set scale of fading of flares in relation to distance.",
+   "default": "7"
+  },
+  "r_flares": {
+   "name": "r_flares",
+   "description": "Toggle projectile flare and lighting effect. the flare effect is a translucent disk that is used to alter the colors around lights with a corona effect.",
+   "default": "0"
+  },
+  "r_flaresSize": {
+   "name": "r_flaresSize",
+   "description": "Set the size of flares? I wish you could make the big balls smaller now those are flares.",
+   "default": "40"
+  },
+  "r_fullbright": {
+   "name": "r_fullbright",
+   "description": "Toggle textures to full brightness level (is set as a cheat code?) boy who turned on the lights (c:.",
+   "default": "0"
+  },
+  "r_fullscreen": {
+   "name": "r_fullscreen",
+   "description": "Toggle full screen or play in a window.",
+   "default": "1"
+  },
+  "r_gamma": {
+   "name": "r_gamma",
+   "description": "Gamma correction.",
+   "default": "1"
+  },
+  "r_glDriver": {
+   "name": "r_glDriver",
+   "description": "Used \"x\" OpenGL driver (Standard OpenGL32 or 3dfxvgl).",
+   "default": "opengl32"
+  },
+  "r_ignore": {
+   "name": "r_ignore",
+   "description": "Possibly ignores hardware driver settings in favor of variable settings.",
+   "default": "0"
+  },
+  "r_ignoreFastPath": {
+   "name": "r_ignoreFastPath",
+   "description": "Possibly to disable the looking outside of the PAK file first feature in case of duplicate file names etc.",
+   "default": "0"
+  },
+  "r_ignoreGLErrors": {
+   "name": "r_ignoreGLErrors",
+   "description": "Ignores OpenGL errors that occur.",
+   "default": "1"
+  },
+  "r_ignorehwgamma": {
+   "name": "r_ignorehwgamma",
+   "description": "Possibly to toggle the use of DirectX gamma correction or video driver gamma correction?.",
+   "default": "0"
+  },
+  "r_ignoreOffset": {
+   "name": "r_ignoreOffset",
+   "description": "See r_offsetfactor this will just turn the offset off completely.",
+   "default": "0"
+  },
+  "r_inGameVideo": {
+   "name": "r_inGameVideo",
+   "description": "Toggle the display of in game animations on bigscreen map objects that display a camera view of the current game.",
+   "default": "1"
+  },
+  "r_intensity": {
+   "name": "r_intensity",
+   "description": "Increase brightness of texture colors (may be like gl_modulate?).",
+   "default": "1"
+  },
+  "r_lastValidRenderer": {
+   "name": "r_lastValidRenderer",
+   "description": "Last known video driver (RIVA 128/RIVA 128 ZX (PCI)).",
+   "default": ""
+  },
+  "r_lightmap": {
+   "name": "r_lightmap",
+   "description": "Toggle entire map to full brightness level all textures become blurred with light (is set as a cheat code?).",
+   "default": "0"
+  },
+  "r_lightningSegmentLength": {
+   "name": "r_lightningSegmentLength",
+   "description": "Possibly to set the distance between bends in the lightning bolt of the lightning gun (c:.",
+   "default": "32"
+  },
+  "r_lockpvs": {
+   "name": "r_lockpvs",
+   "description": "Disable update to PVS table as player moves through map (new areas not rendered) - Randy.",
+   "default": "0"
+  },
+  "r_lockview": {
+   "name": "r_lockview",
+   "description": "Possibly was intended to lock a certain Field Of View (FOV) is removed now.",
+   "default": "0"
+  },
+  "r_lodbias": {
+   "name": "r_lodbias",
+   "description": "Change the geometric level of detail (0 - 2).",
+   "default": "0"
+  },
+  "r_lodCurveError": {
+   "name": "r_lodCurveError",
+   "description": "Another level of detail setting if set to 10000 \"don't drop curve rows for a long time\" John Carmack (really mean 3D cards only??).",
+   "default": "250"
+  },
+  "r_lodscale": {
+   "name": "r_lodscale",
+   "description": "Set scale for level of detail adjustment.",
+   "default": "5"
+  },
+  "r_logFile": {
+   "name": "r_logFile",
+   "description": "Possibly toggles logging of rendering errors.",
+   "default": "0"
+  },
+  "r_mapOverBrightBits": {
+   "name": "r_mapOverBrightBits",
+   "description": "Set intensity level of lights reflected from textures.",
+   "default": "2"
+  },
+  "r_maskMinidriver": {
+   "name": "r_maskMinidriver",
+   "description": "Treat the current OpenGL32 driver as an ICD, even if it is in fact a MCD Questy/Zoid.",
+   "default": "0"
+  },
+  "r_measureOverdraw": {
+   "name": "r_measureOverdraw",
+   "description": "Overdraw' is when the same pixel is written to more than once when rendering a scene. I guess r_measureOverdraw is used to see how much is going on. used for software rendering.",
+   "default": "0"
+  },
+  "r_mode": {
+   "name": "r_mode",
+   "description": "Set video display mode (resolution), use listmodes for list of modes (3 is 640X480).",
+   "default": "3"
+  },
+  "r_nobind": {
+   "name": "r_nobind",
+   "description": "Toggle the binding of textures to triangles.",
+   "default": "0"
+  },
+  "r_nocull": {
+   "name": "r_nocull",
+   "description": "Toggle rendering of hidden objects (1=slow performance).",
+   "default": "0"
+  },
+  "r_nocurves": {
+   "name": "r_nocurves",
+   "description": "Map diagnostic command toggle the use of curved geometry.",
+   "default": "0"
+  },
+  "r_nolightcalc": {
+   "name": "r_nolightcalc",
+   "description": "Disable lighting and shadow calculations hmm.",
+   "default": "0"
+  },
+  "r_noportals": {
+   "name": "r_noportals",
+   "description": "Toggle player view through portals.",
+   "default": "0"
+  },
+  "r_norefresh": {
+   "name": "r_norefresh",
+   "description": "Toggle the refreshing of the rendered display.",
+   "default": "0"
+  },
+  "r_novis": {
+   "name": "r_novis",
+   "description": "The VIS tables hold information about which areas should be displayed from other areas.",
+   "default": "0"
+  },
+  "r_offsetfactor": {
+   "name": "r_offsetfactor",
+   "description": "Control the OpenGL Polygon Offset, If you see lines appearing in decals, or they seem to flick on and off, these variables may help out. - Questy/Andre.",
+   "default": "-1"
+  },
+  "r_offsetunits": {
+   "name": "r_offsetunits",
+   "description": "See r_offsetfactor.",
+   "default": "-2"
+  },
+  "r_overBrightBits": {
+   "name": "r_overBrightBits",
+   "description": "Possibly similar to r_mapOverBrightBits (no visible effect on mine).",
+   "default": "1"
+  },
+  "r_picmip": {
+   "name": "r_picmip",
+   "description": "Set maximum texture size (0 - 3, 3=fastest 0=quality).",
+   "default": "1"
+  },
+  "r_portalOnly": {
+   "name": "r_portalOnly",
+   "description": "When set to \"1\" turns off stencil buffering for portals, this allows you to see the entire portal before it's clipped, i.e. more of the room, to get a better feel for who's in there before you jump in.",
+   "default": "0"
+  },
+  "r_preloadTextures": {
+   "name": "r_preloadTextures",
+   "description": "Enable video processor to pre-cache textures.",
+   "default": "0"
+  },
+  "r_primitives": {
+   "name": "r_primitives",
+   "description": "Set the rendering method. -1 = skips drawing 0 = uses glDrawElements if compiled vertex arrays are present, or strips of glArrayElement if not present 1 = forces strips 2 = forces drawElements 3 = path for non-vertex array testing \"John Carmack\".",
+   "default": "0"
+  },
+  "r_printShaders": {
+   "name": "r_printShaders",
+   "description": "Possibly toggle the printing on console of the number of shaders used?.",
+   "default": "0"
+  },
+  "r_railCoreWidth": {
+   "name": "r_railCoreWidth",
+   "description": "Set size of the rail trail's core.",
+   "default": "16"
+  },
+  "r_railSegmentLength": {
+   "name": "r_railSegmentLength",
+   "description": "Set distance between rail \"sun bursts\".",
+   "default": "64"
+  },
+  "r_railWidth": {
+   "name": "r_railWidth",
+   "description": "Set width of the rail trail.",
+   "default": "128"
+  },
+  "r_roundImagesDown": {
+   "name": "r_roundImagesDown",
+   "description": "Set rounding down amount (larger = faster, lower quality) - Randy.",
+   "default": "1"
+  },
+  "r_showcluster": {
+   "name": "r_showcluster",
+   "description": "Toggle the display of clusters by number as the player enters them on the currently loaded map<maddog.",
+   "default": "0"
+  },
+  "r_showImages": {
+   "name": "r_showImages",
+   "description": "Toggle displaying a collage of all image files when set to a one...texture use debugging tool.",
+   "default": "0"
+  },
+  "r_shownormals": {
+   "name": "r_shownormals",
+   "description": "Toggle the drawing of short lines indicating brush and entity polygon vertices, useful when debugging model lighting - Andre Lucas < maddog.",
+   "default": "0"
+  },
+  "r_showsky": {
+   "name": "r_showsky",
+   "description": "Enable rendering sky in front of other objects.",
+   "default": "0"
+  },
+  "r_showSmp": {
+   "name": "r_showSmp",
+   "description": "Toggle display of multi processor (SMP) info on the HUD.",
+   "default": "0"
+  },
+  "r_showtris": {
+   "name": "r_showtris",
+   "description": "Map diagnostic command show triangles, pretty cool looking.",
+   "default": "0"
+  },
+  "r_simpleMipMaps": {
+   "name": "r_simpleMipMaps",
+   "description": "Toggle the use of \"simple\" mip mapping. used to \"dumb-down\" resoluiton displays for slower machines - Questy.",
+   "default": "1"
+  },
+  "r_singleShader": {
+   "name": "r_singleShader",
+   "description": "Possibly toggles use of 1 shader for objects that have multiple shaders.",
+   "default": "0"
+  },
+  "r_skipBackEnd": {
+   "name": "r_skipBackEnd",
+   "description": "Possibly to toggle the skipping of the backend video buffer.",
+   "default": "0"
+  },
+  "r_smp": {
+   "name": "r_smp",
+   "description": "Toggle the use of multi processor acceleration code.",
+   "default": "0"
+  },
+  "r_speeds": {
+   "name": "r_speeds",
+   "description": "Show the rendering info e.g. how many triangles are drawn added r_speeds timing info to cinematic texture uploads \"John Carmack\".",
+   "default": "0"
+  },
+  "r_stencilbits": {
+   "name": "r_stencilbits",
+   "description": "Stencil buffer size (0, 8bit, and 16bit).",
+   "default": "8"
+  },
+  "r_stereo": {
+   "name": "r_stereo",
+   "description": "Toggle the use of stereo separation for 3D glasses.",
+   "default": "0"
+  },
+  "r_subdivisions": {
+   "name": "r_subdivisions",
+   "description": "Set maximum level of detail. (an example would be the complexity of curves. 1=highest detail).",
+   "default": "4"
+  },
+  "r_swapInterval": {
+   "name": "r_swapInterval",
+   "description": "Toggle frame swapping.",
+   "default": "0"
+  },
+  "r_texturebits": {
+   "name": "r_texturebits",
+   "description": "Set number of bits used for each texture from 0 to 32 bit.",
+   "default": "0"
+  },
+  "r_textureMode": {
+   "name": "r_textureMode",
+   "description": "Select texture mode. \"GL_LINEAR_MIPMAP_NEAREST\" (nearest or linear).",
+   "default": ""
+  },
+  "r_verbose": {
+   "name": "r_verbose",
+   "description": "Toggle display of rendering commands as they happen on the console.",
+   "default": "0"
+  },
+  "r_vertexLight": {
+   "name": "r_vertexLight",
+   "description": "Enable vertex lighting (faster, lower quality than lightmap) removes lightmaps, forces every shader to only use a single rendering pass, no layered transparancy, environment mapping, world lighting is completely static, and there is no dynamic lighting when in vertex lighting mode. (recommend dynamiclight 0 and this 1) direct FPS benefit \"John Carmack\".",
+   "default": "1"
+  },
+  "r_znear": {
+   "name": "r_znear",
+   "description": "Set how close objects can be to the player before they're clipped out of the scene - Questy/Andre.",
+   "default": "4"
+  },
+  "rate": {
+   "name": "rate",
+   "description": "Modem speed/rate of data transfer \"4500\" (take a zero off the end of your connection speed?).",
+   "default": ""
+  },
+  "rcon_password": {
+   "name": "rcon_password",
+   "description": "Set password for remote console control of the server removed cause dupe.",
+   "default": ""
+  },
+  "rconAddress": {
+   "name": "rconAddress",
+   "description": "Variable holds IP address of the server for rcon.",
+   "default": ""
+  },
+  "rconPassword": {
+   "name": "rconPassword",
+   "description": "Set password for remote console control of the server.",
+   "default": ""
+  },
+  "s_2dvolume": {
+   "name": "s_2dvolume",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.7"
+  },
+  "s_bloat": {
+   "name": "s_bloat",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "2.0"
+  },
+  "s_compression": {
+   "name": "s_compression",
+   "description": "Toggle the use of sound compression.",
+   "default": "1"
+  },
+  "s_distance": {
+   "name": "s_distance",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "100.0"
+  },
+  "s_doppler": {
+   "name": "s_doppler",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "1.0"
+  },
+  "s_fogeq": {
+   "name": "s_fogeq",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.8"
+  },
+  "s_geometry": {
+   "name": "s_geometry",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "1"
+  },
+  "s_initsound": {
+   "name": "s_initsound",
+   "description": "Toggle weather sound is initialized or not (on next game).",
+   "default": "1"
+  },
+  "s_khz": {
+   "name": "s_khz",
+   "description": "Set the sampling frequency of sounds lower=performance higher=quality.",
+   "default": "11"
+  },
+  "s_loadas8bit": {
+   "name": "s_loadas8bit",
+   "description": "Load sounds in 8bit mode.",
+   "default": "1"
+  },
+  "s_max_distance": {
+   "name": "s_max_distance",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "1000.0"
+  },
+  "s_min_distance": {
+   "name": "s_min_distance",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "3.0"
+  },
+  "s_mixahead": {
+   "name": "s_mixahead",
+   "description": "Set delay before mixing sound samples.",
+   "default": "0.2"
+  },
+  "s_mixPreStep": {
+   "name": "s_mixPreStep",
+   "description": "Possibly to set the prefetching of sound on sound cards that have that power.",
+   "default": "0.05"
+  },
+  "s_musicvolume": {
+   "name": "s_musicvolume",
+   "description": "Music volume level 0=off.",
+   "default": "1"
+  },
+  "s_numpolys": {
+   "name": "s_numpolys",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "400"
+  },
+  "s_occ_eq": {
+   "name": "s_occ_eq",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.75"
+  },
+  "s_occfactor": {
+   "name": "s_occfactor",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.5"
+  },
+  "s_occlude": {
+   "name": "s_occlude",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0"
+  },
+  "s_refdelay": {
+   "name": "s_refdelay",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "2.0"
+  },
+  "s_refgain": {
+   "name": "s_refgain",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.45"
+  },
+  "s_reflect": {
+   "name": "s_reflect",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "1"
+  },
+  "s_rolloff": {
+   "name": "s_rolloff",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "1.0"
+  },
+  "s_separation": {
+   "name": "s_separation",
+   "description": "Set separation between left and right sound channels (this one is it).",
+   "default": "0.5"
+  },
+  "s_show": {
+   "name": "s_show",
+   "description": "Toggle display of paths and filenames of all sound files as they are played.",
+   "default": "0"
+  },
+  "s_testsound": {
+   "name": "s_testsound",
+   "description": "Toggle a test tone to test sound system. 0=disables,1=toggles.",
+   "default": "0"
+  },
+  "s_usingA3D": {
+   "name": "s_usingA3D",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0"
+  },
+  "s_volume": {
+   "name": "s_volume",
+   "description": "Sound FX Volume.",
+   "default": "0.7"
+  },
+  "s_watereq": {
+   "name": "s_watereq",
+   "description": "Vortex of sound - has a good description of this A3D variable.",
+   "default": "0.2"
+  },
+  "scr_conspeed": {
+   "name": "scr_conspeed",
+   "description": "Set how fast the console goes up and down.",
+   "default": "3"
+  },
+  "sensitivity": {
+   "name": "sensitivity",
+   "description": "Set how far your mouse moves in relation to travel on the mouse pad.",
+   "default": "9"
+  },
+  "server1": {
+   "name": "server1",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server2": {
+   "name": "server2",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server3": {
+   "name": "server3",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server4": {
+   "name": "server4",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server5": {
+   "name": "server5",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server6": {
+   "name": "server6",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server7": {
+   "name": "server7",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server8": {
+   "name": "server8",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server9": {
+   "name": "server9",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server10": {
+   "name": "server10",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server11": {
+   "name": "server11",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server12": {
+   "name": "server12",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server13": {
+   "name": "server13",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server14": {
+   "name": "server14",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server15": {
+   "name": "server15",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "server16": {
+   "name": "server16",
+   "description": "Holds IP/URL of a servers from the favorite servers list - Dr Qube.",
+   "default": ""
+  },
+  "session": {
+   "name": "session",
+   "description": "Possibly holds the value for the active session number when running multiple addresses and sockets for multiple servers on one machine?.",
+   "default": "2"
+  },
+  "session0": {
+   "name": "session0",
+   "description": "Possibly to set up multiple addresses and sockets for multiple servers on one machine (can you say BFServer with multiple processors?).",
+   "default": "0 300 1 0 0 0"
+  },
+  "session1": {
+   "name": "session1",
+   "description": "Possibly to set up multiple addresses and sockets for multiple servers on one machine (can you say BFServer with multiple processors?).",
+   "default": "0 300 1 0 0 0"
+  },
+  "session2": {
+   "name": "session2",
+   "description": "Possibly to set up multiple addresses and sockets for multiple servers on one machine (can you say BFServer with multiple processors?).",
+   "default": "0 300 1 0 0 0"
+  },
+  "session3": {
+   "name": "session3",
+   "description": "Possibly to set up multiple addresses and sockets for multiple servers on one machine (can you say BFServer with multiple processors?).",
+   "default": "0 300 1 0 0 0"
+  },
+  "session4": {
+   "name": "session4",
+   "description": "Possibly to set up multiple addresses and sockets for multiple servers on one machine (can you say BFServer with multiple processors?).",
+   "default": "0 300 1 0 0 0"
+  },
+  "sex": {
+   "name": "sex",
+   "description": "Set gender for model characteristics (sounds, obituary's etc.).",
+   "default": "male"
+  },
+  "showdrop": {
+   "name": "showdrop",
+   "description": "Toggle display of dropped packets. 0=disables,1=toggles.",
+   "default": "0"
+  },
+  "showpackets": {
+   "name": "showpackets",
+   "description": "Toggle display of all packets sent and received. 0=disables,1=toggles.",
+   "default": "0"
+  },
+  "showtrace": {
+   "name": "showtrace",
+   "description": "Toggle display of packet traces. 0=disables,1=toggles.",
+   "default": "0"
+  },
+  "snaps": {
+   "name": "snaps",
+   "description": "Set the number of snapshots sever will send to a client (server run at 40Hz, so use 40, 20, or 10) -Randy.",
+   "default": "20"
+  },
+  "snd": {
+   "name": "snd",
+   "description": "Select which model sounds your player uses (mix it up).",
+   "default": "visor"
+  },
+  "sv_allowAnonymous": {
+   "name": "sv_allowAnonymous",
+   "description": "Possibly to toggle the allowing of anonymous clients to connect to your server.",
+   "default": "0"
+  },
+  "sv_allowdownload": {
+   "name": "sv_allowdownload",
+   "description": "Toggle the ability for clients to download files maps etc. from server..",
+   "default": "1"
+  },
+  "sv_cheats": {
+   "name": "sv_cheats",
+   "description": "Enable cheating commands (give all) (serverside only).",
+   "default": "1"
+  },
+  "sv_floodProtect": {
+   "name": "sv_floodProtect",
+   "description": "Toggle server flood protection to keep players from bringing the server down.",
+   "default": "1"
+  },
+  "sv_fps": {
+   "name": "sv_fps",
+   "description": "Set the max frames per second the server sends the client.",
+   "default": "20"
+  },
+  "sv_hostname": {
+   "name": "sv_hostname",
+   "description": "Set the name of the server \"Shadowlands\".",
+   "default": ""
+  },
+  "sv_keywords": {
+   "name": "sv_keywords",
+   "description": "Variable holds the search string entered in the internet connection menu.",
+   "default": ""
+  },
+  "sv_killserver": {
+   "name": "sv_killserver",
+   "description": "If set to a one the server goes down (server console only I hope).",
+   "default": "0"
+  },
+  "sv_mapChecksum": {
+   "name": "sv_mapChecksum",
+   "description": "Allows check for client server map to match.",
+   "default": ""
+  },
+  "sv_mapname": {
+   "name": "sv_mapname",
+   "description": "Display the name of the current map being used on a server.",
+   "default": ""
+  },
+  "sv_master1": {
+   "name": "sv_master1",
+   "description": "Set URL or address to master server \"master3.idsoftware.com\".",
+   "default": ""
+  },
+  "sv_master2": {
+   "name": "sv_master2",
+   "description": "Optional master 2.",
+   "default": ""
+  },
+  "sv_master3": {
+   "name": "sv_master3",
+   "description": "Optional master 3.",
+   "default": ""
+  },
+  "sv_master4": {
+   "name": "sv_master4",
+   "description": "Optional master 4.",
+   "default": ""
+  },
+  "sv_master5": {
+   "name": "sv_master5",
+   "description": "Optional master 5.",
+   "default": ""
+  },
+  "sv_maxclients": {
+   "name": "sv_maxclients",
+   "description": "Maximum number of people allowed to join the server dedicated server memory optimizations. Tips: com_hunkMegs 4 sv_maxclients 3 bot_enable 0 \"John Carmack\".",
+   "default": "8"
+  },
+  "sv_maxPing": {
+   "name": "sv_maxPing",
+   "description": "Set the maximum ping aloud on the server to keep HPB out.",
+   "default": "0"
+  },
+  "sv_maxRate": {
+   "name": "sv_maxRate",
+   "description": "Option to force all clients to play with a max rate. This can be used to limit the advantage of LPB, or to cap bandwidth utilization for a server. Note that rate is ignored for clients that are on the same LAN. Father John stepping in, in the name of fairness (c: (ever notice when 3 or so LPB's join a server your PING takes a dump? It's because your slice of the pie got smaller because theirs is so big die bandwidth suckers).",
+   "default": ""
+  },
+  "sv_minPing": {
+   "name": "sv_minPing",
+   "description": "Set the minimum ping aloud on the server to keep LPB out.",
+   "default": "0"
+  },
+  "sv_nopredict": {
+   "name": "sv_nopredict",
+   "description": "Is it possible that the server is handling some prediction of player location?.",
+   "default": "0"
+  },
+  "sv_padPackets": {
+   "name": "sv_padPackets",
+   "description": "Possibly toggles the padding of network packets on the server PAD - Packet Assembler/Disassembler.",
+   "default": "0"
+  },
+  "sv_pakNames": {
+   "name": "sv_pakNames",
+   "description": "Variable holds a list of all the pk3 files the server found \"antilogic\".",
+   "default": "antilogic"
+  },
+  "sv_paks": {
+   "name": "sv_paks",
+   "description": "Variable holds the checksum of all pk3 files.",
+   "default": "182784856"
+  },
+  "sv_paused": {
+   "name": "sv_paused",
+   "description": "Allow the game to be paused from the server console?.",
+   "default": "0"
+  },
+  "sv_privateClients": {
+   "name": "sv_privateClients",
+   "description": "The number of spots, out of sv_maxclients, reserved for players with the server password (sv_privatePassword) - Holesinswiss.",
+   "default": "0"
+  },
+  "sv_privatePassword": {
+   "name": "sv_privatePassword",
+   "description": "Set password for private clients to login with.",
+   "default": ""
+  },
+  "sv_pure": {
+   "name": "sv_pure",
+   "description": "Disallow native DLL loading if sv_pure, requires clients to only get data from pk3 files the server is using \"John Carmack\".",
+   "default": "1"
+  },
+  "sv_reconnectlimit": {
+   "name": "sv_reconnectlimit",
+   "description": "Number of times a disconnected client can come back and reconnect.",
+   "default": "3"
+  },
+  "sv_referencedPakNames": {
+   "name": "sv_referencedPakNames",
+   "description": "Variable holds a list of all the pk3 files the server loaded data from. these pk3 files will be autodownloaded by a client if the client does not have them. \"baseq3/pak2 baseq3/pak0\".",
+   "default": ""
+  },
+  "sv_referencedPaks": {
+   "name": "sv_referencedPaks",
+   "description": "Variable holds the checksum of the referenced pk3 files.",
+   "default": ""
+  },
+  "sv_running": {
+   "name": "sv_running",
+   "description": "Variable flag tells the console weather or not a local server is running.",
+   "default": "1"
+  },
+  "sv_serverid": {
+   "name": "sv_serverid",
+   "description": "Hmm \"8021204\".",
+   "default": ""
+  },
+  "sv_showloss": {
+   "name": "sv_showloss",
+   "description": "Toggle sever packet loss display.",
+   "default": "0"
+  },
+  "sv_timeout": {
+   "name": "sv_timeout",
+   "description": "Sets the amount of time for the server to wait for a client packet before assuming a disconnected state.",
+   "default": "120"
+  },
+  "sv_zombietime": {
+   "name": "sv_zombietime",
+   "description": "The amount of time in minutes before a frozen character is removed from the map.",
+   "default": "2"
+  },
+  "sv_zone": {
+   "name": "sv_zone",
+   "description": "This is the keyword that clients will search for, server admin's should set this variable to the gametype they have running. free for all, tournament, team deathmatch, and CTF I do not know if you can deviate from the keywords the way Zaphod laid them down in the whatsnew.txt.",
+   "default": "default"
+  },
+  "sys_cpuid": {
+   "name": "sys_cpuid",
+   "description": "More snooping into your CPU.",
+   "default": "33"
+  },
+  "sys_cpustring": {
+   "name": "sys_cpustring",
+   "description": "Variable holds a string that identifies your processor.",
+   "default": ""
+  },
+  "team_headmodel": {
+   "name": "team_headmodel",
+   "description": "Set head of team_model to a head that will only be used during team game play.",
+   "default": ""
+  },
+  "team_model": {
+   "name": "team_model",
+   "description": "Set player model that will only be used during team game play.",
+   "default": ""
+  },
+  "teamoverlay": {
+   "name": "teamoverlay",
+   "description": "Toggle the drawing of the colored team overlay on the HUD.",
+   "default": "0"
+  },
+  "teamflags": {
+   "name": "teamflags",
+   "description": "Set flags for team play (probably will be a hex value like deathmatch flags).",
+   "default": "0"
+  },
+  "teamtask": {
+   "name": "teamtask",
+   "description": "Variable holds the number of the team task you are currently asigned 1 - offense 2 - defense 3 - point/patroll 4 - following 5 - retrieving 6 - escort(gaurding flag carrier) 7 - camping.",
+   "default": "0"
+  },
+  "timedemo": {
+   "name": "timedemo",
+   "description": "When set to \"1\" times a demo and returns frames per second like a benchmark.",
+   "default": "0"
+  },
+  "timegraph": {
+   "name": "timegraph",
+   "description": "Toggle the display of the timegraph..",
+   "default": "0"
+  },
+  "timelimit": {
+   "name": "timelimit",
+   "description": "Amount of time before new map loads or next match begins.",
+   "default": "0"
+  },
+  "timescale": {
+   "name": "timescale",
+   "description": "Set the ratio between game time and real time.",
+   "default": "1"
+  },
+  "ui_browserGameType": {
+   "name": "ui_browserGameType",
+   "description": "Set server search game type in the browser list (see g_gametype).",
+   "default": "0"
+  },
+  "ui_browserMaster": {
+   "name": "ui_browserMaster",
+   "description": "Set server search 0=LAN 1=Mplayer 2=Internet 3=Favorites - WeeJoker.",
+   "default": "0"
+  },
+  "ui_browserShowEmpty": {
+   "name": "ui_browserShowEmpty",
+   "description": "Toggle the displaying of empty servers in the browser list.",
+   "default": "1"
+  },
+  "ui_browserShowFull": {
+   "name": "ui_browserShowFull",
+   "description": "Toggle the displaying of full servers in the browser list.",
+   "default": "1"
+  },
+  "ui_browserSortKey": {
+   "name": "ui_browserSortKey",
+   "description": "Set the field number to sort by in the browser list 0=Server Name 1=Map Name 2=Open Player Spots 3=Game Type 4=PingTime.",
+   "default": "4"
+  },
+  "ui_cdkeychecked": {
+   "name": "ui_cdkeychecked",
+   "description": "Set to a 1 after the cdkey has been checked so won't ask again.",
+   "default": "1"
+  },
+  "ui_ctf_capturelimit": {
+   "name": "ui_ctf_capturelimit",
+   "description": "Set the menu default capture limit for single player bot matches.",
+   "default": "8"
+  },
+  "ui_ctf_friendly": {
+   "name": "ui_ctf_friendly",
+   "description": "Toggle team mate damage in single player CTF bot matches.",
+   "default": "0"
+  },
+  "ui_ctf_timelimit": {
+   "name": "ui_ctf_timelimit",
+   "description": "Set the menu default CTF time limit for single player bot matches.",
+   "default": "30"
+  },
+  "ui_ffa_fraglimit": {
+   "name": "ui_ffa_fraglimit",
+   "description": "Set the menu default frag limit for single player FFA bot matches.",
+   "default": "20"
+  },
+  "ui_ffa_timelimit": {
+   "name": "ui_ffa_timelimit",
+   "description": "Set the menu default time limit for single player FFA bot matches.",
+   "default": "0"
+  },
+  "ui_master": {
+   "name": "ui_master",
+   "description": "Set server search 0=LAN 1=Mplayer 2=Internet 3=Favorites - WeeJoker.",
+   "default": "0"
+  },
+  "ui_spSelection": {
+   "name": "ui_spSelection",
+   "description": "Set the menu default gametype of single player? 16 = CTF 2 = FFA DM.",
+   "default": "2"
+  },
+  "ui_team_fraglimit": {
+   "name": "ui_team_fraglimit",
+   "description": "Set the menu default frag limit for single player team bot matches.",
+   "default": "0"
+  },
+  "ui_team_friendly": {
+   "name": "ui_team_friendly",
+   "description": "Toggle default team mate damage in single player team bot matches.",
+   "default": "1"
+  },
+  "ui_team_timelimit": {
+   "name": "ui_team_timelimit",
+   "description": "Set the menu default time limit for single player team bot matches.",
+   "default": "20"
+  },
+  "ui_tourney_fraglimit": {
+   "name": "ui_tourney_fraglimit",
+   "description": "Set the menu default frag limit for single player tourney bot matches.",
+   "default": "0"
+  },
+  "ui_tourney_timelimit": {
+   "name": "ui_tourney_timelimit",
+   "description": "Sets the menu default time limit for single player tourney bot matches.",
+   "default": "15"
+  },
+  "username": {
+   "name": "username",
+   "description": "Variable holds your network login id from %username% env variable hmmm? id hackers!.",
+   "default": "vern"
+  },
+  "version": {
+   "name": "version",
+   "description": "Q3 1.30 win-x86 Aug 20 2001.",
+   "default": ""
+  },
+  "versionNumber": {
+   "name": "versionNumber",
+   "description": "\"Q3T 1.08\".",
+   "default": ""
+  },
+  "vid_xpos": {
+   "name": "vid_xpos",
+   "description": "Xposition when windowed.",
+   "default": "30"
+  },
+  "vid_ypos": {
+   "name": "vid_ypos",
+   "description": "Yposition when windowed.",
+   "default": "30"
+  },
+  "viewlog": {
+   "name": "viewlog",
+   "description": "Toggle the display of the startup console window over the game screen.",
+   "default": "0"
+  },
+  "viewsize": {
+   "name": "viewsize",
+   "description": "Changes view port size 0 - 100 (you probably wouldn't want less than 100).",
+   "default": "100"
+  },
+  "vm_cgame": {
+   "name": "vm_cgame",
+   "description": "Part of the virtual machine interpreter which allows PC MOD makers to not have to know MAC code and MAC MOD makers to not have to know PC.",
+   "default": "0"
+  },
+  "vm_game": {
+   "name": "vm_game",
+   "description": "Toggle the virtual machine interpreter, cgame can switch between being loaded as a binary .dll or an interpreted .qvm at the change of this cvar.",
+   "default": "0"
+  },
+  "vm_ui": {
+   "name": "vm_ui",
+   "description": "Part of the virtual machine interpreter which allows PC MOD makers to not have to know MAC code and MAC MOD makers to not have to know PC.",
+   "default": "0"
+  },
+  "win_hinstance": {
+   "name": "win_hinstance",
+   "description": "Address of the handle instance of quake3 under windows - LOKi.",
+   "default": ""
+  },
+  "win_wndproc": {
+   "name": "win_wndproc",
+   "description": "Hmm...\"4368704\".",
+   "default": ""
+  },
+  "zoomfov": {
+   "name": "zoomfov",
+   "description": "What the zoomed in field of view will be any thing more than 30 would not be sniper friendly.",
+   "default": "22.5"
+  }
+ },
+ "commands": {
+  "+attack": {
+   "name": "+attack",
+   "description": "Start attacking (shooting, punching)."
+  },
+  "+back": {
+   "name": "+back",
+   "description": "Start moving backwards."
+  },
+  "+button0": {
+   "name": "+button0",
+   "description": "Start firing same as mouse button 1 (fires weapon)."
+  },
+  "+button1": {
+   "name": "+button1",
+   "description": "Start displaying chat bubble."
+  },
+  "+button2": {
+   "name": "+button2",
+   "description": "Start using items (same as enter)."
+  },
+  "+button3": {
+   "name": "+button3",
+   "description": "Start player taunt animation."
+  },
+  "+button4": {
+   "name": "+button4",
+   "description": "Fixed +button4 not causing footsteps \"John Carmack\"."
+  },
+  "+button5": {
+   "name": "+button5",
+   "description": "Used for MODS also used by Team Arena Mission Pack."
+  },
+  "+button6": {
+   "name": "+button6",
+   "description": "Used for MODS also used by Team Arena Mission Pack."
+  },
+  "+button7": {
+   "name": "+button7",
+   "description": "Start hand signal, player model looks like it's motioning to team \"move forward\" (Team Arena Models Only)."
+  },
+  "+button8": {
+   "name": "+button8",
+   "description": "Start hand signal, player model looks like it's motioning to team \"come here\" (Team Arena Models Only)."
+  },
+  "+button9": {
+   "name": "+button9",
+   "description": "Stop hand signal, player model looks like it's motioning to team \"come to my left side\" (Team Arena Models Only)."
+  },
+  "+button10": {
+   "name": "+button10",
+   "description": "Start hand signal, player model looks like it's motioning to team \"come to my right side\" (Team Arena Models Only)."
+  },
+  "+forward": {
+   "name": "+forward",
+   "description": "Start moving forward."
+  },
+  "+info": {
+   "name": "+info",
+   "description": "Start displaying server information (sv_hostname, map, rules, g_gametype, fraglimit)."
+  },
+  "+left": {
+   "name": "+left",
+   "description": "Start turning left."
+  },
+  "+lookdown": {
+   "name": "+lookdown",
+   "description": "Start looking down."
+  },
+  "+lookup": {
+   "name": "+lookup",
+   "description": "Start looking up."
+  },
+  "+mlook": {
+   "name": "+mlook",
+   "description": "Start using mouse movements to control head movement."
+  },
+  "+movedown": {
+   "name": "+movedown",
+   "description": "Start moving down (crouch, climb down, swim down)."
+  },
+  "+moveleft": {
+   "name": "+moveleft",
+   "description": "Start strafing to the left."
+  },
+  "+moveright": {
+   "name": "+moveright",
+   "description": "Start strafing to the right."
+  },
+  "+moveup": {
+   "name": "+moveup",
+   "description": "Start moving up (jump, climb up, swim up)."
+  },
+  "+right": {
+   "name": "+right",
+   "description": "Start turning right."
+  },
+  "+scores": {
+   "name": "+scores",
+   "description": "Start displaying current scores."
+  },
+  "+speed": {
+   "name": "+speed",
+   "description": "Speed toggle bound to shift key by default toggles run/walk."
+  },
+  "+strafe": {
+   "name": "+strafe",
+   "description": "Start changing directional movement into strafing movement."
+  },
+  "+zoom": {
+   "name": "+zoom",
+   "description": "Zoom in to fov specified by the zoomfov variable."
+  },
+  "addbot": {
+   "name": "addbot",
+   "description": "Add one bot <botlib> name of the bot library <name> name of the bot <skin> skin of the bot <charfile> file with the bot character <charname> name of the character - \"Mr. Elusive\" bots can be given a fractional skill when adding them from the console. for instance use \"/addbot grunt 4.6 blue\" to add a 4.5 skill Grunt to team blue."
+  },
+  "arena": {
+   "name": "arena",
+   "description": "Load arena and bots \"name\" from arena.txt (arena <name>)."
+  },
+  "-attack": {
+   "name": "-attack",
+   "description": "Stop attacking (shooting, punching)."
+  },
+  "-back": {
+   "name": "-back",
+   "description": "Stop moving backwards."
+  },
+  "banClient": {
+   "name": "banClient",
+   "description": "Ban a client by slot number used in conjunction with serverstatus you can ban players by their slot number regardless of player name (from server console only) part of the client banning system which depends on a master banned list on the master server at id software."
+  },
+  "banUser": {
+   "name": "banUser",
+   "description": "Ban a client by their player name. once the name is entered the players name, IP, and CD-Key are sent to the master server where the player will be band for a length of time determined by id software. lamers take heed this system will ban you from all servers instantly."
+  },
+  "bind": {
+   "name": "bind",
+   "description": "Assign a key to command(s). (bind <key> \"<command>\")."
+  },
+  "bindlist": {
+   "name": "bindlist",
+   "description": "List all currently bound keys and what command they are bound to."
+  },
+  "-button0": {
+   "name": "-button0",
+   "description": "Stop firing same as mouse button 1 (fires weapon)."
+  },
+  "-button1": {
+   "name": "-button1",
+   "description": "Stop displaying chat bubble."
+  },
+  "-button2": {
+   "name": "-button2",
+   "description": "Stop using items (same as releasing enter)."
+  },
+  "-button3": {
+   "name": "-button3",
+   "description": "Stop player taunt animation."
+  },
+  "-button4": {
+   "name": "-button4",
+   "description": "Fixed +button4 not causing footsteps \"John Carmack\"."
+  },
+  "-button5": {
+   "name": "-button5",
+   "description": "Used for MODS also used by Team Arena Mission Pack."
+  },
+  "-button6": {
+   "name": "-button6",
+   "description": "Used for MODS also used by Team Arena Mission Pack."
+  },
+  "-button7": {
+   "name": "-button7",
+   "description": "Stop hand signal, player model looks like it's motioning to team \"move forward\" (Team Arena Models Only)."
+  },
+  "-button8": {
+   "name": "-button8",
+   "description": "Stop hand signal, player model looks like it's motioning to team \"come here\" (Team Arena Models Only)."
+  },
+  "-button9": {
+   "name": "-button9",
+   "description": "Start hand signal, player model looks like it's motioning to team \"come to my left side\" (Team Arena Models Only)."
+  },
+  "-button10": {
+   "name": "-button10",
+   "description": "Stop hand signal, player model looks like it's motioning to team \"come to my right side\" (Team Arena Models Only)."
+  },
+  "callteamvote": {
+   "name": "callteamvote",
+   "description": "Allows a team to vote for a captain or team leader."
+  },
+  "callvote": {
+   "name": "callvote",
+   "description": "Callvote <command> vote <y/n> Caller automatically votes yes vote has a 30 second timeout each client can only call 3 votes a level vote is displayed on screen with totals \"John Carmack\" vote commands are: map_restart, nextmap, map , g_gametype and kick."
+  },
+  "centerview": {
+   "name": "centerview",
+   "description": "Quickly move current view to the center of screen."
+  },
+  "changeVectors": {
+   "name": "changeVectors",
+   "description": "Change to vector defined by FIND_NEW_CHANGE_VECTORS as in vector graphics - with vector graphics it is possible to change any element of the picture at any time since each part is stored as an independent object whereas once something in a bitmap has been overwritten it cannot in general be retrieved. could also be for 3D rendering vectors?."
+  },
+  "cinematic": {
+   "name": "cinematic",
+   "description": "Play the q3a movie RoQ files (cinematic intro.RoQ)."
+  },
+  "clear": {
+   "name": "clear",
+   "description": "Clear all text from console."
+  },
+  "clientinfo": {
+   "name": "clientinfo",
+   "description": "Display name, rate, number of snaps, player model, rail color, and handicap (state number?)."
+  },
+  "clientkick": {
+   "name": "clientkick",
+   "description": "Kick a client by slot number used in conjunction with serverstatus you can kick players by their slot number regardless of player name (from server console only)."
+  },
+  "cmd": {
+   "name": "cmd",
+   "description": "Send a command to server remote console."
+  },
+  "cmdlist": {
+   "name": "cmdlist",
+   "description": "List all available console commands."
+  },
+  "condump": {
+   "name": "condump",
+   "description": "Condump \"x\" write the console text to a file where \"x\" is the name of that file."
+  },
+  "configstrings": {
+   "name": "configstrings",
+   "description": "List the current config strings in effect."
+  },
+  "connect": {
+   "name": "connect",
+   "description": "Connect to server (connect 204.52.135.50) or (connect serverURL.com)."
+  },
+  "crash": {
+   "name": "crash",
+   "description": "Causes Q3TEST.EXE to perform an illegal operation in Windows."
+  },
+  "cvar_restart": {
+   "name": "cvar_restart",
+   "description": "Reset all variables back to factory defaults (could be handy)."
+  },
+  "cvarlist": {
+   "name": "cvarlist",
+   "description": "List all available console variables and their values."
+  },
+  "demo": {
+   "name": "demo",
+   "description": "Play demo (demo q3demo001.dm3)."
+  },
+  "devmap": {
+   "name": "devmap",
+   "description": "Load maps in development mode? (loads map with cheats enabled)."
+  },
+  "dir": {
+   "name": "dir",
+   "description": "Display directory if syntax is correct ex. (dir \\) or (dir ..\\) or (dir ..\\baseq3)."
+  },
+  "disconnect": {
+   "name": "disconnect",
+   "description": "Disconnects you from server (local included)."
+  },
+  "dumpuser": {
+   "name": "dumpuser",
+   "description": "Display user info (handicap, model/color, rail color, more )(dumpuser \"<name>\")."
+  },
+  "echo": {
+   "name": "echo",
+   "description": "Echo a string to the message display to your console only."
+  },
+  "error": {
+   "name": "error",
+   "description": "Execute an error routine to protect the server."
+  },
+  "exec": {
+   "name": "exec",
+   "description": "Execute a config file or script."
+  },
+  "fdir": {
+   "name": "fdir",
+   "description": "Allows the user to search his game directory for the presence of file types. a common use for this might be to search out the file names of maps that are often buried inside pak files with different names. syntax: fdir <filter>example: fdir *q3dm?.bsp - In this example, the user is searching all subdirectories (the \"*\" stands in for the path name) for game maps (the .bsp file extension) that have the letters \"q3dm\" in their name AND that are followed by a single character (indicated by the \"?\").one or more metacharacters may be used in the filter.* match any string of zero or more characters? match any single character[abc...] match any of the enclosed characters; a hyphen can be used to specify a range (e.g. a-z, A-Z, 0-9)."
+  },
+  "follow": {
+   "name": "follow",
+   "description": "Switch to follow mode (follow \"<name>\" or follow1 for 1ST place follow2 for 2ND etc )."
+  },
+  "-forward": {
+   "name": "-forward",
+   "description": "Stop moving forward."
+  },
+  "freeze": {
+   "name": "freeze",
+   "description": "Freeze game and all animation for specified time (freeze 5) (5 seconds)."
+  },
+  "gfxinfo": {
+   "name": "gfxinfo",
+   "description": "Returns extensive information about video settings."
+  },
+  "fs_openedList": {
+   "name": "fs_openedList",
+   "description": "Display the file name of open pak files (pk3)."
+  },
+  "Fs_pureList": {
+   "name": "Fs_pureList",
+   "description": "This command basically displays the contents of the sv_referencedPaks variable."
+  },
+  "Fs_referencedList": {
+   "name": "Fs_referencedList",
+   "description": "This variable basically displays the contents of the sv_referencedPakNames variable."
+  },
+  "give": {
+   "name": "give",
+   "description": "Cheat - give player item (give railgun)."
+  },
+  "globalservers": {
+   "name": "globalservers",
+   "description": "List public servers on the internet."
+  },
+  "god": {
+   "name": "god",
+   "description": "Cheat - give player invulnerability."
+  },
+  "heartbeat": {
+   "name": "heartbeat",
+   "description": "Send a manual heartbeat to the master servers."
+  },
+  "hunk_stats": {
+   "name": "hunk_stats",
+   "description": "Returns value of some registers how many bits high/low and total meminfo command replaces hunk_stats and z_stats \"John Carmack\"."
+  },
+  "imagelist": {
+   "name": "imagelist",
+   "description": "List currently open images/textures used by the current map. also displays the amount of texture memory the map is using which is the last number displayed - Jax_Gator."
+  },
+  "in_restart": {
+   "name": "in_restart",
+   "description": "Restarts all the input drivers, dinput, joystick, etc."
+  },
+  "-info": {
+   "name": "-info",
+   "description": "Stop displaying server information (sv_hostname, map, rules, g_gametype, fraglimit)."
+  },
+  "joy_advancedupdate": {
+   "name": "joy_advancedupdate",
+   "description": "Removed Graeme says joy support still broken."
+  },
+  "kick": {
+   "name": "kick",
+   "description": "Kick the player with the given name off the server. if nobody uses the name \"all\" and \"all\" is specified as player name then everyone is kicked. if there are no bots with the name \"allbots\" and \"allbots\" is specified as player name then all the bots are kicked. (from server console only kick \"<name>\")."
+  },
+  "kill": {
+   "name": "kill",
+   "description": "Kills your player (suicide but can get you unstuck some times)."
+  },
+  "killserver": {
+   "name": "killserver",
+   "description": "Stops server from running and broadcasting heartbeat??."
+  },
+  "-left": {
+   "name": "-left",
+   "description": "Stop turning left."
+  },
+  "levelshot": {
+   "name": "levelshot",
+   "description": "Display the image used at the end of a level."
+  },
+  "loaddefered": {
+   "name": "loaddefered",
+   "description": "Load models and skins that have not yet been loaded."
+  },
+  "loaddeferred": {
+   "name": "loaddeferred",
+   "description": "Load models and skins that have not yet been loaded (corrected spelling)."
+  },
+  "localservers": {
+   "name": "localservers",
+   "description": "List servers on LAN or local sub net only."
+  },
+  "-lookdown": {
+   "name": "-lookdown",
+   "description": "Stop looking down."
+  },
+  "-lookup": {
+   "name": "-lookup",
+   "description": "Stop looking up."
+  },
+  "map": {
+   "name": "map",
+   "description": "Loads specified map (map q3dm7)."
+  },
+  "map_restart": {
+   "name": "map_restart",
+   "description": "Resets the game on the same map (also plays fight! sound file and displays FIGHT!)."
+  },
+  "meminfo": {
+   "name": "meminfo",
+   "description": "Meminfo command replaces hunk_stats and z_stats \"John Carmack\"."
+  },
+  "messagemode": {
+   "name": "messagemode",
+   "description": "Send a message to everyone."
+  },
+  "messagemode2": {
+   "name": "messagemode2",
+   "description": "Send a message to teammates."
+  },
+  "messagemode3": {
+   "name": "messagemode3",
+   "description": "Send a message to tourney opponents?."
+  },
+  "messagemode4": {
+   "name": "messagemode4",
+   "description": "Send a message to attacker? (does not work)."
+  },
+  "midiinfo": {
+   "name": "midiinfo",
+   "description": "Display information about MIDI music system."
+  },
+  "-mlook": {
+   "name": "-mlook",
+   "description": "Stop using mouse look."
+  },
+  "model": {
+   "name": "model",
+   "description": "Display the name of current player model if no parameters are given (see also model variable)."
+  },
+  "modelist": {
+   "name": "modelist",
+   "description": "List of accessible screen resolutions."
+  },
+  "modellist": {
+   "name": "modellist",
+   "description": "List of currently open player models."
+  },
+  "-movedown": {
+   "name": "-movedown",
+   "description": "Stop moving down (crouch, climb down, swim down)."
+  },
+  "-moveleft": {
+   "name": "-moveleft",
+   "description": "Stop strafing to the left."
+  },
+  "-moveright": {
+   "name": "-moveright",
+   "description": "Stop strafing to the right."
+  },
+  "-moveup": {
+   "name": "-moveup",
+   "description": "Stop moving up (jump, climb up, swim up)."
+  },
+  "music": {
+   "name": "music",
+   "description": "Plays specified music file (music music.wav)."
+  },
+  "net_restart": {
+   "name": "net_restart",
+   "description": "Reset all the network related variables like rate etc."
+  },
+  "nextframe": {
+   "name": "nextframe",
+   "description": "\"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg."
+  },
+  "nextskin": {
+   "name": "nextskin",
+   "description": "\"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg."
+  },
+  "noclip": {
+   "name": "noclip",
+   "description": "No clipping objects (nothing will be solid)."
+  },
+  "notarget": {
+   "name": "notarget",
+   "description": "BOTS will not fight/see you (good for getting cool screenshots)."
+  },
+  "path": {
+   "name": "path",
+   "description": "Display all current game paths."
+  },
+  "ping": {
+   "name": "ping",
+   "description": "Manually ping a server (ping \"<sv_hostname>\" or by the IP address)."
+  },
+  "play": {
+   "name": "play",
+   "description": "Play a sound file (play sound.wav)."
+  },
+  "prevframe": {
+   "name": "prevframe",
+   "description": "\"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg."
+  },
+  "prevskin": {
+   "name": "prevskin",
+   "description": "\"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg."
+  },
+  "quit": {
+   "name": "quit",
+   "description": "Quit arena and quit Quake 3 Arena and return to your OS Thanx for flying."
+  },
+  "rcon": {
+   "name": "rcon",
+   "description": "Start a remote console to a server."
+  },
+  "reconnect": {
+   "name": "reconnect",
+   "description": "Re-initialize the connection to the last server you were connected to."
+  },
+  "record": {
+   "name": "record",
+   "description": "Records a demo (record mydemo.dm3) (g_syncronousClients must be a 1 to start)."
+  },
+  "reset": {
+   "name": "reset",
+   "description": "Reset specified variable (reset model) single variable as opposed to cvar_restart (c:."
+  },
+  "restart": {
+   "name": "restart",
+   "description": "Restart the game on the current map (server only)."
+  },
+  "-right": {
+   "name": "-right",
+   "description": "Stop turning right."
+  },
+  "s_info": {
+   "name": "s_info",
+   "description": "Display information about sound system (replaced soundinfo command)."
+  },
+  "s_list": {
+   "name": "s_list",
+   "description": "Display paths and filenames of all sound files as they are played. (replaced soundlist command)."
+  },
+  "s_stop": {
+   "name": "s_stop",
+   "description": "Stop whatever sound that is currently playing from playing. (Replaced stopsound command)."
+  },
+  "s_disable_a3d": {
+   "name": "s_disable_a3d",
+   "description": "Disable support for Aureal 3D sound system."
+  },
+  "s_enable_a3d": {
+   "name": "s_enable_a3d",
+   "description": "Enable support for Aureal 3D sound system."
+  },
+  "say": {
+   "name": "say",
+   "description": "Say something to everyone on the server."
+  },
+  "say_team": {
+   "name": "say_team",
+   "description": "Say something to your team only."
+  },
+  "scanservers": {
+   "name": "scanservers",
+   "description": "Scan the local area network for servers (only works for same subnet)."
+  },
+  "-scores": {
+   "name": "-scores",
+   "description": "Stop displaying current scores."
+  },
+  "screenshot": {
+   "name": "screenshot",
+   "description": "Save current viewport to a TARGA image file (usually named sequentially shot0001.tga)."
+  },
+  "screenshotJPEG": {
+   "name": "screenshotJPEG",
+   "description": "Save current viewport to a JPEG image file (usually named sequentially shot0001.jpg)."
+  },
+  "sectorlist": {
+   "name": "sectorlist",
+   "description": "Lists sectors and number of entities in each on the currently loaded map."
+  },
+  "serverinfo": {
+   "name": "serverinfo",
+   "description": "Gives information about local server from the console of that server."
+  },
+  "serverstatus": {
+   "name": "serverstatus",
+   "description": "Display the current status of the connected server as well as connected users and their slot number. if you specify an IP address it will display the status of a remote server."
+  },
+  "serverrecord": {
+   "name": "serverrecord",
+   "description": "Records a serverside demo (serverrecord srvrdemo.dm3)."
+  },
+  "serverstop": {
+   "name": "serverstop",
+   "description": "Stops the recording of a serverside demo."
+  },
+  "set": {
+   "name": "set",
+   "description": "Set a variable (set <variable name> <commands;separate by;semi;colon>)."
+  },
+  "seta": {
+   "name": "seta",
+   "description": "Sets the variable with the archive flag will save the last setting to q3config.cfg and reload that setting every time you run the game. Any changes to variables with an A for the class ID are automatically stored in q3config.cfg - LOKi."
+  },
+  "setenv": {
+   "name": "setenv",
+   "description": "Sets environment variables."
+  },
+  "sets": {
+   "name": "sets",
+   "description": "Sets the variable with the serverinfo flag, so it will be transmitted from a server to connecting clients - LOKi."
+  },
+  "setu": {
+   "name": "setu",
+   "description": "Sets the variable with the userinfo flag, so it will be transmitted from a client to a server while connecting - LOKi."
+  },
+  "setviewpos": {
+   "name": "setviewpos",
+   "description": "Sets the VR coordinates of the players view screen."
+  },
+  "shaderlist": {
+   "name": "shaderlist",
+   "description": "List of currently open shaders (light effects)."
+  },
+  "showip": {
+   "name": "showip",
+   "description": "Display your current TCP/IP address."
+  },
+  "sizedown": {
+   "name": "sizedown",
+   "description": "Makes viewport one size smaller."
+  },
+  "sizeup": {
+   "name": "sizeup",
+   "description": "Makes viewport one size larger."
+  },
+  "skinlist": {
+   "name": "skinlist",
+   "description": "List of currently open skins."
+  },
+  "snd_restart": {
+   "name": "snd_restart",
+   "description": "Reinitialize sound."
+  },
+  "soundinfo": {
+   "name": "soundinfo",
+   "description": "Information about sound system."
+  },
+  "soundlist": {
+   "name": "soundlist",
+   "description": "List of currently open sound files."
+  },
+  "spdevmap": {
+   "name": "spdevmap",
+   "description": "Load a devmap with bots spawned in. (cheats enabled)."
+  },
+  "-speed": {
+   "name": "-speed",
+   "description": "Speed toggle bound to shift key by default toggles run/walk."
+  },
+  "spmap": {
+   "name": "spmap",
+   "description": "Load a map with bots spawned in. (cheats disabled)."
+  },
+  "startOrbit": {
+   "name": "startOrbit",
+   "description": "Start the 3rd person display of your player model and orbit in a circle around it."
+  },
+  "status": {
+   "name": "status",
+   "description": "Status of currently connected server."
+  },
+  "stoprecord": {
+   "name": "stoprecord",
+   "description": "Stop recording a demo."
+  },
+  "stopdemo": {
+   "name": "stopdemo",
+   "description": "Stop recording demo."
+  },
+  "stopsound": {
+   "name": "stopsound",
+   "description": "Stop whatever sound that is currently playing from playing."
+  },
+  "-strafe": {
+   "name": "-strafe",
+   "description": "Stop changing directional movement into strafing movement."
+  },
+  "systeminfo": {
+   "name": "systeminfo",
+   "description": "Returns values for: g_syncronousclients, sv_serverid, and timescale."
+  },
+  "tcmd": {
+   "name": "tcmd",
+   "description": "Display the current target command or displays some type of code address."
+  },
+  "team": {
+   "name": "team",
+   "description": "Set player status. p=player s=spectator red, blue, or free (team free joins smallest/loosing team)also in tourney play team follow1 2 etc.(follow players by lead position) team scoreboard your player becomes a scoreboard."
+  },
+  "teamtask": {
+   "name": "teamtask",
+   "description": "Display the current task you have been assigned 1 - offense 2 - defense 3 - point/patroll 4 - following 5 - retrieving 6 - escort(gaurding flag carrier) 7 - camping."
+  },
+  "teamvote": {
+   "name": "teamvote",
+   "description": "Allows user to cast a vote on a called team vote yes or no callteamvote <playername> vote <y/n> Caller automatically votes yes vote has a 30 second timeout each client can only call 3 votes a level vote is displayed on screen with totals."
+  },
+  "tell": {
+   "name": "tell",
+   "description": "Say something to an individual on the server tell <playername> \"go get the flag\"."
+  },
+  "tell_attacker": {
+   "name": "tell_attacker",
+   "description": "Possibly to pass a complement to your last known attacker..he he more like insult."
+  },
+  "tell_target": {
+   "name": "tell_target",
+   "description": "Possibly to pass a complement back ha ha more like \"Die Llama\"."
+  },
+  "testfog": {
+   "name": "testfog",
+   "description": "Removed may have been used for development of fog emulation."
+  },
+  "testgun": {
+   "name": "testgun",
+   "description": "Weapon model dissapears cg_gun 1 does not bring it back. will cause the model to follow the player around and suppress the real view weapon model. The default frame 0 of most guns is completely off screen, so you will probably have to cycle a couple frames to see it. \"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg."
+  },
+  "testmodel": {
+   "name": "testmodel",
+   "description": "Testmodel <path\\model.md3> will create a fake entity 100 units in front of the current view position, directly facing the viewer. It will remain immobile, so you can move around it to view it from different angles \"nextframe\", \"prevframe\", \"nextskin\", and \"prevskin\" commands will change the frame or skin of the testmodel. These are bound to F5, F6, F7, and F8 in q3default.cfg. (useful tool for model and skin artists)."
+  },
+  "testshader": {
+   "name": "testshader",
+   "description": "Covers all brushes and entities with the selected texture, and lights the map using the effect of that texture as well. entering testshader without a parameter will restore all textures set by the map. -hacker (removed possibly because cheat potential)."
+  },
+  "toggle": {
+   "name": "toggle",
+   "description": "Toggle \"X\", where X is the variable you give, to a 1 if it is 0 and 0 if it is 1 (toggle cg_autoswitch) \"The 'toggle' command can toggle write protected cvars.\" Graeme."
+  },
+  "toggleconsole": {
+   "name": "toggleconsole",
+   "description": "Usually bound to ~ the tilde key brings the console up and down."
+  },
+  "touchFile": {
+   "name": "touchFile",
+   "description": "Make the file a zero byte file (not a good idea I did not test this one)."
+  },
+  "unbind": {
+   "name": "unbind",
+   "description": "Unbinds a key."
+  },
+  "unbindall": {
+   "name": "unbindall",
+   "description": "Unbinds all keys (be careful)."
+  },
+  "userinfo": {
+   "name": "userinfo",
+   "description": "List user information like (possibly replaced by clientinfo)."
+  },
+  "vid_restart": {
+   "name": "vid_restart",
+   "description": "Reinitialize video."
+  },
+  "viewpos": {
+   "name": "viewpos",
+   "description": "Returns player coordinates on the map in x y z form."
+  },
+  "vminfo": {
+   "name": "vminfo",
+   "description": "Display information about virtual machine interpreter on the local machine."
+  },
+  "vmprofile": {
+   "name": "vmprofile",
+   "description": "Possibly more of the virtual machine John's talking about, profile hmm?."
+  },
+  "vmtest": {
+   "name": "vmtest",
+   "description": "Probably a developer test which returns levels of success, returns >display \"C: test 1234\"."
+  },
+  "vosay": {
+   "name": "vosay",
+   "description": "Use a predefined voice message and play everyone."
+  },
+  "vosay_team": {
+   "name": "vosay_team",
+   "description": "Use a predefined voice message and play to your team."
+  },
+  "vote": {
+   "name": "vote",
+   "description": "Allows user to cast a vote on a called vote usually bound to F1 (yes) and F2 (no)...(c: callvote <command> vote <y/n> Caller automatically votes yes vote has a 30 second timeout each client can only call 3 votes a level vote is displayed on screen with totals \"John Carmack\"."
+  },
+  "votell": {
+   "name": "votell",
+   "description": "Use a predefined voice message and play to a <playername> you specify."
+  },
+  "vsay": {
+   "name": "vsay",
+   "description": "Use a predefined voice message and play to everyone."
+  },
+  "vsay_team": {
+   "name": "vsay_team",
+   "description": "Use a predefined voice message and play to your team."
+  },
+  "vstr": {
+   "name": "vstr",
+   "description": "Identifies the attached command as a variable sting (bind a vstr \"myvariable\")."
+  },
+  "vtaunt": {
+   "name": "vtaunt",
+   "description": "Play a random voice taunt wav file to everyone."
+  },
+  "vtell": {
+   "name": "vtell",
+   "description": "Possibly to play a random voice taunt to a <playername> you specify."
+  },
+  "vtell_attacker": {
+   "name": "vtell_attacker",
+   "description": "Possibly to play a random voice taunt to your last known attacker."
+  },
+  "vtell_target": {
+   "name": "vtell_target",
+   "description": "Possibly to play a random voice taunt at player you last hit."
+  },
+  "wait": {
+   "name": "wait",
+   "description": "Stop execution and wait one game tick (no alias support will be added in Q3A per J.C.)."
+  },
+  "weapnext": {
+   "name": "weapnext",
+   "description": "Switch to the next higher numbered weapon."
+  },
+  "weapon": {
+   "name": "weapon",
+   "description": "Select a weapon by it's number (weapon \"5\")."
+  },
+  "weapprev": {
+   "name": "weapprev",
+   "description": "Switch to the next lower numbered weapon."
+  },
+  "writeconfig": {
+   "name": "writeconfig",
+   "description": "Saves current configuration to a cfg file this is cool! (c:."
+  },
+  "z_stats": {
+   "name": "z_stats",
+   "description": "Display the memory statistics for the Z-buffer in the game \"lists all blocks >= given size\" John Carmack meminfo command replaces hunk_stats and z_stats \"John Carmack\"."
+  },
+  "-zoom": {
+   "name": "-zoom",
+   "description": "Zoom out to fov specified by the fov variable."
+  }
+ }
+}

@@ -1,0 +1,3541 @@
+{
+ "label": "Openarena /cvarlist command",
+ "variables": {
+  "cg_teamChatBeep": {
+   "name": "cg_teamChatBeep",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_chatBeep": {
+   "name": "cg_chatBeep",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_weaponOrder": {
+   "name": "cg_weaponOrder",
+   "default": "/1/2/4/3/6/7/8/9/5/",
+   "cheat": false
+  },
+  "cg_weaponBarStyle": {
+   "name": "cg_weaponBarStyle",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_crosshairColorBlue": {
+   "name": "cg_crosshairColorBlue",
+   "default": "1.0",
+   "cheat": false
+  },
+  "cg_crosshairColorGreen": {
+   "name": "cg_crosshairColorGreen",
+   "default": "1.0",
+   "cheat": false
+  },
+  "cg_crosshairColorRed": {
+   "name": "cg_crosshairColorRed",
+   "default": "1.0",
+   "cheat": false
+  },
+  "cg_ch13size": {
+   "name": "cg_ch13size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch13": {
+   "name": "cg_ch13",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch12size": {
+   "name": "cg_ch12size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch12": {
+   "name": "cg_ch12",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch11size": {
+   "name": "cg_ch11size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch11": {
+   "name": "cg_ch11",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch10size": {
+   "name": "cg_ch10size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch10": {
+   "name": "cg_ch10",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch9size": {
+   "name": "cg_ch9size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch9": {
+   "name": "cg_ch9",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch8size": {
+   "name": "cg_ch8size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch8": {
+   "name": "cg_ch8",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch7size": {
+   "name": "cg_ch7size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch7": {
+   "name": "cg_ch7",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch6size": {
+   "name": "cg_ch6size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch6": {
+   "name": "cg_ch6",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch5size": {
+   "name": "cg_ch5size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch5": {
+   "name": "cg_ch5",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch4size": {
+   "name": "cg_ch4size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch4": {
+   "name": "cg_ch4",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch3size": {
+   "name": "cg_ch3size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch3": {
+   "name": "cg_ch3",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch2size": {
+   "name": "cg_ch2size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch2": {
+   "name": "cg_ch2",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ch1size": {
+   "name": "cg_ch1size",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_ch1": {
+   "name": "cg_ch1",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_differentCrosshairs": {
+   "name": "cg_differentCrosshairs",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_crosshairPulse": {
+   "name": "cg_crosshairPulse",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_fragmsgsize": {
+   "name": "cg_fragmsgsize",
+   "default": "1.0",
+   "cheat": false
+  },
+  "cg_music": {
+   "name": "cg_music",
+   "default": "",
+   "cheat": false
+  },
+  "cg_trueLightning": {
+   "name": "cg_trueLightning",
+   "default": "0.0",
+   "cheat": false
+  },
+  "cg_optimizePrediction": {
+   "name": "cg_optimizePrediction",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_projectileNudge": {
+   "name": "cg_projectileNudge",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_cmdTimeNudge": {
+   "name": "cg_cmdTimeNudge",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_delag": {
+   "name": "cg_delag",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_oldPlasma": {
+   "name": "cg_oldPlasma",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_leiSuperGoreyAwesome": {
+   "name": "cg_leiSuperGoreyAwesome",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_leiBrassNoise": {
+   "name": "cg_leiBrassNoise",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_leiGoreNoise": {
+   "name": "cg_leiGoreNoise",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_leiEnhancement": {
+   "name": "cg_leiEnhancement",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_oldRocket": {
+   "name": "cg_oldRocket",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_oldRail": {
+   "name": "cg_oldRail",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_bigFont": {
+   "name": "ui_bigFont",
+   "default": "0.4",
+   "cheat": false
+  },
+  "ui_smallFont": {
+   "name": "ui_smallFont",
+   "default": "0.25",
+   "cheat": false
+  },
+  "cg_noProjectileTrail": {
+   "name": "cg_noProjectileTrail",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_noTaunt": {
+   "name": "cg_noTaunt",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_scorePlums": {
+   "name": "cg_scorePlums",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_timescaleFadeSpeed": {
+   "name": "cg_timescaleFadeSpeed",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_timescaleFadeEnd": {
+   "name": "cg_timescaleFadeEnd",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_cameraOrbitDelay": {
+   "name": "cg_cameraOrbitDelay",
+   "default": "50",
+   "cheat": false
+  },
+  "cg_cameraOrbit": {
+   "name": "cg_cameraOrbit",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_autovertex": {
+   "name": "cg_autovertex",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_vote_custom_commands": {
+   "name": "cg_vote_custom_commands",
+   "default": "",
+   "cheat": false
+  },
+  "cg_cyclegrapple": {
+   "name": "cg_cyclegrapple",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_voteflags": {
+   "name": "cg_voteflags",
+   "default": "767",
+   "cheat": false
+  },
+  "cg_voipTeamOnly": {
+   "name": "cg_voipTeamOnly",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_hitsound": {
+   "name": "cg_hitsound",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_alwaysWeaponBar": {
+   "name": "cg_alwaysWeaponBar",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_noVoiceText": {
+   "name": "cg_noVoiceText",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_noVoiceChats": {
+   "name": "cg_noVoiceChats",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_teamChatsOnly": {
+   "name": "cg_teamChatsOnly",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawFriend": {
+   "name": "cg_drawFriend",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_stats": {
+   "name": "cg_stats",
+   "default": "0",
+   "cheat": false
+  },
+  "teamoverlay": {
+   "name": "teamoverlay",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawTeamOverlay": {
+   "name": "cg_drawTeamOverlay",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_deferPlayers": {
+   "name": "cg_deferPlayers",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_forceModel": {
+   "name": "cg_forceModel",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_teamChatHeight": {
+   "name": "cg_teamChatHeight",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_teamChatTime": {
+   "name": "cg_teamChatTime",
+   "default": "3000",
+   "cheat": false
+  },
+  "cg_thirdPerson": {
+   "name": "cg_thirdPerson",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_thirdPersonAngle": {
+   "name": "cg_thirdPersonAngle",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_thirdPersonRange": {
+   "name": "cg_thirdPersonRange",
+   "default": "40",
+   "cheat": false
+  },
+  "cg_tracerlength": {
+   "name": "cg_tracerlength",
+   "default": "100",
+   "cheat": false
+  },
+  "cg_tracerwidth": {
+   "name": "cg_tracerwidth",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_tracerchance": {
+   "name": "cg_tracerchance",
+   "default": "0.4",
+   "cheat": false
+  },
+  "cg_footsteps": {
+   "name": "cg_footsteps",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_showmiss": {
+   "name": "cg_showmiss",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_noplayeranims": {
+   "name": "cg_noplayeranims",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_nopredict": {
+   "name": "cg_nopredict",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_errordecay": {
+   "name": "cg_errordecay",
+   "default": "100",
+   "cheat": false
+  },
+  "cg_debugevents": {
+   "name": "cg_debugevents",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_debugposition": {
+   "name": "cg_debugposition",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_debuganim": {
+   "name": "cg_debuganim",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_animspeed": {
+   "name": "cg_animspeed",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_swingSpeed": {
+   "name": "cg_swingSpeed",
+   "default": "0.3",
+   "cheat": false
+  },
+  "cg_bobroll": {
+   "name": "cg_bobroll",
+   "default": "0.002",
+   "cheat": false
+  },
+  "cg_bobpitch": {
+   "name": "cg_bobpitch",
+   "default": "0.002",
+   "cheat": false
+  },
+  "cg_bobup": {
+   "name": "cg_bobup",
+   "default": "0.005",
+   "cheat": false
+  },
+  "cg_runroll": {
+   "name": "cg_runroll",
+   "default": "0.005",
+   "cheat": false
+  },
+  "cg_runpitch": {
+   "name": "cg_runpitch",
+   "default": "0.002",
+   "cheat": false
+  },
+  "cg_centertime": {
+   "name": "cg_centertime",
+   "default": "3",
+   "cheat": false
+  },
+  "cg_gunZ": {
+   "name": "cg_gunZ",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_gunY": {
+   "name": "cg_gunY",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_gunX": {
+   "name": "cg_gunX",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_railTrailTime": {
+   "name": "cg_railTrailTime",
+   "default": "600",
+   "cheat": false
+  },
+  "cg_lagometer": {
+   "name": "cg_lagometer",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_simpleItems": {
+   "name": "cg_simpleItems",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_crosshairY": {
+   "name": "cg_crosshairY",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_crosshairX": {
+   "name": "cg_crosshairX",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_crosshairHealth": {
+   "name": "cg_crosshairHealth",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_crosshairSize": {
+   "name": "cg_crosshairSize",
+   "default": "24",
+   "cheat": false
+  },
+  "cg_drawRewards": {
+   "name": "cg_drawRewards",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawSpeed": {
+   "name": "cg_drawSpeed",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawAttacker": {
+   "name": "cg_drawAttacker",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawAmmoWarning": {
+   "name": "cg_drawAmmoWarning",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawIcons": {
+   "name": "cg_drawIcons",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_draw3dIcons": {
+   "name": "cg_draw3dIcons",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawSnapshot": {
+   "name": "cg_drawSnapshot",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawFPS": {
+   "name": "cg_drawFPS",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawTimer": {
+   "name": "cg_drawTimer",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_drawStatus": {
+   "name": "cg_drawStatus",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_draw2D": {
+   "name": "cg_draw2D",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_gibs": {
+   "name": "cg_gibs",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_fov": {
+   "name": "cg_fov",
+   "default": "90",
+   "cheat": false
+  },
+  "cg_zoomfov": {
+   "name": "cg_zoomfov",
+   "default": "22.5",
+   "cheat": false
+  },
+  "cg_drawGun": {
+   "name": "cg_drawGun",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_ignore": {
+   "name": "cg_ignore",
+   "default": "0",
+   "cheat": false
+  },
+  "session0": {
+   "name": "session0",
+   "default": "0 0 1 0 0 0 0",
+   "cheat": false
+  },
+  "bot_predictobstacles": {
+   "name": "bot_predictobstacles",
+   "default": "1",
+   "cheat": false
+  },
+  "r_debugSurfaceUpdate": {
+   "name": "r_debugSurfaceUpdate",
+   "default": "1",
+   "cheat": false
+  },
+  "bot_memorydump": {
+   "name": "bot_memorydump",
+   "default": "0",
+   "cheat": false
+  },
+  "g_timestamp": {
+   "name": "g_timestamp",
+   "default": "2019-08-12 12:04:48",
+   "cheat": false
+  },
+  "g_maxNameChanges": {
+   "name": "g_maxNameChanges",
+   "default": "50",
+   "cheat": false
+  },
+  "g_minNameChangePeriod": {
+   "name": "g_minNameChangePeriod",
+   "default": "10",
+   "cheat": false
+  },
+  "g_warningExpire": {
+   "name": "g_warningExpire",
+   "default": "3600",
+   "cheat": false
+  },
+  "g_maxWarnings": {
+   "name": "g_maxWarnings",
+   "default": "3",
+   "cheat": false
+  },
+  "g_publicAdminMessages": {
+   "name": "g_publicAdminMessages",
+   "default": "1",
+   "cheat": false
+  },
+  "g_specChat": {
+   "name": "g_specChat",
+   "default": "1",
+   "cheat": false
+  },
+  "g_adminMaxBan": {
+   "name": "g_adminMaxBan",
+   "default": "2w",
+   "cheat": false
+  },
+  "g_adminTempBan": {
+   "name": "g_adminTempBan",
+   "default": "2m",
+   "cheat": false
+  },
+  "g_adminNameProtect": {
+   "name": "g_adminNameProtect",
+   "default": "1",
+   "cheat": false
+  },
+  "g_adminParseSay": {
+   "name": "g_adminParseSay",
+   "default": "1",
+   "cheat": false
+  },
+  "g_adminLog": {
+   "name": "g_adminLog",
+   "default": "admin.log",
+   "cheat": false
+  },
+  "g_admin": {
+   "name": "g_admin",
+   "default": "admin.dat",
+   "cheat": false
+  },
+  "g_floodMinTime": {
+   "name": "g_floodMinTime",
+   "default": "2000",
+   "cheat": false
+  },
+  "g_floodMaxDemerits": {
+   "name": "g_floodMaxDemerits",
+   "default": "5000",
+   "cheat": false
+  },
+  "g_spreeDiv": {
+   "name": "g_spreeDiv",
+   "default": "5",
+   "cheat": false
+  },
+  "g_altExcellent": {
+   "name": "g_altExcellent",
+   "default": "0",
+   "cheat": false
+  },
+  "g_sprees": {
+   "name": "g_sprees",
+   "default": "sprees.dat",
+   "cheat": false
+  },
+  "g_blueTeamClientNumbers": {
+   "name": "g_blueTeamClientNumbers",
+   "default": "0",
+   "cheat": false
+  },
+  "g_redTeamClientNumbers": {
+   "name": "g_redTeamClientNumbers",
+   "default": "0",
+   "cheat": false
+  },
+  "g_humanplayers": {
+   "name": "g_humanplayers",
+   "default": "1",
+   "cheat": false
+  },
+  "g_mappools": {
+   "name": "g_mappools",
+   "default": "0\\maps_dm.cfg\\1\\maps_tourney.cfg\\3\\maps_tdm.cfg\\4\\maps_ctf.cfg\\5\\maps_oneflag.cfg\\6\\maps_obelisk.cfg\\7\\maps_harvester.cfg\\8\\maps_elimination.cfg\\9\\maps_ctf.cfg\\10\\maps_lms.cfg\\11\\maps_dd.cfg\\12\\maps_dom.cfg\\",
+   "cheat": false
+  },
+  "g_autonextmap": {
+   "name": "g_autonextmap",
+   "default": "0",
+   "cheat": false
+  },
+  "g_catchup": {
+   "name": "g_catchup",
+   "default": "0",
+   "cheat": false
+  },
+  "g_lms_mode": {
+   "name": "g_lms_mode",
+   "default": "0",
+   "cheat": false
+  },
+  "g_lms_lives": {
+   "name": "g_lms_lives",
+   "default": "1",
+   "cheat": false
+  },
+  "g_vampire_max_health": {
+   "name": "g_vampire_max_health",
+   "default": "500",
+   "cheat": false
+  },
+  "g_regen": {
+   "name": "g_regen",
+   "default": "0",
+   "cheat": false
+  },
+  "g_vampire": {
+   "name": "g_vampire",
+   "default": "0.0",
+   "cheat": false
+  },
+  "g_instantgib": {
+   "name": "g_instantgib",
+   "default": "0",
+   "cheat": false
+  },
+  "g_rockets": {
+   "name": "g_rockets",
+   "default": "0",
+   "cheat": false
+  },
+  "g_runes": {
+   "name": "g_runes",
+   "default": "0",
+   "cheat": false
+  },
+  "g_awardpushing": {
+   "name": "g_awardpushing",
+   "default": "1",
+   "cheat": false
+  },
+  "elimination_lockspectator": {
+   "name": "elimination_lockspectator",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_ctf_oneway": {
+   "name": "elimination_ctf_oneway",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_nail": {
+   "name": "elimination_nail",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_mine": {
+   "name": "elimination_mine",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_chain": {
+   "name": "elimination_chain",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_plasmagun": {
+   "name": "elimination_plasmagun",
+   "default": "200",
+   "cheat": false
+  },
+  "elimination_lightning": {
+   "name": "elimination_lightning",
+   "default": "300",
+   "cheat": false
+  },
+  "elimination_railgun": {
+   "name": "elimination_railgun",
+   "default": "20",
+   "cheat": false
+  },
+  "elimination_rocket": {
+   "name": "elimination_rocket",
+   "default": "50",
+   "cheat": false
+  },
+  "elimination_grenade": {
+   "name": "elimination_grenade",
+   "default": "100",
+   "cheat": false
+  },
+  "elimination_shotgun": {
+   "name": "elimination_shotgun",
+   "default": "500",
+   "cheat": false
+  },
+  "elimination_machinegun": {
+   "name": "elimination_machinegun",
+   "default": "500",
+   "cheat": false
+  },
+  "g_elimination": {
+   "name": "g_elimination",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_activewarmup": {
+   "name": "elimination_activewarmup",
+   "default": "5",
+   "cheat": false
+  },
+  "elimination_warmup": {
+   "name": "elimination_warmup",
+   "default": "7",
+   "cheat": false
+  },
+  "elimination_roundtime": {
+   "name": "elimination_roundtime",
+   "default": "120",
+   "cheat": false
+  },
+  "elimination_grapple": {
+   "name": "elimination_grapple",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_bfg": {
+   "name": "elimination_bfg",
+   "default": "0",
+   "cheat": false
+  },
+  "elimination_startArmor": {
+   "name": "elimination_startArmor",
+   "default": "150",
+   "cheat": false
+  },
+  "elimination_startHealth": {
+   "name": "elimination_startHealth",
+   "default": "200",
+   "cheat": false
+  },
+  "elimination_selfdamage": {
+   "name": "elimination_selfdamage",
+   "default": "0",
+   "cheat": false
+  },
+  "g_spawnprotect": {
+   "name": "g_spawnprotect",
+   "default": "500",
+   "cheat": false
+  },
+  "g_music": {
+   "name": "g_music",
+   "default": "",
+   "cheat": false
+  },
+  "g_rankings": {
+   "name": "g_rankings",
+   "default": "0",
+   "cheat": false
+  },
+  "g_lagLightning": {
+   "name": "g_lagLightning",
+   "default": "1",
+   "cheat": false
+  },
+  "g_truePing": {
+   "name": "g_truePing",
+   "default": "0",
+   "cheat": false
+  },
+  "g_delagHitscan": {
+   "name": "g_delagHitscan",
+   "default": "0",
+   "cheat": false
+  },
+  "pmove_float": {
+   "name": "pmove_float",
+   "default": "1",
+   "cheat": false
+  },
+  "pmove_msec": {
+   "name": "pmove_msec",
+   "default": "11",
+   "cheat": false
+  },
+  "pmove_fixed": {
+   "name": "pmove_fixed",
+   "default": "0",
+   "cheat": false
+  },
+  "g_smoothClients": {
+   "name": "g_smoothClients",
+   "default": "1",
+   "cheat": false
+  },
+  "g_proxMineTimeout": {
+   "name": "g_proxMineTimeout",
+   "default": "20000",
+   "cheat": false
+  },
+  "g_enableBreath": {
+   "name": "g_enableBreath",
+   "default": "0",
+   "cheat": false
+  },
+  "g_enableDust": {
+   "name": "g_enableDust",
+   "default": "0",
+   "cheat": false
+  },
+  "g_cubeTimeout": {
+   "name": "g_cubeTimeout",
+   "default": "30",
+   "cheat": false
+  },
+  "g_obeliskRespawnDelay": {
+   "name": "g_obeliskRespawnDelay",
+   "default": "10",
+   "cheat": false
+  },
+  "g_obeliskRegenAmount": {
+   "name": "g_obeliskRegenAmount",
+   "default": "15",
+   "cheat": false
+  },
+  "g_obeliskRegenPeriod": {
+   "name": "g_obeliskRegenPeriod",
+   "default": "1",
+   "cheat": false
+  },
+  "g_obeliskHealth": {
+   "name": "g_obeliskHealth",
+   "default": "2500",
+   "cheat": false
+  },
+  "g_listEntity": {
+   "name": "g_listEntity",
+   "default": "0",
+   "cheat": false
+  },
+  "g_votecustomfile": {
+   "name": "g_votecustomfile",
+   "default": "votecustom.cfg",
+   "cheat": false
+  },
+  "g_votemapsfile": {
+   "name": "g_votemapsfile",
+   "default": "votemaps.cfg",
+   "cheat": false
+  },
+  "g_voteMinFraglimit": {
+   "name": "g_voteMinFraglimit",
+   "default": "0",
+   "cheat": false
+  },
+  "g_voteMaxFraglimit": {
+   "name": "g_voteMaxFraglimit",
+   "default": "0",
+   "cheat": false
+  },
+  "g_voteMinTimelimit": {
+   "name": "g_voteMinTimelimit",
+   "default": "0",
+   "cheat": false
+  },
+  "g_voteMaxTimelimit": {
+   "name": "g_voteMaxTimelimit",
+   "default": "1000",
+   "cheat": false
+  },
+  "g_voteGametypes": {
+   "name": "g_voteGametypes",
+   "default": "/0/1/3/4/5/6/7/8/9/10/11/12/",
+   "cheat": false
+  },
+  "g_voteBan": {
+   "name": "g_voteBan",
+   "default": "0",
+   "cheat": false
+  },
+  "g_voteNames": {
+   "name": "g_voteNames",
+   "default": "/map_restart/nextmap/map/g_gametype/kick/clientkick/g_doWarmup/timelimit/fraglimit/shuffle/",
+   "cheat": false
+  },
+  "g_maxVotes": {
+   "name": "g_maxVotes",
+   "default": "3",
+   "cheat": false
+  },
+  "g_allowVote": {
+   "name": "g_allowVote",
+   "default": "1",
+   "cheat": false
+  },
+  "g_podiumDrop": {
+   "name": "g_podiumDrop",
+   "default": "70",
+   "cheat": false
+  },
+  "g_podiumDist": {
+   "name": "g_podiumDist",
+   "default": "80",
+   "cheat": false
+  },
+  "g_motdfile": {
+   "name": "g_motdfile",
+   "default": "motd.cfg",
+   "cheat": false
+  },
+  "g_motd": {
+   "name": "g_motd",
+   "default": "",
+   "cheat": false
+  },
+  "g_debugAlloc": {
+   "name": "g_debugAlloc",
+   "default": "0",
+   "cheat": false
+  },
+  "g_debugDamage": {
+   "name": "g_debugDamage",
+   "default": "0",
+   "cheat": false
+  },
+  "g_debugMove": {
+   "name": "g_debugMove",
+   "default": "0",
+   "cheat": false
+  },
+  "g_inactivity": {
+   "name": "g_inactivity",
+   "default": "0",
+   "cheat": false
+  },
+  "g_respawntime": {
+   "name": "g_respawntime",
+   "default": "0",
+   "cheat": false
+  },
+  "g_forcerespawn": {
+   "name": "g_forcerespawn",
+   "default": "20",
+   "cheat": false
+  },
+  "g_weaponTeamRespawn": {
+   "name": "g_weaponTeamRespawn",
+   "default": "30",
+   "cheat": false
+  },
+  "g_weaponrespawn": {
+   "name": "g_weaponrespawn",
+   "default": "5",
+   "cheat": false
+  },
+  "g_quadfactor": {
+   "name": "g_quadfactor",
+   "default": "3",
+   "cheat": false
+  },
+  "g_knockback": {
+   "name": "g_knockback",
+   "default": "1000",
+   "cheat": false
+  },
+  "g_damageModifier": {
+   "name": "g_damageModifier",
+   "default": "0",
+   "cheat": false
+  },
+  "g_gravityModifier": {
+   "name": "g_gravityModifier",
+   "default": "1",
+   "cheat": false
+  },
+  "g_gravity": {
+   "name": "g_gravity",
+   "default": "800",
+   "cheat": false
+  },
+  "g_speed": {
+   "name": "g_speed",
+   "default": "320",
+   "cheat": false
+  },
+  "g_needpass": {
+   "name": "g_needpass",
+   "default": "0",
+   "cheat": false
+  },
+  "g_filterBan": {
+   "name": "g_filterBan",
+   "default": "1",
+   "cheat": false
+  },
+  "g_banIPs": {
+   "name": "g_banIPs",
+   "default": "",
+   "cheat": false
+  },
+  "g_password": {
+   "name": "g_password",
+   "default": "",
+   "cheat": false
+  },
+  "g_logsync": {
+   "name": "g_logsync",
+   "default": "0",
+   "cheat": false
+  },
+  "g_log": {
+   "name": "g_log",
+   "default": "games.log",
+   "cheat": false
+  },
+  "g_doWarmup": {
+   "name": "g_doWarmup",
+   "default": "0",
+   "cheat": false
+  },
+  "g_warmup": {
+   "name": "g_warmup",
+   "default": "20",
+   "cheat": false
+  },
+  "g_teamForceBalance": {
+   "name": "g_teamForceBalance",
+   "default": "0",
+   "cheat": false
+  },
+  "g_teamAutoJoin": {
+   "name": "g_teamAutoJoin",
+   "default": "0",
+   "cheat": false
+  },
+  "g_friendlyFire": {
+   "name": "g_friendlyFire",
+   "default": "0",
+   "cheat": false
+  },
+  "g_synchronousClients": {
+   "name": "g_synchronousClients",
+   "default": "0",
+   "cheat": false
+  },
+  "capturelimit": {
+   "name": "capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "voteflags": {
+   "name": "voteflags",
+   "default": "767",
+   "cheat": false
+  },
+  "elimflags": {
+   "name": "elimflags",
+   "default": "0",
+   "cheat": false
+  },
+  "videoflags": {
+   "name": "videoflags",
+   "default": "7",
+   "cheat": false
+  },
+  "g_maxGameClients": {
+   "name": "g_maxGameClients",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_mapname": {
+   "name": "sv_mapname",
+   "default": "",
+   "cheat": false
+  },
+  "g_restarted": {
+   "name": "g_restarted",
+   "default": "0",
+   "cheat": false
+  },
+  "gamedate": {
+   "name": "gamedate",
+   "default": "Jan 28 2012",
+   "cheat": false
+  },
+  "gamename": {
+   "name": "gamename",
+   "default": "baseoa",
+   "cheat": false
+  },
+  "cm_playerCurveClip": {
+   "name": "cm_playerCurveClip",
+   "default": "1",
+   "cheat": false
+  },
+  "cm_noCurves": {
+   "name": "cm_noCurves",
+   "default": "0",
+   "cheat": false
+  },
+  "cm_noAreas": {
+   "name": "cm_noAreas",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_downloadName": {
+   "name": "cl_downloadName",
+   "default": "",
+   "cheat": false
+  },
+  "net_dropsim": {
+   "name": "net_dropsim",
+   "default": "",
+   "cheat": false
+  },
+  "net_socksPassword": {
+   "name": "net_socksPassword",
+   "default": "",
+   "cheat": false
+  },
+  "net_socksUsername": {
+   "name": "net_socksUsername",
+   "default": "",
+   "cheat": false
+  },
+  "net_socksPort": {
+   "name": "net_socksPort",
+   "default": "1080",
+   "cheat": false
+  },
+  "net_socksServer": {
+   "name": "net_socksServer",
+   "default": "",
+   "cheat": false
+  },
+  "net_socksEnabled": {
+   "name": "net_socksEnabled",
+   "default": "0",
+   "cheat": false
+  },
+  "net_mcast6iface": {
+   "name": "net_mcast6iface",
+   "default": "",
+   "cheat": false
+  },
+  "net_mcast6addr": {
+   "name": "net_mcast6addr",
+   "default": "ff04::696f:7175:616b:6533",
+   "cheat": false
+  },
+  "net_port6": {
+   "name": "net_port6",
+   "default": "27960",
+   "cheat": false
+  },
+  "net_port": {
+   "name": "net_port",
+   "default": "27960",
+   "cheat": false
+  },
+  "net_ip6": {
+   "name": "net_ip6",
+   "default": "::",
+   "cheat": false
+  },
+  "net_ip": {
+   "name": "net_ip",
+   "default": "0.0.0.0",
+   "cheat": false
+  },
+  "net_enabled": {
+   "name": "net_enabled",
+   "default": "3",
+   "cheat": false
+  },
+  "ui_singlePlayerActive": {
+   "name": "ui_singlePlayerActive",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_setupchecked": {
+   "name": "ui_setupchecked",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_browserOnlyHumans": {
+   "name": "ui_browserOnlyHumans",
+   "default": "0",
+   "cheat": false
+  },
+  "server16": {
+   "name": "server16",
+   "default": "",
+   "cheat": false
+  },
+  "server15": {
+   "name": "server15",
+   "default": "",
+   "cheat": false
+  },
+  "server14": {
+   "name": "server14",
+   "default": "",
+   "cheat": false
+  },
+  "server13": {
+   "name": "server13",
+   "default": "",
+   "cheat": false
+  },
+  "server12": {
+   "name": "server12",
+   "default": "",
+   "cheat": false
+  },
+  "server11": {
+   "name": "server11",
+   "default": "",
+   "cheat": false
+  },
+  "server10": {
+   "name": "server10",
+   "default": "",
+   "cheat": false
+  },
+  "server9": {
+   "name": "server9",
+   "default": "",
+   "cheat": false
+  },
+  "server8": {
+   "name": "server8",
+   "default": "",
+   "cheat": false
+  },
+  "server7": {
+   "name": "server7",
+   "default": "",
+   "cheat": false
+  },
+  "server6": {
+   "name": "server6",
+   "default": "",
+   "cheat": false
+  },
+  "server5": {
+   "name": "server5",
+   "default": "",
+   "cheat": false
+  },
+  "server4": {
+   "name": "server4",
+   "default": "",
+   "cheat": false
+  },
+  "server3": {
+   "name": "server3",
+   "default": "",
+   "cheat": false
+  },
+  "server2": {
+   "name": "server2",
+   "default": "",
+   "cheat": false
+  },
+  "server1": {
+   "name": "server1",
+   "default": "",
+   "cheat": false
+  },
+  "cg_marks": {
+   "name": "cg_marks",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawCrosshairNames": {
+   "name": "cg_drawCrosshairNames",
+   "default": "1",
+   "cheat": false
+  },
+  "cg_drawCrosshair": {
+   "name": "cg_drawCrosshair",
+   "default": "4",
+   "cheat": false
+  },
+  "cg_brassTime": {
+   "name": "cg_brassTime",
+   "default": "2500",
+   "cheat": false
+  },
+  "ui_browserShowEmpty": {
+   "name": "ui_browserShowEmpty",
+   "default": "1",
+   "cheat": false
+  },
+  "ui_browserShowFull": {
+   "name": "ui_browserShowFull",
+   "default": "1",
+   "cheat": false
+  },
+  "ui_browserSortKey": {
+   "name": "ui_browserSortKey",
+   "default": "4",
+   "cheat": false
+  },
+  "ui_browserGameType": {
+   "name": "ui_browserGameType",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_browserMaster": {
+   "name": "ui_browserMaster",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_spSelection": {
+   "name": "ui_spSelection",
+   "default": "",
+   "cheat": false
+  },
+  "g_spSkill": {
+   "name": "g_spSkill",
+   "default": "2",
+   "cheat": false
+  },
+  "g_spVideos": {
+   "name": "g_spVideos",
+   "default": "",
+   "cheat": false
+  },
+  "g_spAwards": {
+   "name": "g_spAwards",
+   "default": "",
+   "cheat": false
+  },
+  "g_spScores5": {
+   "name": "g_spScores5",
+   "default": "",
+   "cheat": false
+  },
+  "g_spScores4": {
+   "name": "g_spScores4",
+   "default": "",
+   "cheat": false
+  },
+  "g_spScores3": {
+   "name": "g_spScores3",
+   "default": "",
+   "cheat": false
+  },
+  "g_spScores2": {
+   "name": "g_spScores2",
+   "default": "",
+   "cheat": false
+  },
+  "g_spScores1": {
+   "name": "g_spScores1",
+   "default": "",
+   "cheat": false
+  },
+  "g_botsFile": {
+   "name": "g_botsFile",
+   "default": "",
+   "cheat": false
+  },
+  "g_arenasFile": {
+   "name": "g_arenasFile",
+   "default": "",
+   "cheat": false
+  },
+  "ui_dom_friendly": {
+   "name": "ui_dom_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_dom_timelimit": {
+   "name": "ui_dom_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_dom_capturelimit": {
+   "name": "ui_dom_capturelimit",
+   "default": "500",
+   "cheat": false
+  },
+  "ui_dd_friendly": {
+   "name": "ui_dd_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_dd_timelimit": {
+   "name": "ui_dd_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_dd_capturelimit": {
+   "name": "ui_dd_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_lms_timelimit": {
+   "name": "ui_lms_timelimit",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_lms_fraglimit": {
+   "name": "ui_lms_fraglimit",
+   "default": "20",
+   "cheat": false
+  },
+  "ui_ctf_elimination_timelimit": {
+   "name": "ui_ctf_elimination_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_ctf_elimination_capturelimit": {
+   "name": "ui_ctf_elimination_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_elimination_timelimit": {
+   "name": "ui_elimination_timelimit",
+   "default": "20",
+   "cheat": false
+  },
+  "ui_elimination_capturelimit": {
+   "name": "ui_elimination_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_harvester_friendly": {
+   "name": "ui_harvester_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_harvester_timelimit": {
+   "name": "ui_harvester_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_harvester_capturelimit": {
+   "name": "ui_harvester_capturelimit",
+   "default": "20",
+   "cheat": false
+  },
+  "ui_overload_friendly": {
+   "name": "ui_overload_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_overload_timelimit": {
+   "name": "ui_overload_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_overload_capturelimit": {
+   "name": "ui_overload_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_1fctf_friendly": {
+   "name": "ui_1fctf_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_1fctf_timelimit": {
+   "name": "ui_1fctf_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_1fctf_capturelimit": {
+   "name": "ui_1fctf_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_ctf_friendly": {
+   "name": "ui_ctf_friendly",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_ctf_timelimit": {
+   "name": "ui_ctf_timelimit",
+   "default": "30",
+   "cheat": false
+  },
+  "ui_ctf_capturelimit": {
+   "name": "ui_ctf_capturelimit",
+   "default": "8",
+   "cheat": false
+  },
+  "ui_team_friendly": {
+   "name": "ui_team_friendly",
+   "default": "1",
+   "cheat": false
+  },
+  "ui_team_timelimit": {
+   "name": "ui_team_timelimit",
+   "default": "20",
+   "cheat": false
+  },
+  "ui_team_fraglimit": {
+   "name": "ui_team_fraglimit",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_tourney_timelimit": {
+   "name": "ui_tourney_timelimit",
+   "default": "15",
+   "cheat": false
+  },
+  "ui_tourney_fraglimit": {
+   "name": "ui_tourney_fraglimit",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_ffa_timelimit": {
+   "name": "ui_ffa_timelimit",
+   "default": "0",
+   "cheat": false
+  },
+  "ui_ffa_fraglimit": {
+   "name": "ui_ffa_fraglimit",
+   "default": "20",
+   "cheat": false
+  },
+  "s_alCapture": {
+   "name": "s_alCapture",
+   "default": "1",
+   "cheat": false
+  },
+  "s_alAvailableDevices": {
+   "name": "s_alAvailableDevices",
+   "default": "OpenAL Soft",
+   "cheat": false
+  },
+  "s_alDevice": {
+   "name": "s_alDevice",
+   "default": "",
+   "cheat": false
+  },
+  "s_alDriver": {
+   "name": "s_alDriver",
+   "default": "libopenal.so.1",
+   "cheat": false
+  },
+  "s_alGraceDistance": {
+   "name": "s_alGraceDistance",
+   "default": "512",
+   "cheat": false
+  },
+  "s_alRolloff": {
+   "name": "s_alRolloff",
+   "default": "2",
+   "cheat": false
+  },
+  "s_alMaxDistance": {
+   "name": "s_alMaxDistance",
+   "default": "1024",
+   "cheat": false
+  },
+  "s_alMinDistance": {
+   "name": "s_alMinDistance",
+   "default": "120",
+   "cheat": false
+  },
+  "s_alDopplerSpeed": {
+   "name": "s_alDopplerSpeed",
+   "default": "2200",
+   "cheat": false
+  },
+  "s_alDopplerFactor": {
+   "name": "s_alDopplerFactor",
+   "default": "1.0",
+   "cheat": false
+  },
+  "s_alSources": {
+   "name": "s_alSources",
+   "default": "96",
+   "cheat": false
+  },
+  "s_alGain": {
+   "name": "s_alGain",
+   "default": "1.0",
+   "cheat": false
+  },
+  "s_alPrecache": {
+   "name": "s_alPrecache",
+   "default": "1",
+   "cheat": false
+  },
+  "s_useOpenAL": {
+   "name": "s_useOpenAL",
+   "default": "1",
+   "cheat": false
+  },
+  "s_initsound": {
+   "name": "s_initsound",
+   "default": "1",
+   "cheat": false
+  },
+  "s_muteWhenUnfocused": {
+   "name": "s_muteWhenUnfocused",
+   "default": "0",
+   "cheat": false
+  },
+  "s_muteWhenMinimized": {
+   "name": "s_muteWhenMinimized",
+   "default": "0",
+   "cheat": false
+  },
+  "s_backend": {
+   "name": "s_backend",
+   "default": "OpenAL",
+   "cheat": false
+  },
+  "s_doppler": {
+   "name": "s_doppler",
+   "default": "1",
+   "cheat": false
+  },
+  "s_muted": {
+   "name": "s_muted",
+   "default": "0",
+   "cheat": false
+  },
+  "s_musicvolume": {
+   "name": "s_musicvolume",
+   "default": "0.25",
+   "cheat": false
+  },
+  "s_volume": {
+   "name": "s_volume",
+   "default": "0.8",
+   "cheat": false
+  },
+  "in_joystickThreshold": {
+   "name": "in_joystickThreshold",
+   "default": "0.15",
+   "cheat": false
+  },
+  "in_joystickDebug": {
+   "name": "in_joystickDebug",
+   "default": "0",
+   "cheat": false
+  },
+  "in_joystick": {
+   "name": "in_joystick",
+   "default": "0",
+   "cheat": false
+  },
+  "in_nograb": {
+   "name": "in_nograb",
+   "default": "0",
+   "cheat": false
+  },
+  "in_mouse": {
+   "name": "in_mouse",
+   "default": "1",
+   "cheat": false
+  },
+  "in_keyboardDebug": {
+   "name": "in_keyboardDebug",
+   "default": "0",
+   "cheat": false
+  },
+  "r_availableModes": {
+   "name": "r_availableModes",
+   "default": "1600x900 720x400 640x350 640x400 640x480 800x600 1024x768 1152x864",
+   "cheat": false
+  },
+  "r_centerWindow": {
+   "name": "r_centerWindow",
+   "default": "0",
+   "cheat": false
+  },
+  "r_allowResize": {
+   "name": "r_allowResize",
+   "default": "0",
+   "cheat": false
+  },
+  "r_sdlDriver": {
+   "name": "r_sdlDriver",
+   "default": "x11",
+   "cheat": false
+  },
+  "r_allowSoftwareGL": {
+   "name": "r_allowSoftwareGL",
+   "default": "0",
+   "cheat": false
+  },
+  "r_bloom_sky_only": {
+   "name": "r_bloom_sky_only",
+   "default": "0",
+   "cheat": false
+  },
+  "r_bloom_reflection": {
+   "name": "r_bloom_reflection",
+   "default": "0",
+   "cheat": false
+  },
+  "r_bloom_dry": {
+   "name": "r_bloom_dry",
+   "default": "1",
+   "cheat": false
+  },
+  "r_bloom_cascade_dry": {
+   "name": "r_bloom_cascade_dry",
+   "default": "0.8",
+   "cheat": false
+  },
+  "r_bloom_cascade_alpha": {
+   "name": "r_bloom_cascade_alpha",
+   "default": "0.15",
+   "cheat": false
+  },
+  "r_bloom_cascade_intensity": {
+   "name": "r_bloom_cascade_intensity",
+   "default": "20",
+   "cheat": false
+  },
+  "r_bloom_cascade_blur": {
+   "name": "r_bloom_cascade_blur",
+   "default": ".4",
+   "cheat": false
+  },
+  "r_bloom_cascade": {
+   "name": "r_bloom_cascade",
+   "default": "0",
+   "cheat": false
+  },
+  "r_bloom_fast_sample": {
+   "name": "r_bloom_fast_sample",
+   "default": "0",
+   "cheat": false
+  },
+  "r_bloom_sample_size": {
+   "name": "r_bloom_sample_size",
+   "default": "256",
+   "cheat": false
+  },
+  "r_bloom_darken": {
+   "name": "r_bloom_darken",
+   "default": "4",
+   "cheat": false
+  },
+  "r_bloom_intensity": {
+   "name": "r_bloom_intensity",
+   "default": "1.3",
+   "cheat": false
+  },
+  "r_bloom_diamond_size": {
+   "name": "r_bloom_diamond_size",
+   "default": "8",
+   "cheat": false
+  },
+  "r_bloom_alpha": {
+   "name": "r_bloom_alpha",
+   "default": "0.3",
+   "cheat": false
+  },
+  "r_bloom": {
+   "name": "r_bloom",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lensReflectionBrightness": {
+   "name": "r_lensReflectionBrightness",
+   "default": "0.5",
+   "cheat": false
+  },
+  "r_lensReflection2": {
+   "name": "r_lensReflection2",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lensReflection1": {
+   "name": "r_lensReflection1",
+   "default": "1",
+   "cheat": false
+  },
+  "r_specMode": {
+   "name": "r_specMode",
+   "default": "1",
+   "cheat": false
+  },
+  "r_envMode": {
+   "name": "r_envMode",
+   "default": "1",
+   "cheat": false
+  },
+  "r_flaresDlight": {
+   "name": "r_flaresDlight",
+   "default": "0",
+   "cheat": false
+  },
+  "r_maxpolyverts": {
+   "name": "r_maxpolyverts",
+   "default": "3000",
+   "cheat": false
+  },
+  "r_maxpolys": {
+   "name": "r_maxpolys",
+   "default": "600",
+   "cheat": false
+  },
+  "r_screenshotJpegQuality": {
+   "name": "r_screenshotJpegQuality",
+   "default": "90",
+   "cheat": false
+  },
+  "r_aviMotionJpegQuality": {
+   "name": "r_aviMotionJpegQuality",
+   "default": "90",
+   "cheat": false
+  },
+  "r_marksOnTriangleMeshes": {
+   "name": "r_marksOnTriangleMeshes",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_shadows": {
+   "name": "cg_shadows",
+   "default": "1",
+   "cheat": false
+  },
+  "r_noportals": {
+   "name": "r_noportals",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lockpvs": {
+   "name": "r_lockpvs",
+   "default": "0",
+   "cheat": false
+  },
+  "r_drawBuffer": {
+   "name": "r_drawBuffer",
+   "default": "GL_BACK",
+   "cheat": false
+  },
+  "r_offsetunits": {
+   "name": "r_offsetunits",
+   "default": "-2",
+   "cheat": false
+  },
+  "r_offsetfactor": {
+   "name": "r_offsetfactor",
+   "default": "-1",
+   "cheat": false
+  },
+  "r_clear": {
+   "name": "r_clear",
+   "default": "0",
+   "cheat": false
+  },
+  "r_shownormals": {
+   "name": "r_shownormals",
+   "default": "0",
+   "cheat": false
+  },
+  "r_showsky": {
+   "name": "r_showsky",
+   "default": "0",
+   "cheat": false
+  },
+  "r_showtris": {
+   "name": "r_showtris",
+   "default": "0",
+   "cheat": false
+  },
+  "r_nobind": {
+   "name": "r_nobind",
+   "default": "0",
+   "cheat": false
+  },
+  "r_debugSurface": {
+   "name": "r_debugSurface",
+   "default": "0",
+   "cheat": false
+  },
+  "r_logFile": {
+   "name": "r_logFile",
+   "default": "0",
+   "cheat": false
+  },
+  "r_verbose": {
+   "name": "r_verbose",
+   "default": "0",
+   "cheat": false
+  },
+  "r_speeds": {
+   "name": "r_speeds",
+   "default": "0",
+   "cheat": false
+  },
+  "r_showcluster": {
+   "name": "r_showcluster",
+   "default": "0",
+   "cheat": false
+  },
+  "r_novis": {
+   "name": "r_novis",
+   "default": "0",
+   "cheat": false
+  },
+  "r_nocull": {
+   "name": "r_nocull",
+   "default": "0",
+   "cheat": false
+  },
+  "r_ignore": {
+   "name": "r_ignore",
+   "default": "1",
+   "cheat": false
+  },
+  "r_drawentities": {
+   "name": "r_drawentities",
+   "default": "1",
+   "cheat": false
+  },
+  "r_norefresh": {
+   "name": "r_norefresh",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lodscale": {
+   "name": "r_lodscale",
+   "default": "5",
+   "cheat": false
+  },
+  "r_measureOverdraw": {
+   "name": "r_measureOverdraw",
+   "default": "0",
+   "cheat": false
+  },
+  "r_skipBackEnd": {
+   "name": "r_skipBackEnd",
+   "default": "0",
+   "cheat": false
+  },
+  "r_showSmp": {
+   "name": "r_showSmp",
+   "default": "0",
+   "cheat": false
+  },
+  "r_flareCoeff": {
+   "name": "r_flareCoeff",
+   "default": "150",
+   "cheat": false
+  },
+  "r_flareFade": {
+   "name": "r_flareFade",
+   "default": "7",
+   "cheat": false
+  },
+  "r_flareSize": {
+   "name": "r_flareSize",
+   "default": "40",
+   "cheat": false
+  },
+  "r_portalOnly": {
+   "name": "r_portalOnly",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lightmap": {
+   "name": "r_lightmap",
+   "default": "0",
+   "cheat": false
+  },
+  "r_drawworld": {
+   "name": "r_drawworld",
+   "default": "1",
+   "cheat": false
+  },
+  "r_nocurves": {
+   "name": "r_nocurves",
+   "default": "0",
+   "cheat": false
+  },
+  "r_saveFontData": {
+   "name": "r_saveFontData",
+   "default": "0",
+   "cheat": false
+  },
+  "r_printShaders": {
+   "name": "r_printShaders",
+   "default": "0",
+   "cheat": false
+  },
+  "r_debugSort": {
+   "name": "r_debugSort",
+   "default": "0",
+   "cheat": false
+  },
+  "r_debuglight": {
+   "name": "r_debuglight",
+   "default": "0",
+   "cheat": false
+  },
+  "r_showImages": {
+   "name": "r_showImages",
+   "default": "0",
+   "cheat": false
+  },
+  "r_anaglyphMode": {
+   "name": "r_anaglyphMode",
+   "default": "0",
+   "cheat": false
+  },
+  "r_directedScale": {
+   "name": "r_directedScale",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ambientScale": {
+   "name": "r_ambientScale",
+   "default": "0.6",
+   "cheat": false
+  },
+  "r_primitives": {
+   "name": "r_primitives",
+   "default": "0",
+   "cheat": false
+  },
+  "r_railSegmentLength": {
+   "name": "r_railSegmentLength",
+   "default": "32",
+   "cheat": false
+  },
+  "r_railCoreWidth": {
+   "name": "r_railCoreWidth",
+   "default": "6",
+   "cheat": false
+  },
+  "r_railWidth": {
+   "name": "r_railWidth",
+   "default": "16",
+   "cheat": false
+  },
+  "r_facePlaneCull": {
+   "name": "r_facePlaneCull",
+   "default": "1",
+   "cheat": false
+  },
+  "r_gamma": {
+   "name": "r_gamma",
+   "default": "1",
+   "cheat": false
+  },
+  "r_swapInterval": {
+   "name": "r_swapInterval",
+   "default": "0",
+   "cheat": false
+  },
+  "r_textureMode": {
+   "name": "r_textureMode",
+   "default": "GL_LINEAR_MIPMAP_NEAREST",
+   "cheat": false
+  },
+  "r_finish": {
+   "name": "r_finish",
+   "default": "0",
+   "cheat": false
+  },
+  "r_dlightBacks": {
+   "name": "r_dlightBacks",
+   "default": "1",
+   "cheat": false
+  },
+  "r_dynamiclight": {
+   "name": "r_dynamiclight",
+   "default": "1",
+   "cheat": false
+  },
+  "r_drawSun": {
+   "name": "r_drawSun",
+   "default": "0",
+   "cheat": false
+  },
+  "r_fastsky": {
+   "name": "r_fastsky",
+   "default": "0",
+   "cheat": false
+  },
+  "r_ignoreGLErrors": {
+   "name": "r_ignoreGLErrors",
+   "default": "1",
+   "cheat": false
+  },
+  "r_stereoSeparation": {
+   "name": "r_stereoSeparation",
+   "default": "64",
+   "cheat": false
+  },
+  "r_zproj": {
+   "name": "r_zproj",
+   "default": "64",
+   "cheat": false
+  },
+  "r_znear": {
+   "name": "r_znear",
+   "default": "4",
+   "cheat": false
+  },
+  "r_flares": {
+   "name": "r_flares",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lodbias": {
+   "name": "r_lodbias",
+   "default": "0",
+   "cheat": false
+  },
+  "r_lodCurveError": {
+   "name": "r_lodCurveError",
+   "default": "250",
+   "cheat": false
+  },
+  "r_singleShader": {
+   "name": "r_singleShader",
+   "default": "0",
+   "cheat": false
+  },
+  "r_mapOverBrightBits": {
+   "name": "r_mapOverBrightBits",
+   "default": "2",
+   "cheat": false
+  },
+  "r_fullbright": {
+   "name": "r_fullbright",
+   "default": "0",
+   "cheat": false
+  },
+  "r_monolightmaps": {
+   "name": "r_monolightmaps",
+   "default": "0",
+   "cheat": false
+  },
+  "r_greyscale": {
+   "name": "r_greyscale",
+   "default": "0",
+   "cheat": false
+  },
+  "r_ignoreFastPath": {
+   "name": "r_ignoreFastPath",
+   "default": "1",
+   "cheat": false
+  },
+  "r_stereoEnabled": {
+   "name": "r_stereoEnabled",
+   "default": "0",
+   "cheat": false
+  },
+  "r_smp": {
+   "name": "r_smp",
+   "default": "0",
+   "cheat": false
+  },
+  "r_subdivisions": {
+   "name": "r_subdivisions",
+   "default": "4",
+   "cheat": false
+  },
+  "r_simpleMipMaps": {
+   "name": "r_simpleMipMaps",
+   "default": "1",
+   "cheat": false
+  },
+  "r_customPixelAspect": {
+   "name": "r_customPixelAspect",
+   "default": "1",
+   "cheat": false
+  },
+  "r_customheight": {
+   "name": "r_customheight",
+   "default": "1024",
+   "cheat": false
+  },
+  "r_customwidth": {
+   "name": "r_customwidth",
+   "default": "1600",
+   "cheat": false
+  },
+  "r_noborder": {
+   "name": "r_noborder",
+   "default": "0",
+   "cheat": false
+  },
+  "r_fullscreen": {
+   "name": "r_fullscreen",
+   "default": "1",
+   "cheat": false
+  },
+  "r_mode": {
+   "name": "r_mode",
+   "default": "3",
+   "cheat": false
+  },
+  "r_ignorehwgamma": {
+   "name": "r_ignorehwgamma",
+   "default": "0",
+   "cheat": false
+  },
+  "r_overBrightBits": {
+   "name": "r_overBrightBits",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ext_multisample": {
+   "name": "r_ext_multisample",
+   "default": "0",
+   "cheat": false
+  },
+  "r_depthbits": {
+   "name": "r_depthbits",
+   "default": "0",
+   "cheat": false
+  },
+  "r_stencilbits": {
+   "name": "r_stencilbits",
+   "default": "8",
+   "cheat": false
+  },
+  "r_colorbits": {
+   "name": "r_colorbits",
+   "default": "0",
+   "cheat": false
+  },
+  "r_texturebits": {
+   "name": "r_texturebits",
+   "default": "0",
+   "cheat": false
+  },
+  "r_detailtextures": {
+   "name": "r_detailtextures",
+   "default": "1",
+   "cheat": false
+  },
+  "r_colorMipLevels": {
+   "name": "r_colorMipLevels",
+   "default": "0",
+   "cheat": false
+  },
+  "r_roundImagesDown": {
+   "name": "r_roundImagesDown",
+   "default": "1",
+   "cheat": false
+  },
+  "r_picmip": {
+   "name": "r_picmip",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ext_vertex_shader": {
+   "name": "r_ext_vertex_shader",
+   "default": "0",
+   "cheat": false
+  },
+  "r_postprocess": {
+   "name": "r_postprocess",
+   "default": "none",
+   "cheat": false
+  },
+  "r_ext_max_anisotropy": {
+   "name": "r_ext_max_anisotropy",
+   "default": "2",
+   "cheat": false
+  },
+  "r_ext_texture_filter_anisotropic": {
+   "name": "r_ext_texture_filter_anisotropic",
+   "default": "0",
+   "cheat": false
+  },
+  "r_ext_texture_env_add": {
+   "name": "r_ext_texture_env_add",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ext_compiled_vertex_array": {
+   "name": "r_ext_compiled_vertex_array",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ext_multitexture": {
+   "name": "r_ext_multitexture",
+   "default": "1",
+   "cheat": false
+  },
+  "r_ext_compressed_textures": {
+   "name": "r_ext_compressed_textures",
+   "default": "0",
+   "cheat": false
+  },
+  "r_allowExtensions": {
+   "name": "r_allowExtensions",
+   "default": "1",
+   "cheat": false
+  },
+  "r_uiFullScreen": {
+   "name": "r_uiFullScreen",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_guid": {
+   "name": "cl_guid",
+   "default": "FE217F6EF9F560524608DBBF3ABB3D3D",
+   "cheat": false
+  },
+  "graphshift": {
+   "name": "graphshift",
+   "default": "0",
+   "cheat": false
+  },
+  "graphscale": {
+   "name": "graphscale",
+   "default": "1",
+   "cheat": false
+  },
+  "graphheight": {
+   "name": "graphheight",
+   "default": "32",
+   "cheat": false
+  },
+  "debuggraph": {
+   "name": "debuggraph",
+   "default": "0",
+   "cheat": false
+  },
+  "timegraph": {
+   "name": "timegraph",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_stereoSeparation": {
+   "name": "cg_stereoSeparation",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_viewsize": {
+   "name": "cg_viewsize",
+   "default": "100",
+   "cheat": false
+  },
+  "cl_voip": {
+   "name": "cl_voip",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_voipShowMeter": {
+   "name": "cl_voipShowMeter",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_voipVADThreshold": {
+   "name": "cl_voipVADThreshold",
+   "default": "0.25",
+   "cheat": false
+  },
+  "cl_voipUseVAD": {
+   "name": "cl_voipUseVAD",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_voipCaptureMult": {
+   "name": "cl_voipCaptureMult",
+   "default": "2.0",
+   "cheat": false
+  },
+  "cl_voipGainDuringCapture": {
+   "name": "cl_voipGainDuringCapture",
+   "default": "0.2",
+   "cheat": false
+  },
+  "cl_voipSendTarget": {
+   "name": "cl_voipSendTarget",
+   "default": "all",
+   "cheat": false
+  },
+  "cl_voipSend": {
+   "name": "cl_voipSend",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_mumbleScale": {
+   "name": "cl_mumbleScale",
+   "default": "0.0254",
+   "cheat": false
+  },
+  "cl_useMumble": {
+   "name": "cl_useMumble",
+   "default": "0",
+   "cheat": false
+  },
+  "cg_predictItems": {
+   "name": "cg_predictItems",
+   "default": "1",
+   "cheat": false
+  },
+  "password": {
+   "name": "password",
+   "default": "",
+   "cheat": false
+  },
+  "cl_anonymous": {
+   "name": "cl_anonymous",
+   "default": "0",
+   "cheat": false
+  },
+  "sex": {
+   "name": "sex",
+   "default": "male",
+   "cheat": false
+  },
+  "teamtask": {
+   "name": "teamtask",
+   "default": "0",
+   "cheat": false
+  },
+  "handicap": {
+   "name": "handicap",
+   "default": "100",
+   "cheat": false
+  },
+  "color2": {
+   "name": "color2",
+   "default": "5",
+   "cheat": false
+  },
+  "color1": {
+   "name": "color1",
+   "default": "4",
+   "cheat": false
+  },
+  "g_blueTeam": {
+   "name": "g_blueTeam",
+   "default": "Pagans",
+   "cheat": false
+  },
+  "g_redTeam": {
+   "name": "g_redTeam",
+   "default": "Stroggs",
+   "cheat": false
+  },
+  "team_headmodel": {
+   "name": "team_headmodel",
+   "default": "*james",
+   "cheat": false
+  },
+  "team_model": {
+   "name": "team_model",
+   "default": "james",
+   "cheat": false
+  },
+  "headmodel": {
+   "name": "headmodel",
+   "default": "sarge",
+   "cheat": false
+  },
+  "model": {
+   "name": "model",
+   "default": "sarge",
+   "cheat": false
+  },
+  "snaps": {
+   "name": "snaps",
+   "default": "20",
+   "cheat": false
+  },
+  "rate": {
+   "name": "rate",
+   "default": "25000",
+   "cheat": false
+  },
+  "name": {
+   "name": "name",
+   "default": "UnnamedPlayer",
+   "cheat": false
+  },
+  "cl_gamename": {
+   "name": "cl_gamename",
+   "default": "openarena",
+   "cheat": false
+  },
+  "cl_consoleHeight": {
+   "name": "cl_consoleHeight",
+   "default": "0.5",
+   "cheat": false
+  },
+  "cl_consoleColorAlpha": {
+   "name": "cl_consoleColorAlpha",
+   "default": "0.8",
+   "cheat": false
+  },
+  "cl_consoleColorBlue": {
+   "name": "cl_consoleColorBlue",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_consoleColorGreen": {
+   "name": "cl_consoleColorGreen",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_consoleColorRed": {
+   "name": "cl_consoleColorRed",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_consoleType": {
+   "name": "cl_consoleType",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_consoleKeys": {
+   "name": "cl_consoleKeys",
+   "default": "~ ` 0x7e 0x60",
+   "cheat": false
+  },
+  "cl_guidServerUniq": {
+   "name": "cl_guidServerUniq",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_lanForcePackets": {
+   "name": "cl_lanForcePackets",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_maxPing": {
+   "name": "cl_maxPing",
+   "default": "800",
+   "cheat": false
+  },
+  "cl_motdString": {
+   "name": "cl_motdString",
+   "default": "",
+   "cheat": false
+  },
+  "m_filter": {
+   "name": "m_filter",
+   "default": "0",
+   "cheat": false
+  },
+  "m_side": {
+   "name": "m_side",
+   "default": "0.25",
+   "cheat": false
+  },
+  "m_forward": {
+   "name": "m_forward",
+   "default": "0.25",
+   "cheat": false
+  },
+  "m_yaw": {
+   "name": "m_yaw",
+   "default": "0.022",
+   "cheat": false
+  },
+  "m_pitch": {
+   "name": "m_pitch",
+   "default": "0.022",
+   "cheat": false
+  },
+  "cg_autoswitch": {
+   "name": "cg_autoswitch",
+   "default": "2",
+   "cheat": false
+  },
+  "cl_serverStatusResendTime": {
+   "name": "cl_serverStatusResendTime",
+   "default": "750",
+   "cheat": false
+  },
+  "r_inGameVideo": {
+   "name": "r_inGameVideo",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_conXOffset": {
+   "name": "cl_conXOffset",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_cURLLib": {
+   "name": "cl_cURLLib",
+   "default": "libcurl.so.4",
+   "cheat": false
+  },
+  "cl_allowDownload": {
+   "name": "cl_allowDownload",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_showmouserate": {
+   "name": "cl_showmouserate",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_mouseAccelOffset": {
+   "name": "cl_mouseAccelOffset",
+   "default": "5",
+   "cheat": false
+  },
+  "cl_mouseAccelStyle": {
+   "name": "cl_mouseAccelStyle",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_freelook": {
+   "name": "cl_freelook",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_mouseAccel": {
+   "name": "cl_mouseAccel",
+   "default": "0",
+   "cheat": false
+  },
+  "sensitivity": {
+   "name": "sensitivity",
+   "default": "5",
+   "cheat": false
+  },
+  "cl_run": {
+   "name": "cl_run",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_packetdup": {
+   "name": "cl_packetdup",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_maxpackets": {
+   "name": "cl_maxpackets",
+   "default": "30",
+   "cheat": false
+  },
+  "cl_anglespeedkey": {
+   "name": "cl_anglespeedkey",
+   "default": "1.5",
+   "cheat": false
+  },
+  "rconAddress": {
+   "name": "rconAddress",
+   "default": "",
+   "cheat": false
+  },
+  "cl_forceavidemo": {
+   "name": "cl_forceavidemo",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_aviMotionJpeg": {
+   "name": "cl_aviMotionJpeg",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_aviFrameRate": {
+   "name": "cl_aviFrameRate",
+   "default": "25",
+   "cheat": false
+  },
+  "cl_autoRecordDemo": {
+   "name": "cl_autoRecordDemo",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_timedemoLog": {
+   "name": "cl_timedemoLog",
+   "default": "",
+   "cheat": false
+  },
+  "activeAction": {
+   "name": "activeAction",
+   "default": "",
+   "cheat": false
+  },
+  "cl_freezeDemo": {
+   "name": "cl_freezeDemo",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_showTimeDelta": {
+   "name": "cl_showTimeDelta",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_showSend": {
+   "name": "cl_showSend",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_shownet": {
+   "name": "cl_shownet",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_timeNudge": {
+   "name": "cl_timeNudge",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_timeout": {
+   "name": "cl_timeout",
+   "default": "200",
+   "cheat": false
+  },
+  "cl_motd": {
+   "name": "cl_motd",
+   "default": "1",
+   "cheat": false
+  },
+  "cl_noprint": {
+   "name": "cl_noprint",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_debugMove": {
+   "name": "cl_debugMove",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_nodelta": {
+   "name": "cl_nodelta",
+   "default": "0",
+   "cheat": false
+  },
+  "scr_conspeed": {
+   "name": "scr_conspeed",
+   "default": "3",
+   "cheat": false
+  },
+  "con_notifytime": {
+   "name": "con_notifytime",
+   "default": "3",
+   "cheat": false
+  },
+  "bot_interbreedwrite": {
+   "name": "bot_interbreedwrite",
+   "default": "",
+   "cheat": false
+  },
+  "bot_interbreedcycle": {
+   "name": "bot_interbreedcycle",
+   "default": "20",
+   "cheat": false
+  },
+  "bot_interbreedbots": {
+   "name": "bot_interbreedbots",
+   "default": "10",
+   "cheat": false
+  },
+  "bot_interbreedchar": {
+   "name": "bot_interbreedchar",
+   "default": "",
+   "cheat": false
+  },
+  "bot_minplayers": {
+   "name": "bot_minplayers",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_challenge": {
+   "name": "bot_challenge",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_rocketjump": {
+   "name": "bot_rocketjump",
+   "default": "1",
+   "cheat": false
+  },
+  "bot_grapple": {
+   "name": "bot_grapple",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_report": {
+   "name": "bot_report",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_pause": {
+   "name": "bot_pause",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_nochat": {
+   "name": "bot_nochat",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_fastchat": {
+   "name": "bot_fastchat",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_testclusters": {
+   "name": "bot_testclusters",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_testsolid": {
+   "name": "bot_testsolid",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_testrchat": {
+   "name": "bot_testrchat",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_testichat": {
+   "name": "bot_testichat",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_reloadcharacters": {
+   "name": "bot_reloadcharacters",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_thinktime": {
+   "name": "bot_thinktime",
+   "default": "100",
+   "cheat": false
+  },
+  "bot_saveroutingcache": {
+   "name": "bot_saveroutingcache",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_aasoptimize": {
+   "name": "bot_aasoptimize",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_forcewrite": {
+   "name": "bot_forcewrite",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_forcereachability": {
+   "name": "bot_forcereachability",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_forceclustering": {
+   "name": "bot_forceclustering",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_visualizejumppads": {
+   "name": "bot_visualizejumppads",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_reachability": {
+   "name": "bot_reachability",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_groundonly": {
+   "name": "bot_groundonly",
+   "default": "1",
+   "cheat": false
+  },
+  "bot_maxdebugpolys": {
+   "name": "bot_maxdebugpolys",
+   "default": "2",
+   "cheat": false
+  },
+  "bot_debug": {
+   "name": "bot_debug",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_developer": {
+   "name": "bot_developer",
+   "default": "0",
+   "cheat": false
+  },
+  "bot_enable": {
+   "name": "bot_enable",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_flatline": {
+   "name": "sv_flatline",
+   "default": "QuakeArena-1",
+   "cheat": false
+  },
+  "sv_heartbeat": {
+   "name": "sv_heartbeat",
+   "default": "QuakeArena-1",
+   "cheat": false
+  },
+  "sv_banFile": {
+   "name": "sv_banFile",
+   "default": "serverbans.dat",
+   "cheat": false
+  },
+  "sv_public": {
+   "name": "sv_public",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_lanForceRate": {
+   "name": "sv_lanForceRate",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_mapChecksum": {
+   "name": "sv_mapChecksum",
+   "default": "-811242028",
+   "cheat": false
+  },
+  "sv_killserver": {
+   "name": "sv_killserver",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_padPackets": {
+   "name": "sv_padPackets",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_showloss": {
+   "name": "sv_showloss",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_reconnectlimit": {
+   "name": "sv_reconnectlimit",
+   "default": "3",
+   "cheat": false
+  },
+  "sv_master5": {
+   "name": "sv_master5",
+   "default": "",
+   "cheat": false
+  },
+  "sv_master4": {
+   "name": "sv_master4",
+   "default": "",
+   "cheat": false
+  },
+  "sv_master3": {
+   "name": "sv_master3",
+   "default": "",
+   "cheat": false
+  },
+  "sv_master2": {
+   "name": "sv_master2",
+   "default": "",
+   "cheat": false
+  },
+  "sv_master1": {
+   "name": "sv_master1",
+   "default": "dpmaster.deathmask.net",
+   "cheat": false
+  },
+  "sv_dlURL": {
+   "name": "sv_dlURL",
+   "default": "",
+   "cheat": false
+  },
+  "sv_allowDownload": {
+   "name": "sv_allowDownload",
+   "default": "0",
+   "cheat": false
+  },
+  "nextmap": {
+   "name": "nextmap",
+   "default": "map_restart 0",
+   "cheat": false
+  },
+  "sv_zombietime": {
+   "name": "sv_zombietime",
+   "default": "2",
+   "cheat": false
+  },
+  "sv_timeout": {
+   "name": "sv_timeout",
+   "default": "200",
+   "cheat": false
+  },
+  "sv_fps": {
+   "name": "sv_fps",
+   "default": "20",
+   "cheat": false
+  },
+  "sv_privatePassword": {
+   "name": "sv_privatePassword",
+   "default": "",
+   "cheat": false
+  },
+  "rconPassword": {
+   "name": "rconPassword",
+   "default": "",
+   "cheat": false
+  },
+  "sv_referencedPakNames": {
+   "name": "sv_referencedPakNames",
+   "default": "baseoa/pak6-patch088 baseoa/pak6-patch085 baseoa/pak6-misc",
+   "cheat": false
+  },
+  "sv_referencedPaks": {
+   "name": "sv_referencedPaks",
+   "default": "-693262601 -633993734 1197836179 ",
+   "cheat": false
+  },
+  "sv_pakNames": {
+   "name": "sv_pakNames",
+   "default": "pak6-patch088 pak6-patch085 pak6-misc pak5-TA pak4-textures pak2-players pak2-players-mature pak1-maps pak0",
+   "cheat": false
+  },
+  "sv_paks": {
+   "name": "sv_paks",
+   "default": "-693262601 -633993734 1197836179 553326033 1886599373 1807528105 267250180 1809027058 -1059476049 ",
+   "cheat": false
+  },
+  "sv_voip": {
+   "name": "sv_voip",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_pure": {
+   "name": "sv_pure",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_serverid": {
+   "name": "sv_serverid",
+   "default": "5566",
+   "cheat": false
+  },
+  "sv_floodProtect": {
+   "name": "sv_floodProtect",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_maxPing": {
+   "name": "sv_maxPing",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_minPing": {
+   "name": "sv_minPing",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_maxRate": {
+   "name": "sv_maxRate",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_minRate": {
+   "name": "sv_minRate",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_maxclients": {
+   "name": "sv_maxclients",
+   "default": "8",
+   "cheat": false
+  },
+  "sv_hostname": {
+   "name": "sv_hostname",
+   "default": "noname",
+   "cheat": false
+  },
+  "sv_privateClients": {
+   "name": "sv_privateClients",
+   "default": "0",
+   "cheat": false
+  },
+  "mapname": {
+   "name": "mapname",
+   "default": "oasago2",
+   "cheat": false
+  },
+  "sv_keywords": {
+   "name": "sv_keywords",
+   "default": "",
+   "cheat": false
+  },
+  "sv_dorestart": {
+   "name": "sv_dorestart",
+   "default": "0",
+   "cheat": false
+  },
+  "g_gametype": {
+   "name": "g_gametype",
+   "default": "0",
+   "cheat": false
+  },
+  "timelimit": {
+   "name": "timelimit",
+   "default": "0",
+   "cheat": false
+  },
+  "fraglimit": {
+   "name": "fraglimit",
+   "default": "20",
+   "cheat": false
+  },
+  "dmflags": {
+   "name": "dmflags",
+   "default": "0",
+   "cheat": false
+  },
+  "vm_ui": {
+   "name": "vm_ui",
+   "default": "2",
+   "cheat": false
+  },
+  "vm_game": {
+   "name": "vm_game",
+   "default": "2",
+   "cheat": false
+  },
+  "vm_cgame": {
+   "name": "vm_cgame",
+   "default": "2",
+   "cheat": false
+  },
+  "net_qport": {
+   "name": "net_qport",
+   "default": "14610",
+   "cheat": false
+  },
+  "showdrop": {
+   "name": "showdrop",
+   "default": "0",
+   "cheat": false
+  },
+  "showpackets": {
+   "name": "showpackets",
+   "default": "0",
+   "cheat": false
+  },
+  "username": {
+   "name": "username",
+   "default": "braph",
+   "cheat": false
+  },
+  "arch": {
+   "name": "arch",
+   "default": "linux x86_64",
+   "cheat": false
+  },
+  "protocol": {
+   "name": "protocol",
+   "default": "71",
+   "cheat": false
+  },
+  "version": {
+   "name": "version",
+   "default": "ioq3+oa 1.36_SVN1910M linux-x86_64 Dec 25 2011",
+   "cheat": false
+  },
+  "com_introplayed": {
+   "name": "com_introplayed",
+   "default": "0",
+   "cheat": false
+  },
+  "com_busyWait": {
+   "name": "com_busyWait",
+   "default": "0",
+   "cheat": false
+  },
+  "com_abnormalExit": {
+   "name": "com_abnormalExit",
+   "default": "0",
+   "cheat": false
+  },
+  "com_maxfpsMinimized": {
+   "name": "com_maxfpsMinimized",
+   "default": "0",
+   "cheat": false
+  },
+  "com_minimized": {
+   "name": "com_minimized",
+   "default": "0",
+   "cheat": false
+  },
+  "com_maxfpsUnfocused": {
+   "name": "com_maxfpsUnfocused",
+   "default": "0",
+   "cheat": false
+  },
+  "com_unfocused": {
+   "name": "com_unfocused",
+   "default": "0",
+   "cheat": false
+  },
+  "com_ansiColor": {
+   "name": "com_ansiColor",
+   "default": "0",
+   "cheat": false
+  },
+  "com_buildScript": {
+   "name": "com_buildScript",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_running": {
+   "name": "cl_running",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_running": {
+   "name": "sv_running",
+   "default": "1",
+   "cheat": false
+  },
+  "sv_packetdelay": {
+   "name": "sv_packetdelay",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_packetdelay": {
+   "name": "cl_packetdelay",
+   "default": "0",
+   "cheat": false
+  },
+  "sv_paused": {
+   "name": "sv_paused",
+   "default": "0",
+   "cheat": false
+  },
+  "cl_paused": {
+   "name": "cl_paused",
+   "default": "0",
+   "cheat": false
+  },
+  "com_cameraMode": {
+   "name": "com_cameraMode",
+   "default": "0",
+   "cheat": false
+  },
+  "timedemo": {
+   "name": "timedemo",
+   "default": "0",
+   "cheat": false
+  },
+  "com_speeds": {
+   "name": "com_speeds",
+   "default": "0",
+   "cheat": false
+  },
+  "com_showtrace": {
+   "name": "com_showtrace",
+   "default": "0",
+   "cheat": false
+  },
+  "fixedtime": {
+   "name": "fixedtime",
+   "default": "0",
+   "cheat": false
+  },
+  "timescale": {
+   "name": "timescale",
+   "default": "1",
+   "cheat": false
+  },
+  "logfile": {
+   "name": "logfile",
+   "default": "0",
+   "cheat": false
+  },
+  "com_blood": {
+   "name": "com_blood",
+   "default": "1",
+   "cheat": false
+  },
+  "com_maxfps": {
+   "name": "com_maxfps",
+   "default": "85",
+   "cheat": false
+  },
+  "com_altivec": {
+   "name": "com_altivec",
+   "default": "0",
+   "cheat": false
+  },
+  "com_hunkMegs": {
+   "name": "com_hunkMegs",
+   "default": "128",
+   "cheat": false
+  },
+  "dedicated": {
+   "name": "dedicated",
+   "default": "0",
+   "cheat": false
+  },
+  "r_intensity": {
+   "name": "r_intensity",
+   "default": "1",
+   "cheat": false
+  },
+  "r_vertexLight": {
+   "name": "r_vertexLight",
+   "default": "0",
+   "cheat": false
+  },
+  "journal": {
+   "name": "journal",
+   "default": "0",
+   "cheat": false
+  },
+  "fs_game": {
+   "name": "fs_game",
+   "default": "",
+   "cheat": false
+  },
+  "fs_homepath": {
+   "name": "fs_homepath",
+   "default": "/home/braph//.openarena",
+   "cheat": false
+  },
+  "fs_basegame": {
+   "name": "fs_basegame",
+   "default": "",
+   "cheat": false
+  },
+  "fs_basepath": {
+   "name": "fs_basepath",
+   "default": "/opt/openarena",
+   "cheat": false
+  },
+  "fs_debug": {
+   "name": "fs_debug",
+   "default": "0",
+   "cheat": false
+  },
+  "com_homepath": {
+   "name": "com_homepath",
+   "default": "",
+   "cheat": false
+  },
+  "com_basegame": {
+   "name": "com_basegame",
+   "default": "baseoa",
+   "cheat": false
+  },
+  "com_standalone": {
+   "name": "com_standalone",
+   "default": "0",
+   "cheat": false
+  },
+  "developer": {
+   "name": "developer",
+   "default": "0",
+   "cheat": false
+  },
+  "com_zoneMegs": {
+   "name": "com_zoneMegs",
+   "default": "24",
+   "cheat": false
+  },
+  "sv_cheats": {
+   "name": "sv_cheats",
+   "default": "1",
+   "cheat": false
+  }
+ },
+ "commands": {}
+}

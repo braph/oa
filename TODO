@@ -1,0 +1,22 @@
+widgets/variablesview.py:
+  - Make items in list widget multi-selectable (for deletion)
+  - Move/Copy variables from one file to another
+  - Button for adding a new variable
+  - Right-click -> Contextmenu -> 'edit in lineeditor'
+
+oaconf.py:
+  - Make a widget for displaying a catalog of available variables
+
+widgets/texteditcolored.py:
+  - Show Carets Option
+
+widgets/sourceview.py:
+  - ...
+
+q3/q3config.py:
+  - More testing
+  - Fix the *View-Classes, add append(), insert() etc...
+  - Maybe use the Command-Pattern for doing redo/undo
+
+config_data:
+  - ...

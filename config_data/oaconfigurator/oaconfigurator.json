@@ -1,0 +1,1912 @@
+{
+ "label": "Openarena Configurator",
+ "variables": {
+  "name": {
+   "name": "name",
+   "alias": "player_Name",
+   "description": "Set the Player Name"
+  },
+  "headmodel": {
+   "name": "headmodel",
+   "alias": "player_Model Head",
+   "description": "Set the head of the player model",
+   "default": "sarge"
+  },
+  "model": {
+   "name": "model",
+   "alias": "player_Model",
+   "description": "Set the body of the player model",
+   "default": "sarge"
+  },
+  "team_headmodel": {
+   "name": "team_headmodel",
+   "alias": "player_Team Model Head"
+  },
+  "team_model": {
+   "name": "team_model",
+   "alias": "player_Team Model"
+  },
+  "sex": {
+   "name": "sex",
+   "alias": "player_Sex",
+   "description": "Set the player's sex",
+   "default": "male"
+  },
+  "handicap": {
+   "name": "handicap",
+   "alias": "player_Handicap",
+   "description": "Set handicap",
+   "type": "int",
+   "default": "100"
+  },
+  "color1": {
+   "name": "color1",
+   "alias": "player_Railgun Color 1",
+   "description": "Set color 1 for railgun beam",
+   "type": "int"
+  },
+  "color2": {
+   "name": "color2",
+   "alias": "player_Railgun Color 2",
+   "description": "Set color 2 for railgun beam",
+   "type": "int"
+  },
+  "server1": {
+   "name": "server1",
+   "alias": "Favourite Server #01",
+   "description": "Set favourite server #01"
+  },
+  "server2": {
+   "name": "server2",
+   "alias": "Favourite Server #02",
+   "description": "Set favourite server #02"
+  },
+  "server3": {
+   "name": "server3",
+   "alias": "Favourite Server #03",
+   "description": "Set favourite server #03"
+  },
+  "server4": {
+   "name": "server4",
+   "alias": "Favourite Server #04",
+   "description": "Set favourite server #04"
+  },
+  "server5": {
+   "name": "server5",
+   "alias": "Favourite Server #05",
+   "description": "Set favourite server #05"
+  },
+  "server6": {
+   "name": "server6",
+   "alias": "Favourite Server #06",
+   "description": "Set favourite server #06"
+  },
+  "server7": {
+   "name": "server7",
+   "alias": "Favourite Server #07",
+   "description": "Set favourite server #07"
+  },
+  "server8": {
+   "name": "server8",
+   "alias": "Favourite Server #08",
+   "description": "Set favourite server #08"
+  },
+  "server9": {
+   "name": "server9",
+   "alias": "Favourite Server #09",
+   "description": "Set favourite server #09"
+  },
+  "server10": {
+   "name": "server10",
+   "alias": "Favourite Server #10",
+   "description": "Set favourite server #10"
+  },
+  "server11": {
+   "name": "server11",
+   "alias": "Favourite Server #11",
+   "description": "Set favourite server #11"
+  },
+  "server12": {
+   "name": "server12",
+   "alias": "Favourite Server #12",
+   "description": "Set favourite server #12"
+  },
+  "server13": {
+   "name": "server13",
+   "alias": "Favourite Server #13",
+   "description": "Set favourite server #13"
+  },
+  "server14": {
+   "name": "server14",
+   "alias": "Favourite Server #14",
+   "description": "Set favourite server #14"
+  },
+  "server15": {
+   "name": "server15",
+   "alias": "Favourite Server #15",
+   "description": "Set favourite server #15"
+  },
+  "server16": {
+   "name": "server16",
+   "alias": "Favourite Server #16",
+   "description": "Set favourite server #16"
+  },
+  "cg_crosshairsize": {
+   "name": "cg_crosshairSize",
+   "alias": "cg_Crosshair Size",
+   "description": "Set the size of the crosshair"
+  },
+  "cg_crosshairhealth": {
+   "name": "cg_crosshairHealth",
+   "alias": "cg_Crosshair indicates Health",
+   "description": "Color the crosshair based on your health"
+  },
+  "cg_crosshairpulse": {
+   "name": "cg_crosshairPulse",
+   "alias": "cg_Crosshair Pulse",
+   "description": "Resize the crosshair when picking up items"
+  },
+  "cg_crosshairx": {
+   "name": "cg_crosshairX",
+   "alias": "cg_Crosshair X",
+   "description": "Adjust chrosshair X position"
+  },
+  "cg_crosshairy": {
+   "name": "cg_crosshairY",
+   "alias": "cg_Crosshair Y",
+   "description": "Adjust chrosshair Y position"
+  },
+  "cg_crosshaircolorgreen": {
+   "name": "cg_crosshairColorGreen",
+   "alias": "cg_Crosshair green",
+   "description": "Set the amount of green in chrosshair"
+  },
+  "cg_crosshaircolorblue": {
+   "name": "cg_crosshairColorBlue",
+   "alias": "cg_Crosshair blue",
+   "description": "Set the amount of blue in chrosshair"
+  },
+  "cg_crosshaircolorred": {
+   "name": "cg_crosshairColorRed",
+   "alias": "cg_Crosshair red",
+   "description": "Set the amount of red in chrosshair"
+  },
+  "cg_differentcrosshairs": {
+   "name": "cg_differentCrosshairs",
+   "alias": "cg_Weapon based Crosshairs",
+   "description": "Use different chrosshairs based on weapon"
+  },
+  "cg_drawcrosshair": {
+   "name": "cg_drawCrosshair",
+   "alias": "cg_Crosshair Shape",
+   "description": "Sets the shape of the crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch1": {
+   "name": "cg_ch1",
+   "alias": "cg_Crosshair Shape (Gauntlet)",
+   "description": "Set the Crosshair Shape for Gauntlet",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch1size": {
+   "name": "cg_ch1size",
+   "alias": "cg_Crosshair Size (Gauntlet)",
+   "description": "Set Crosshair Size for Gauntlet",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch2": {
+   "name": "cg_ch2",
+   "alias": "cg_Crosshair Shape (Machine Gun)",
+   "description": "Set the Crosshair Shape for Machine Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch2size": {
+   "name": "cg_ch2size",
+   "alias": "cg_Crosshair Size (Machine Gun)",
+   "description": "Set Crosshair Size for Machine Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch3": {
+   "name": "cg_ch3",
+   "alias": "cg_Crosshair Shape (Shotgun)",
+   "description": "Set the Crosshair Shape for Shotgun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch3size": {
+   "name": "cg_ch3size",
+   "alias": "cg_Crosshair Size (Shotgun)",
+   "description": "Set Crosshair Size for Shotgun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch4": {
+   "name": "cg_ch4",
+   "alias": "cg_Crosshair Shape (Grenade Laucher)",
+   "description": "Set the Crosshair Shape for Grenade Laucher",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch4size": {
+   "name": "cg_ch4size",
+   "alias": "cg_Crosshair Size (Grenade Laucher)",
+   "description": "Set Crosshair Size for Grenade Laucher",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch5": {
+   "name": "cg_ch5",
+   "alias": "cg_Crosshair Shape (Rocket Launcher)",
+   "description": "Set the Crosshair Shape for Rocket Launcher",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch5size": {
+   "name": "cg_ch5size",
+   "alias": "cg_Crosshair Size (Rocket Launcher)",
+   "description": "Set Crosshair Size for Rocket Launcher",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch6": {
+   "name": "cg_ch6",
+   "alias": "cg_Crosshair Shape (Lightning Gun)",
+   "description": "Set the Crosshair Shape for Lightning Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch6size": {
+   "name": "cg_ch6size",
+   "alias": "cg_Crosshair Size (Lightning Gun)",
+   "description": "Set Crosshair Size for Lightning Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch7": {
+   "name": "cg_ch7",
+   "alias": "cg_Crosshair Shape (Rail Gun)",
+   "description": "Set the Crosshair Shape for Rail Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch7size": {
+   "name": "cg_ch7size",
+   "alias": "cg_Crosshair Size (Rail Gun)",
+   "description": "Set Crosshair Size for Rail Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch8": {
+   "name": "cg_ch8",
+   "alias": "cg_Crosshair Shape (Plasma Gun)",
+   "description": "Set the Crosshair Shape for Plasma Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch8size": {
+   "name": "cg_ch8size",
+   "alias": "cg_Crosshair Size (Plasma Gun)",
+   "description": "Set Crosshair Size for Plasma Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch9": {
+   "name": "cg_ch9",
+   "alias": "cg_Crosshair Shape (BFG10K)",
+   "description": "Set the Crosshair Shape for BFG10K",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch9size": {
+   "name": "cg_ch9size",
+   "alias": "cg_Crosshair Size (BFG10K)",
+   "description": "Set Crosshair Size for BFG10K",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch10": {
+   "name": "cg_ch10",
+   "alias": "cg_Crosshair Shape (Grappling Hook)",
+   "description": "Set the Crosshair Shape for Grappling Hook",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch10size": {
+   "name": "cg_ch10size",
+   "alias": "cg_Crosshair Size (Grappling Hook)",
+   "description": "Set Crosshair Size for Grappling Hook",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch11": {
+   "name": "cg_ch11",
+   "alias": "cg_Crosshair Shape (Nail Gun)",
+   "description": "Set the Crosshair Shape for Nail Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch11size": {
+   "name": "cg_ch11size",
+   "alias": "cg_Crosshair Size (Nail Gun)",
+   "description": "Set Crosshair Size for Nail Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch12": {
+   "name": "cg_ch12",
+   "alias": "cg_Crosshair Shape (Prox mine Launcher)",
+   "description": "Set the Crosshair Shape for Prox mine Launcher",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch12size": {
+   "name": "cg_ch12size",
+   "alias": "cg_Crosshair Size (Prox mine Launcher)",
+   "description": "Set Crosshair Size for Prox mine Launcher",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_ch13": {
+   "name": "cg_ch13",
+   "alias": "cg_Crosshair Shape (Chain Gun)",
+   "description": "Set the Crosshair Shape for Chain Gun",
+   "type": "int",
+   "default": "1",
+   "representation": "crosshair",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "No crosshair",
+     "1": "Circle and point \u00ab(\u00b7)\u00bb",
+     "2": "Circle (filled) and point \u00ab(\u00b7)\u00bb",
+     "3": "Cross \u00ab+\u00bb",
+     "4": "Point \u00ab\u00b7\u00bb",
+     "5": "Point \u00ab\u00b7\u00bb",
+     "6": "Wide cross \u00ab-+\u2013\u00bb",
+     "7": "Wide cross \u00ab-+\u2013\u00bb",
+     "8": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb",
+     "9": "Wide cross with a hole \u00ab\u2013+\u2013\u00bb"
+    }
+   }
+  },
+  "cg_ch13size": {
+   "name": "cg_ch13size",
+   "alias": "cg_Crosshair Size (Chain Gun)",
+   "description": "Set Crosshair Size for Chain Gun",
+   "type": "float",
+   "default": "24"
+  },
+  "cg_drawcrosshairnames": {
+   "name": "cg_drawCrosshairNames",
+   "alias": "cg_Identify target",
+   "description": "Show the name of the player you are aiming at. (\"Identify target\" from \"game options\" menu)",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_shadows": {
+   "name": "cg_shadows",
+   "alias": "cg_Draw_Shadows",
+   "description": "\nDetermines how the shadows of the characters are drawn. The standard shadow is a sort of disc under the character, but the\nengine is capable to draw more complex shadows (known as \"detailed shadows\", \"stencil shadows\" or \"volumetric shadows\": they reproduce the 3D model and are\nprojected to the opposite side from the light source), although with some glitches (sometimes you can see such shadows go through the walls). Since OpenArena 0.8.5, the detailed shadows have been disabled almost completely, and they are available in Single Player Deathmatch (g_gametype 2) mode only; still available in all modes in old mods. Moreover, detailed shadows are not shown under character models that contain more than a certain number of polygons.",
+   "type": "int",
+   "default": "1",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "(Off) No shadows under yourself, under the other players and the items.",
+     "1": "(Blob) Simple semi-transparent \"disc\" shadow under yourself and under the other players; no shadow under items. It is the default value.",
+     "2": "(Stencil) Semi-transparent grey detailed shadow under the other players and under items (such as weapons, ammo boxes, health, etc.); no shadow under yourself, unless you enable cg_thirdperson. It needs r_stencilbits <> 0 (usually set to 8 -default-, 24 or 32). Disabled in OpenArena 0.8.5+, except when playing in Single Player Deathmatch mode.",
+     "3": "(Vertex) Non-transparent uniform black detailed shadow under yourself and under the other players; no shadow under items. Disabled in OpenArena 0.8.5+, except when playing in Single Player Deathmatch mode."
+    }
+   }
+  },
+  "cg_drawdamage": {
+   "name": "cg_drawDamage",
+   "alias": "cg_Draw Shot Damage",
+   "description": "Draw the damage of a shot"
+  },
+  "cg_drawgun": {
+   "name": "cg_drawGun",
+   "alias": "cg_Draw Gun",
+   "description": "Where to draw the weapon",
+   "type": "int",
+   "default": "1",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "Hide",
+     "1": "Right",
+     "2": "Left",
+     "3": "Center"
+    }
+   }
+  },
+  "cg_drawteamoverlay": {
+   "name": "cg_drawTeamOverlay",
+   "alias": "cg_Draw Team Overlay",
+   "description": "Draw the Team Overlay"
+  },
+  "cg_drawfriend": {
+   "name": "cg_drawFriend",
+   "alias": "cg_Draw Friend",
+   "description": "Draw friend"
+  },
+  "cg_drawspeed": {
+   "name": "cg_drawSpeed",
+   "alias": "cg_Draw Speed",
+   "description": "Draw the speed-o-meter",
+   "type": "bool",
+   "default": "0"
+  },
+  "cg_draw2d": {
+   "name": "cg_draw2D",
+   "alias": "cg_Draw HUD",
+   "description": "Draw the HUD",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_drawstatus": {
+   "name": "cg_drawStatus",
+   "alias": "cg_Draw Status",
+   "description": "Draw ammo, health and armor status",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_drawtimer": {
+   "name": "cg_drawTimer",
+   "alias": "cg_Draw Timer",
+   "description": "Draw time elapsed since the beginning of the match",
+   "type": "bool",
+   "default": "0"
+  },
+  "cg_drawfps": {
+   "name": "cg_drawFPS",
+   "alias": "cg_Draw FPS",
+   "description": "Draw FPS",
+   "type": "bool",
+   "default": "0"
+  },
+  "cg_drawsnapshot": {
+   "name": "cg_drawSnapshot",
+   "alias": "cg_Draw Snapshot",
+   "type": "bool",
+   "default": "0"
+  },
+  "cg_draw3dicons": {
+   "name": "cg_draw3dIcons",
+   "alias": "cg_Draw 3D icons",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_drawicons": {
+   "name": "cg_drawIcons",
+   "alias": "cg_Draw Icons",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_weaponbarstyle": {
+   "name": "cg_weaponBarStyle",
+   "alias": "cg_Weapon Bar Style",
+   "description": "Style of Weapon Bar"
+  },
+  "cg_alwaysweaponbar": {
+   "name": "cg_alwaysWeaponBar",
+   "alias": "cg_Always Show Weapon Bar",
+   "description": "Always Show Weapon Bar"
+  },
+  "cg_drawammowarning": {
+   "name": "cg_drawAmmoWarning",
+   "alias": "cg_Draw Ammo Warning",
+   "description": "Draw the \"low ammo warning\" and \"out of ammo\" on-screen messages when you have few or no ammo left.",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_drawattacker": {
+   "name": "cg_drawAttacker",
+   "alias": "cg_Draw Attacker's Name",
+   "description": "Show the head and the name of the last player who hit you near to the upper right corner of the screen. ",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_drawrewards": {
+   "name": "cg_drawRewards",
+   "alias": "cg_Draw Reward Medals",
+   "description": "Show the \"Medals\" over the head of the players. (Excellent, Impressive, etc.)",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_marks": {
+   "name": "cg_marks",
+   "alias": "cg_Show Marks on walls",
+   "description": "Show damaged surfaces on walls hit by shots.",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_brasstime": {
+   "name": "cg_brassTime",
+   "alias": "cg_Ejecting Brass Time",
+   "description": "How long you will see the cartridge cases ejected by some weapons, before they disappear.",
+   "type": "int",
+   "default": "2500"
+  },
+  "net_socksenabled": {
+   "name": "net_socksEnabled",
+   "alias": "net_SOCKS Proxy Enabled",
+   "description": "Use a SOCKS proxy",
+   "type": "bool",
+   "default": "0"
+  },
+  "net_sockspassword": {
+   "name": "net_socksPassword",
+   "alias": "net_SOCKS Password",
+   "description": "Set password for SOCKS proxy"
+  },
+  "net_socksusername": {
+   "name": "net_socksUsername",
+   "alias": "net_SOCKS Username",
+   "description": "Set username for SOCKS proxy"
+  },
+  "net_socksport": {
+   "name": "net_socksPort",
+   "alias": "net_SOCKS Port",
+   "description": "Set the port number for SOCKS proxy",
+   "type": "int",
+   "default": "1080"
+  },
+  "net_socksserver": {
+   "name": "net_socksServer",
+   "alias": "net_SOCKS Host",
+   "description": "Set the SOCKS proxy host"
+  },
+  "rate": {
+   "name": "rate",
+   "alias": "net_Rate (kbit/s)"
+  },
+  "fm_chatbeep": {
+   "name": "fm_chatbeep",
+   "alias": "fm_Chat Beep",
+   "description": "Enable Beep on Chat (FailMod)"
+  },
+  "fm_teamchatbeep": {
+   "name": "fm_teamchatbeep",
+   "alias": "fm_Team Chat Beep",
+   "description": "Enable Beep on Team Chat (FailMod)"
+  },
+  "fm_votebeep": {
+   "name": "fm_votebeep",
+   "alias": "fm_Vote Beep",
+   "description": "Enable Beep on Vote (FailMod)"
+  },
+  "cg_drawready": {
+   "name": "cg_drawReady",
+   "alias": "fm_Draw Ready",
+   "description": "If you are bothered with that text occupying the whole screen. -1 disables completely other numbers do something"
+  },
+  "cl_consoleheight": {
+   "name": "cl_consoleHeight",
+   "alias": "cl_Console Height",
+   "description": "Set the percentual height of the console",
+   "type": "float",
+   "default": "0.5"
+  },
+  "cl_consolecoloralpha": {
+   "name": "cl_consoleColorAlpha",
+   "alias": "cl_Console color alpha",
+   "description": "Set the console color alpha",
+   "type": "float",
+   "default": "0.8"
+  },
+  "cl_consolecolorblue": {
+   "name": "cl_consoleColorBlue",
+   "alias": "cl_Console color blue",
+   "description": "Set the amount of blue color",
+   "type": "float",
+   "default": "0"
+  },
+  "cl_consolecolorgreen": {
+   "name": "cl_consoleColorGreen",
+   "alias": "cl_Console color green",
+   "description": "Set the amount of green color",
+   "type": "float",
+   "default": "0"
+  },
+  "cl_consolecolorred": {
+   "name": "cl_consoleColorRed",
+   "alias": "cl_Console color red",
+   "description": "Set the amount of red color",
+   "type": "float",
+   "default": "1"
+  },
+  "cl_consoletype": {
+   "name": "cl_consoleType",
+   "alias": "cl_Console type",
+   "description": "Set the console type TODO",
+   "type": "int",
+   "default": "0"
+  },
+  "cl_consolekeys": {
+   "name": "cl_consoleKeys",
+   "alias": "cl_Console keys",
+   "description": "Set which keys activate the console",
+   "default": "~ ` 0x7e 0x60"
+  },
+  "cl_run": {
+   "name": "cl_run",
+   "alias": "cl_Always_Run",
+   "description": "\"Always Run\" Option from Game Menu"
+  },
+  "cl_allowdownload": {
+   "name": "cl_allowDownload",
+   "alias": "cl_Automatic Download",
+   "description": "Automatically download Maps and Mods from the Server"
+  },
+  "cg_viewsize": {
+   "name": "cg_viewsize",
+   "description": "Draw the game world in a smaller window. The HUD and chat messages will be drawn outside of that section."
+  },
+  "cg_simpleitems": {
+   "name": "cg_simpleItems",
+   "alias": "cg_Simple Items",
+   "description": "Draw 2D items",
+   "type": "bool",
+   "default": "0"
+  },
+  "cg_lagometer": {
+   "name": "cg_lagometer",
+   "alias": "cg_Draw Lagometer",
+   "description": "Draw the lagometer",
+   "type": "bool"
+  },
+  "cg_autoswitch": {
+   "name": "cg_autoswitch",
+   "alias": "cg_Weapon Autoswitch",
+   "description": "What to do when picking up a weapon",
+   "type": "int",
+   "default": "1",
+   "select": {
+    "type": "values",
+    "values": {
+     "0": "OFF: Disable automatically switching weapons",
+     "1": "ALWAYS: Always choose the weapon you just picked up (even if you already had it)",
+     "2": "NEW: Automatically selects the weapon you just picked up, but only if you didn't have it before.",
+     "3": "BETTER: Automatically selects the the weapon you just picked up, but only if it is \"better\" than the one you are currently using (even if you already had it). The switch is triggered only if both currently used and picked up weapon are listed in the \"better weapons\" list variable.",
+     "4": "NEW&BETTER: Automatically selects the weapon you just picked up, but only if it is \"better\" than the one you are currently using and (at the same time) you didn't have it before. The switch is triggered only if both currently used and picked up weapon are listed in the \"better weapons\" list variable"
+    }
+   }
+  },
+  "cg_weaponorder": {
+   "name": "cg_weaponOrder",
+   "alias": "cg_Weapon Order",
+   "description": "Set weapon order",
+   "representation": "weapon"
+  },
+  "cg_teamchatbeep": {
+   "name": "cg_teamChatBeep",
+   "alias": "cg_Team Chat Beep",
+   "description": "Enable Beep on Team Chat"
+  },
+  "cg_chatbeep": {
+   "name": "cg_chatBeep",
+   "alias": "cg_Chat Beep",
+   "description": "Enable Beep on Chat"
+  },
+  "cg_teamchattime": {
+   "name": "cg_teamChatTime",
+   "alias": "cg_Team Chat Time",
+   "description": "Set the Team Chat Time in Miliseconds"
+  },
+  "cg_teamchatheight": {
+   "name": "cg_teamChatHeight",
+   "alias": "cg_Team Chat Height",
+   "description": "Set the Team Chat Height"
+  },
+  "cg_teamchatsonly": {
+   "name": "cg_teamChatsOnly",
+   "alias": "cg_Team Chats only",
+   "description": "Only display Team Chats"
+  },
+  "cg_zoomfov": {
+   "name": "cg_zoomfov",
+   "alias": "cg_Zoom Field of View",
+   "description": "Set the Field of View when zooming",
+   "type": "float",
+   "default": "22.5"
+  },
+  "cg_fov": {
+   "name": "cg_fov",
+   "alias": "cg_Field of View",
+   "description": "Set the Field of View",
+   "type": "float",
+   "default": "90"
+  },
+  "cg_zoomtime": {
+   "name": "cg_zoomTime",
+   "alias": "cg_Zoom time",
+   "description": "Set the time for zoom",
+   "type": "int",
+   "default": "0"
+  },
+  "cg_footsteps": {
+   "name": "cg_footsteps",
+   "alias": "cg_Footsteps",
+   "description": "Enable footsteps",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_gibs": {
+   "name": "cg_gibs",
+   "alias": "cg_Gibs",
+   "description": "Set to 0 if you want to see less gibs than usual when someone will be \"gibbed\"",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_bobup": {
+   "name": "cg_bobup",
+   "alias": "cg_Bob Up"
+  },
+  "cg_bobpitch": {
+   "name": "cg_bobpitch",
+   "alias": "cg_Bob Pitch"
+  },
+  "cg_bobroll": {
+   "name": "cg_bobroll",
+   "alias": "cg_Bob Roll"
+  },
+  "cg_runpitch": {
+   "name": "cg_runpitch",
+   "alias": "cg_Run Pitch"
+  },
+  "cg_runroll": {
+   "name": "cg_runroll",
+   "alias": "cg_Run Roll"
+  },
+  "cg_oldrail": {
+   "name": "cg_oldRail",
+   "alias": "cg_Old Rail",
+   "description": "If enabled, external \"spiral\" trace is omitted from railgun beam. The spiral is nice at look, but may be distractive",
+   "type": "int"
+  },
+  "cg_oldrocket": {
+   "name": "cg_oldRocket",
+   "alias": "cg_Old Rocket",
+   "description": "Use old rocket style",
+   "type": "bool",
+   "default": "1"
+  },
+  "cg_oldplasma": {
+   "name": "cg_oldPlasma",
+   "alias": "cg_Old Plasma",
+   "description": "If disabled, plasma balls leave additional particle effects behind them (nice at view, but nothing impressive and they could distract from gameplay). At the time of this writing, with OA 0.8.8, if you have cg_leiEnhancement 1, then cg_oldplasma value is ignored, and you see as with cg_oldplasma 1.",
+   "type": "bool",
+   "default": "1"
+  },
+  "com_introplayed": {
+   "name": "com_introplayed"
+  },
+  "com_busywait": {
+   "name": "com_busyWait"
+  },
+  "com_maxfps": {
+   "name": "com_maxfps"
+  },
+  "com_maxfpsminimized": {
+   "name": "com_maxfpsMinimized"
+  },
+  "com_maxfpsunfocused": {
+   "name": "com_maxfpsUnfocused"
+  },
+  "com_ansicolor": {
+   "name": "com_ansiColor"
+  },
+  "com_altivec": {
+   "name": "com_altivec"
+  },
+  "com_hunkmegs": {
+   "name": "com_hunkMegs"
+  },
+  "com_blood": {
+   "name": "com_blood"
+  },
+  "com_zonemegs": {
+   "name": "com_zoneMegs"
+  },
+  "com_soundmegs": {
+   "name": "com_soundMegs"
+  },
+  "sv_banfile": {
+   "name": "sv_banFile"
+  },
+  "sv_lanforcerate": {
+   "name": "sv_lanForceRate"
+  },
+  "sv_master5": {
+   "name": "sv_master5"
+  },
+  "sv_master4": {
+   "name": "sv_master4"
+  },
+  "sv_master3": {
+   "name": "sv_master3"
+  },
+  "sv_master2": {
+   "name": "sv_master2"
+  },
+  "sv_master1": {
+   "name": "sv_master1"
+  },
+  "sv_dlurl": {
+   "name": "sv_dlURL"
+  },
+  "sv_floodprotect": {
+   "name": "sv_floodProtect"
+  },
+  "sv_maxping": {
+   "name": "sv_maxPing"
+  },
+  "sv_minping": {
+   "name": "sv_minPing"
+  },
+  "sv_maxrate": {
+   "name": "sv_maxRate"
+  },
+  "sv_minrate": {
+   "name": "sv_minRate"
+  },
+  "sv_hostname": {
+   "name": "sv_hostname"
+  },
+  "sv_maxclients": {
+   "name": "sv_maxclients"
+  },
+  "sv_fps": {
+   "name": "sv_fps"
+  },
+  "s_sdlmixsamps": {
+   "name": "s_sdlMixSamps"
+  },
+  "s_sdldevsamps": {
+   "name": "s_sdlDevSamps"
+  },
+  "s_sdlchannels": {
+   "name": "s_sdlChannels"
+  },
+  "s_sdlspeed": {
+   "name": "s_sdlSpeed"
+  },
+  "s_sdlbits": {
+   "name": "s_sdlBits"
+  },
+  "s_mixprestep": {
+   "name": "s_mixPreStep"
+  },
+  "s_mixahead": {
+   "name": "s_mixahead"
+  },
+  "s_khz": {
+   "name": "s_khz"
+  },
+  "s_alcapture": {
+   "name": "s_alCapture"
+  },
+  "s_ambient": {
+   "name": "s_ambient"
+  },
+  "sensitivity": {
+   "name": "sensitivity",
+   "alias": "in_Mouse Sensitivity"
+  },
+  "r_detailtextures": {
+   "name": "r_detailtextures",
+   "alias": "r_Detailed_Textures"
+  },
+  "r_ext_max_anisotropy": {
+   "name": "r_ext_max_anisotropy",
+   "alias": "r_Anisotropy_Max"
+  },
+  "r_ext_texture_filter_anisotropic": {
+   "name": "r_ext_texture_filter_anisotropic",
+   "alias": "r_Anisotropy_Enabled"
+  },
+  "r_texturebits": {
+   "name": "r_texturebits",
+   "alias": "r_Texture_Quality"
+  },
+  "r_bloom": {
+   "name": "r_bloom"
+  },
+  "r_flares": {
+   "name": "r_flares"
+  },
+  "r_fullscreen": {
+   "name": "r_fullscreen"
+  },
+  "r_drawsun": {
+   "name": "r_drawSun"
+  },
+  "r_centerwindow": {
+   "name": "r_centerWindow"
+  },
+  "r_allowresize": {
+   "name": "r_allowResize"
+  },
+  "r_bloom_sky_only": {
+   "name": "r_bloom_sky_only"
+  },
+  "r_bloom_reflection": {
+   "name": "r_bloom_reflection"
+  },
+  "r_bloom_dry": {
+   "name": "r_bloom_dry"
+  },
+  "r_bloom_cascade_dry": {
+   "name": "r_bloom_cascade_dry"
+  },
+  "r_bloom_cascade_alpha": {
+   "name": "r_bloom_cascade_alpha"
+  },
+  "r_bloom_cascade_intensity": {
+   "name": "r_bloom_cascade_intensity"
+  },
+  "r_bloom_cascade_blur": {
+   "name": "r_bloom_cascade_blur"
+  },
+  "r_bloom_cascade": {
+   "name": "r_bloom_cascade"
+  },
+  "r_bloom_fast_sample": {
+   "name": "r_bloom_fast_sample"
+  },
+  "r_bloom_sample_size": {
+   "name": "r_bloom_sample_size"
+  },
+  "r_bloom_darken": {
+   "name": "r_bloom_darken"
+  },
+  "r_bloom_intensity": {
+   "name": "r_bloom_intensity"
+  },
+  "r_bloom_diamond_size": {
+   "name": "r_bloom_diamond_size"
+  },
+  "r_bloom_alpha": {
+   "name": "r_bloom_alpha"
+  },
+  "r_lensreflectionbrightness": {
+   "name": "r_lensReflectionBrightness"
+  },
+  "r_lensreflection2": {
+   "name": "r_lensReflection2"
+  },
+  "r_lensreflection1": {
+   "name": "r_lensReflection1"
+  },
+  "r_specmode": {
+   "name": "r_specMode"
+  },
+  "r_envmode": {
+   "name": "r_envMode"
+  },
+  "r_flaresdlight": {
+   "name": "r_flaresDlight"
+  },
+  "r_screenshotjpegquality": {
+   "name": "r_screenshotJpegQuality"
+  },
+  "r_avimotionjpegquality": {
+   "name": "r_aviMotionJpegQuality"
+  },
+  "r_marksontrianglemeshes": {
+   "name": "r_marksOnTriangleMeshes"
+  },
+  "r_anaglyphmode": {
+   "name": "r_anaglyphMode"
+  },
+  "r_primitives": {
+   "name": "r_primitives"
+  },
+  "r_railsegmentlength": {
+   "name": "r_railSegmentLength"
+  },
+  "r_railcorewidth": {
+   "name": "r_railCoreWidth"
+  },
+  "r_railwidth": {
+   "name": "r_railWidth"
+  },
+  "r_faceplanecull": {
+   "name": "r_facePlaneCull"
+  },
+  "r_gamma": {
+   "name": "r_gamma"
+  },
+  "r_swapinterval": {
+   "name": "r_swapInterval"
+  },
+  "r_texturemode": {
+   "name": "r_textureMode",
+   "select": {
+    "type": "values",
+    "values": {
+     "GL_LINEAR": "GL_LINEAR",
+     "GL_NEAREST": "GL_NEAREST",
+     "GL_LINEAR_MIPMAP_LINEAR": "GL_LINEAR_MIPMAP_LINEAR",
+     "GL_LINEAR_MIPMAP_NEAREST": "GL_LINEAR_MIPMAP_NEAREST",
+     "GL_NEAREST_MIPMAP_LINEAR": "GL_NEAREST_MIPMAP_LINEAR",
+     "GL_NEAREST_MIPMAP_NEAREST": "GL_NEAREST_MIPMAP_NEAREST"
+    }
+   }
+  },
+  "r_finish": {
+   "name": "r_finish"
+  },
+  "r_dlightbacks": {
+   "name": "r_dlightBacks"
+  },
+  "r_dynamiclight": {
+   "name": "r_dynamiclight"
+  },
+  "r_fastsky": {
+   "name": "r_fastsky"
+  },
+  "r_ignoreglerrors": {
+   "name": "r_ignoreGLErrors"
+  },
+  "r_stereoseparation": {
+   "name": "r_stereoSeparation"
+  },
+  "r_zproj": {
+   "name": "r_zproj"
+  },
+  "r_lodbias": {
+   "name": "r_lodbias"
+  },
+  "r_lodcurveerror": {
+   "name": "r_lodCurveError"
+  },
+  "r_monolightmaps": {
+   "name": "r_monolightmaps"
+  },
+  "r_greyscale": {
+   "name": "r_greyscale"
+  },
+  "r_ignorefastpath": {
+   "name": "r_ignoreFastPath"
+  },
+  "r_stereoenabled": {
+   "name": "r_stereoEnabled"
+  },
+  "r_smp": {
+   "name": "r_smp"
+  },
+  "r_subdivisions": {
+   "name": "r_subdivisions"
+  },
+  "r_simplemipmaps": {
+   "name": "r_simpleMipMaps"
+  },
+  "r_custompixelaspect": {
+   "name": "r_customPixelAspect"
+  },
+  "r_customheight": {
+   "name": "r_customheight"
+  },
+  "r_customwidth": {
+   "name": "r_customwidth"
+  },
+  "r_noborder": {
+   "name": "r_noborder"
+  },
+  "r_ignorehwgamma": {
+   "name": "r_ignorehwgamma"
+  },
+  "r_overbrightbits": {
+   "name": "r_overBrightBits"
+  },
+  "r_ext_multisample": {
+   "name": "r_ext_multisample"
+  },
+  "r_depthbits": {
+   "name": "r_depthbits"
+  },
+  "r_stencilbits": {
+   "name": "r_stencilbits"
+  },
+  "r_colorbits": {
+   "name": "r_colorbits"
+  },
+  "r_roundimagesdown": {
+   "name": "r_roundImagesDown"
+  },
+  "r_ext_vertex_shader": {
+   "name": "r_ext_vertex_shader"
+  },
+  "r_postprocess": {
+   "name": "r_postprocess"
+  },
+  "r_ext_texture_env_add": {
+   "name": "r_ext_texture_env_add"
+  },
+  "r_ext_compiled_vertex_array": {
+   "name": "r_ext_compiled_vertex_array"
+  },
+  "r_ext_multitexture": {
+   "name": "r_ext_multitexture"
+  },
+  "r_ext_compressed_textures": {
+   "name": "r_ext_compressed_textures"
+  },
+  "r_allowextensions": {
+   "name": "r_allowExtensions"
+  },
+  "vm_ui": {
+   "name": "vm_ui"
+  },
+  "vm_game": {
+   "name": "vm_game"
+  },
+  "vm_cgame": {
+   "name": "vm_cgame"
+  },
+  "m_filter": {
+   "name": "m_filter"
+  },
+  "m_side": {
+   "name": "m_side"
+  },
+  "m_forward": {
+   "name": "m_forward"
+  },
+  "m_yaw": {
+   "name": "m_yaw"
+  },
+  "m_pitch": {
+   "name": "m_pitch"
+  }
+ },
+ "commands": {
+  "cmdlist": {
+   "name": "cmdlist",
+   "description": "List all available commands"
+  },
+  "cinematic": {
+   "name": "cinematic"
+  },
+  "rehashbans": {
+   "name": "rehashbans"
+  },
+  "net_restart": {
+   "name": "net_restart",
+   "description": "Restart network dependent stuff"
+  },
+  "which": {
+   "name": "which",
+   "description": "Locate the path of a file",
+   "usage": "<FILE>"
+  },
+  "s_info": {
+   "name": "s_info"
+  },
+  "s_stop": {
+   "name": "s_stop"
+  },
+  "s_list": {
+   "name": "s_list"
+  },
+  "stopmusic": {
+   "name": "stopmusic",
+   "description": "Stop playing music"
+  },
+  "music": {
+   "name": "music"
+  },
+  "play": {
+   "name": "play"
+  },
+  "gfxinfo": {
+   "name": "gfxinfo"
+  },
+  "screenshotjpeg": {
+   "name": "screenshotJPEG",
+   "description": "Save screenshot as <FILE>.jpg",
+   "usage": "<FILE>"
+  },
+  "screenshot": {
+   "name": "screenshot",
+   "description": "Save screenshot as <FILE>.tga",
+   "usage": "<FILE>"
+  },
+  "modelist": {
+   "name": "modelist",
+   "description": "List all available screen resolutions"
+  },
+  "modellist": {
+   "name": "modellist"
+  },
+  "skinlist": {
+   "name": "skinlist"
+  },
+  "shaderlist": {
+   "name": "shaderlist"
+  },
+  "imagelist": {
+   "name": "imagelist"
+  },
+  "minimize": {
+   "name": "minimize"
+  },
+  "stopvideo": {
+   "name": "stopvideo"
+  },
+  "video": {
+   "name": "video"
+  },
+  "model": {
+   "name": "model"
+  },
+  "fs_referencedlist": {
+   "name": "fs_referencedList"
+  },
+  "fs_openedlist": {
+   "name": "fs_openedList"
+  },
+  "showip": {
+   "name": "showip",
+   "description": "Show IP address"
+  },
+  "serverstatus": {
+   "name": "serverstatus"
+  },
+  "ping": {
+   "name": "ping"
+  },
+  "rcon": {
+   "name": "rcon"
+  },
+  "globalservers": {
+   "name": "globalservers"
+  },
+  "localservers": {
+   "name": "localservers"
+  },
+  "reconnect": {
+   "name": "reconnect"
+  },
+  "connect": {
+   "name": "connect"
+  },
+  "stoprecord": {
+   "name": "stoprecord"
+  },
+  "demo": {
+   "name": "demo"
+  },
+  "record": {
+   "name": "record"
+  },
+  "disconnect": {
+   "name": "disconnect"
+  },
+  "vid_restart": {
+   "name": "vid_restart",
+   "description": "Restart graphics related stuff",
+   "alias": "restart_video"
+  },
+  "snd_restart": {
+   "name": "snd_restart",
+   "description": "Restart sound related stuff",
+   "alias": "restart_sound"
+  },
+  "clientinfo": {
+   "name": "clientinfo"
+  },
+  "configstrings": {
+   "name": "configstrings"
+  },
+  "cmd": {
+   "name": "cmd"
+  },
+  "-voiprecord": {
+   "name": "-voiprecord"
+  },
+  "+voiprecord": {
+   "name": "+voiprecord"
+  },
+  "-mlook": {
+   "name": "-mlook"
+  },
+  "+mlook": {
+   "name": "+mlook"
+  },
+  "-button14": {
+   "name": "-button14"
+  },
+  "+button14": {
+   "name": "+button14"
+  },
+  "-button13": {
+   "name": "-button13"
+  },
+  "+button13": {
+   "name": "+button13"
+  },
+  "-button12": {
+   "name": "-button12"
+  },
+  "+button12": {
+   "name": "+button12"
+  },
+  "-button11": {
+   "name": "-button11"
+  },
+  "+button11": {
+   "name": "+button11"
+  },
+  "-button10": {
+   "name": "-button10"
+  },
+  "+button10": {
+   "name": "+button10"
+  },
+  "-button9": {
+   "name": "-button9"
+  },
+  "+button9": {
+   "name": "+button9"
+  },
+  "-button8": {
+   "name": "-button8"
+  },
+  "+button8": {
+   "name": "+button8"
+  },
+  "-button7": {
+   "name": "-button7"
+  },
+  "+button7": {
+   "name": "+button7"
+  },
+  "-button6": {
+   "name": "-button6"
+  },
+  "+button6": {
+   "name": "+button6"
+  },
+  "-button5": {
+   "name": "-button5"
+  },
+  "+button5": {
+   "name": "+button5"
+  },
+  "-button4": {
+   "name": "-button4"
+  },
+  "+button4": {
+   "name": "+button4"
+  },
+  "-button3": {
+   "name": "-button3"
+  },
+  "+button3": {
+   "name": "+button3"
+  },
+  "-button2": {
+   "name": "-button2"
+  },
+  "+button2": {
+   "name": "+button2"
+  },
+  "-button1": {
+   "name": "-button1"
+  },
+  "+button1": {
+   "name": "+button1"
+  },
+  "-button0": {
+   "name": "-button0"
+  },
+  "+button0": {
+   "name": "+button0"
+  },
+  "-attack": {
+   "name": "-attack"
+  },
+  "+attack": {
+   "name": "+attack"
+  },
+  "-speed": {
+   "name": "-speed",
+   "alias": "-run"
+  },
+  "+speed": {
+   "name": "+speed",
+   "alias": "+run"
+  },
+  "-moveright": {
+   "name": "-moveright"
+  },
+  "+moveright": {
+   "name": "+moveright"
+  },
+  "-moveleft": {
+   "name": "-moveleft"
+  },
+  "+moveleft": {
+   "name": "+moveleft"
+  },
+  "-strafe": {
+   "name": "-strafe"
+  },
+  "+strafe": {
+   "name": "+strafe"
+  },
+  "-lookdown": {
+   "name": "-lookdown"
+  },
+  "+lookdown": {
+   "name": "+lookdown"
+  },
+  "-lookup": {
+   "name": "-lookup"
+  },
+  "+lookup": {
+   "name": "+lookup"
+  },
+  "-back": {
+   "name": "-back"
+  },
+  "+back": {
+   "name": "+back"
+  },
+  "-forward": {
+   "name": "-forward"
+  },
+  "+forward": {
+   "name": "+forward"
+  },
+  "-right": {
+   "name": "-right"
+  },
+  "+right": {
+   "name": "+right"
+  },
+  "-left": {
+   "name": "-left"
+  },
+  "+left": {
+   "name": "+left"
+  },
+  "-movedown": {
+   "name": "-movedown",
+   "alias": "-crouch"
+  },
+  "+movedown": {
+   "name": "+movedown",
+   "alias": "+crouch"
+  },
+  "-moveup": {
+   "name": "-moveup",
+   "alias": "-jump"
+  },
+  "+moveup": {
+   "name": "+moveup",
+   "alias": "+jump"
+  },
+  "centerview": {
+   "name": "centerview"
+  },
+  "condump": {
+   "name": "condump",
+   "description": "Dump console contents to <FILE>",
+   "usage": "<FILE>"
+  },
+  "clear": {
+   "name": "clear",
+   "description": "Clear console"
+  },
+  "messagemode4": {
+   "name": "messagemode4",
+   "description": "Enter attacker chat mode",
+   "alias": "messagemode_attacker"
+  },
+  "messagemode3": {
+   "name": "messagemode3",
+   "description": "Enter target chat mode",
+   "alias": "messagemode_target"
+  },
+  "messagemode2": {
+   "name": "messagemode2",
+   "description": "Enter team chat mode",
+   "alias": "messagemode_team"
+  },
+  "messagemode": {
+   "name": "messagemode",
+   "description": "Enter global chat mode",
+   "alias": "messagemode_say"
+  },
+  "toggleconsole": {
+   "name": "toggleconsole",
+   "description": "Show/Hide the Console"
+  },
+  "flushbans": {
+   "name": "flushbans"
+  },
+  "exceptdel": {
+   "name": "exceptdel"
+  },
+  "bandel": {
+   "name": "bandel"
+  },
+  "exceptaddr": {
+   "name": "exceptaddr"
+  },
+  "banaddr": {
+   "name": "banaddr"
+  },
+  "listbans": {
+   "name": "listbans"
+  },
+  "killserver": {
+   "name": "killserver"
+  },
+  "spdevmap": {
+   "name": "spdevmap"
+  },
+  "spmap": {
+   "name": "spmap"
+  },
+  "devmap": {
+   "name": "devmap"
+  },
+  "map": {
+   "name": "map"
+  },
+  "sectorlist": {
+   "name": "sectorlist"
+  },
+  "map_restart": {
+   "name": "map_restart"
+  },
+  "dumpuser": {
+   "name": "dumpuser"
+  },
+  "systeminfo": {
+   "name": "systeminfo"
+  },
+  "serverinfo": {
+   "name": "serverinfo"
+  },
+  "status": {
+   "name": "status"
+  },
+  "clientkick": {
+   "name": "clientkick"
+  },
+  "kick": {
+   "name": "kick"
+  },
+  "heartbeat": {
+   "name": "heartbeat"
+  },
+  "vminfo": {
+   "name": "vminfo"
+  },
+  "vmprofile": {
+   "name": "vmprofile"
+  },
+  "in_restart": {
+   "name": "in_restart",
+   "description": "Restart input related stuff",
+   "alias": "restart_input"
+  },
+  "meminfo": {
+   "name": "meminfo"
+  },
+  "exec": {
+   "name": "exec",
+   "description": "Execute <FILE[.cfg]> inside config directory",
+   "usage": "<FILE[.cfg]>"
+  },
+  "set": {
+   "name": "set"
+  },
+  "seta": {
+   "name": "seta",
+   "description": "Set variable <VAR> to <VALUE> and archive it",
+   "usage": "<VAR> <VALUE>"
+  },
+  "setu": {
+   "name": "setu"
+  },
+  "sets": {
+   "name": "sets"
+  },
+  "bind": {
+   "name": "bind",
+   "description": "Bind <KEY> to <COMMAND>",
+   "usage": "<KEY> <COMMAND>"
+  },
+  "unbindall": {
+   "name": "unbindall",
+   "description": "Reset all keybindings"
+  },
+  "game_restart": {
+   "name": "game_restart"
+  },
+  "writeconfig": {
+   "name": "writeconfig",
+   "description": "Save the current configuration to disk"
+  },
+  "changevectors": {
+   "name": "changeVectors"
+  },
+  "quit": {
+   "name": "quit",
+   "description": "Quit the game"
+  },
+  "setenv": {
+   "name": "setenv"
+  },
+  "touchfile": {
+   "name": "touchFile"
+  },
+  "fdir": {
+   "name": "fdir"
+  },
+  "dir": {
+   "name": "dir"
+  },
+  "path": {
+   "name": "path"
+  },
+  "bindlist": {
+   "name": "bindlist"
+  },
+  "unbind": {
+   "name": "unbind"
+  },
+  "wait": {
+   "name": "wait"
+  },
+  "echo": {
+   "name": "echo",
+   "description": "Write <string> to console",
+   "usage": "<string>"
+  },
+  "cvar_restart": {
+   "name": "cvar_restart"
+  },
+  "cvarlist": {
+   "name": "cvarlist"
+  },
+  "unset": {
+   "name": "unset"
+  },
+  "reset": {
+   "name": "reset"
+  },
+  "toggle": {
+   "name": "toggle",
+   "description": "Toggle the value of <VAR>",
+   "usage": "<VAR> <value1>, [<value2>, <valueN>...]"
+  },
+  "print": {
+   "name": "print",
+   "description": "Print value of <VAR> to console",
+   "usage": "<VAR>"
+  },
+  "vstr": {
+   "name": "vstr",
+   "description": "Execute contents of <VAR> as a config script",
+   "usage": "<VAR>"
+  }
+ }
+}

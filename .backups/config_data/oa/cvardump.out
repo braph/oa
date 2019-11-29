@@ -1,0 +1,952 @@
+ioq3+oa 1.36_SVN1910M linux-x86_64 Dec 25 2011
+----- FS_Startup -----
+Current search path:
+/home/braph//.openarena/baseoa
+/opt/openarena/baseoa/pak6-patch088.pk3 (711 files)
+/opt/openarena/baseoa/pak6-patch085.pk3 (559 files)
+/opt/openarena/baseoa/pak6-misc.pk3 (229 files)
+/opt/openarena/baseoa/pak5-TA.pk3 (139 files)
+/opt/openarena/baseoa/pak4-textures.pk3 (1753 files)
+/opt/openarena/baseoa/pak2-players.pk3 (669 files)
+/opt/openarena/baseoa/pak2-players-mature.pk3 (231 files)
+/opt/openarena/baseoa/pak1-maps.pk3 (100 files)
+/opt/openarena/baseoa/pak0.pk3 (1042 files)
+/opt/openarena/baseoa
+
+----------------------
+5433 files in pk3 files
+execing default.cfg
+couldn't exec q3config.cfg
+couldn't exec autoexec.cfg
+Hunk_Clear: reset the hunk ok
+----- Client Initialization -----
+Couldn't read q3history.
+----- Initializing Renderer ----
+-------------------------------
+QKEY building random string
+QKEY generated
+----- Client Initialization Complete -----
+----- R_Init -----
+SDL using driver "x11"
+Initializing OpenGL display
+Estimated display aspect: 1.778
+...setting mode 3: 640 480
+Using 8/8/8 Color bits, 24 depth, 8 stencil display.
+Available modes: '1600x900 720x400 640x350 640x400 640x480 800x600 1024x768 1152x864'
+GL_RENDERER: NVC1
+Initializing OpenGL extensions
+...ignoring GL_EXT_texture_compression_s3tc
+...ignoring GL_S3_s3tc
+...using GL_EXT_texture_env_add
+...using GL_ARB_multitexture
+...using GL_EXT_compiled_vertex_array
+...ignoring GL_EXT_texture_filter_anisotropic
+...ignoring GL_ARB_vertex_shader
+
+GL_VENDOR: nouveau
+GL_RENDERER: NVC1
+GL_VERSION: 4.3 (Compatibility Profile) Mesa 19.1.4
+GL_EXTENSIONS: GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_depth_bounds_test GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_mirror_clamp GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_ATI_texture_mirror_once GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_performance_monitor GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_veGL_MAX_TEXTURE_SIZE: 16384
+GL_MAX_TEXTURE_UNITS_ARB: 8
+
+PIXELFORMAT: color(24-bits) Z(24-bit) stencil(8-bits)
+MODE: 3, 640 x 480 fullscreen hz:N/A
+GAMMA: hardware w/ 0 overbright bits
+rendering primitives: single glDrawElements
+texturemode: GL_LINEAR_MIPMAP_NEAREST
+picmip: 1
+texture bits: 0
+multitexture: enabled
+compiled vertex arrays: enabled
+texenv add: enabled
+compressed textures: disabled
+glsl programs: disabled
+Initializing Shaders
+----- finished R_Init -----
+------ Initializing Sound ------
+Loading "libopenal.so.1"...
+Allocated 96 sources.
+OpenAL default capture device is 'Built-in Audio Analog Stereo'
+OpenAL capture device opened.
+OpenAL info:
+  Vendor:     OpenAL Community
+  Version:    1.1 ALSOFT 1.19.1
+  Renderer:   OpenAL Soft
+  AL Extensions: AL_EXT_ALAW AL_EXT_BFORMAT AL_EXT_DOUBLE AL_EXT_EXPONENT_DISTANCE AL_EXT_FLOAT32 AL_EXT_IMA4 AL_EXT_LINEAR_DISTANCE AL_EXT_MCFORMATS AL_EXT_MULAW AL_EXT_MULAW_BFORMAT AL_EXT_MULAW_MCFORMATS AL_EXT_OFFSET AL_EXT_source_distance_model AL_EXT_SOURCE_RADIUS AL_EXT_STEREO_ANGLES AL_LOKI_quadriphonic AL_SOFT_block_alignment AL_SOFT_deferred_updates AL_SOFT_direct_channels AL_SOFTX_events AL_SOFTX_filter_gain_ex AL_SOFT_gain_clamp_ex AL_SOFT_loop_points AL_SOFTX_map_buffer AL_SOFT_MSADPCM AL_SOFT_source_latency AL_SOFT_source_length AL_SOFT_source_resampler AL_SOFT_source_spatialize
+  ALC Extensions: ALC_ENUMERATE_ALL_EXT ALC_ENUMERATION_EXT ALC_EXT_CAPTURE ALC_EXT_DEDICATED ALC_EXT_disconnect ALC_EXT_EFX ALC_EXT_thread_local_context ALC_SOFT_device_clock ALC_SOFT_HRTF ALC_SOFT_loopback ALC_SOFT_output_limiter ALC_SOFT_pause_device
+  Device:     OpenAL Soft
+Available Devices:
+OpenAL Soft
+Sound initialization successful.
+--------------------------------
+Loading vm file vm/ui.qvm...
+File "vm/ui.qvm" found in "/opt/openarena/baseoa/pak6-patch088.pk3"
+...which has vmMagic VM_MAGIC_VER2
+Loading 1555 jump table targets
+VM file ui compiled to 1663211 bytes of code (0x7efe8950a000 - 0x7efe896a00eb)
+compilation took 0.304739 seconds
+ui loaded in 1451648 bytes on the hunk
+58 arenas parsed
+33 bots parsed
+--- Common Initialization Complete ---
+IP: 127.0.0.1
+IP: 192.168.43.159
+IP6: ::1
+IP6: fe80::863a:4bff:fe04:948c%wlo1
+Opening IP6 socket: [::]:27960
+Opening IP socket: 0.0.0.0:27960
+------ Server Initialization ------
+Server: oasago2
+RE_Shutdown( 0 )
+Hunk_Clear: reset the hunk ok
+----- R_Init -----
+
+GL_VENDOR: nouveau
+GL_RENDERER: NVC1
+GL_VERSION: 4.3 (Compatibility Profile) Mesa 19.1.4
+GL_EXTENSIONS: GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_depth_bounds_test GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_mirror_clamp GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_ATI_texture_mirror_once GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_performance_monitor GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_veGL_MAX_TEXTURE_SIZE: 16384
+GL_MAX_TEXTURE_UNITS_ARB: 8
+
+PIXELFORMAT: color(24-bits) Z(24-bit) stencil(8-bits)
+MODE: 3, 640 x 480 fullscreen hz:N/A
+GAMMA: hardware w/ 0 overbright bits
+rendering primitives: single glDrawElements
+texturemode: GL_LINEAR_MIPMAP_NEAREST
+picmip: 1
+texture bits: 0
+multitexture: enabled
+compiled vertex arrays: enabled
+texenv add: enabled
+compressed textures: disabled
+glsl programs: disabled
+Initializing Shaders
+----- finished R_Init -----
+----- FS_Startup -----
+Current search path:
+/home/braph//.openarena/baseoa
+/opt/openarena/baseoa/pak6-patch088.pk3 (711 files)
+/opt/openarena/baseoa/pak6-patch085.pk3 (559 files)
+/opt/openarena/baseoa/pak6-misc.pk3 (229 files)
+/opt/openarena/baseoa/pak5-TA.pk3 (139 files)
+/opt/openarena/baseoa/pak4-textures.pk3 (1753 files)
+/opt/openarena/baseoa/pak2-players.pk3 (669 files)
+/opt/openarena/baseoa/pak2-players-mature.pk3 (231 files)
+/opt/openarena/baseoa/pak1-maps.pk3 (100 files)
+/opt/openarena/baseoa/pak0.pk3 (1042 files)
+/opt/openarena/baseoa
+
+----------------------
+5433 files in pk3 files
+Loading vm file vm/qagame.qvm...
+File "vm/qagame.qvm" found in "/opt/openarena/baseoa/pak6-patch088.pk3"
+...which has vmMagic VM_MAGIC_VER2
+Loading 1590 jump table targets
+VM file qagame compiled to 3770207 bytes of code (0x7efe884f1000 - 0x7efe8888975f)
+compilation took 0.721358 seconds
+qagame loaded in 3012256 bytes on the hunk
+------- Game Initialization -------
+gamename: baseoa
+gamedate: Jan 28 2012
+^3!readconfig: ^7could not open admin config file admin.dat
+Sprees/Kills: loaded 1 killing sprees, 0 death sprees, and 0 multikills.
+0 teams with 0 entities
+16 items registered
+-----------------------------------
+------- BotLib Initialization -------
+loaded weapons.c
+loaded items.c
+loaded syn.c
+loaded rnd.c
+loaded match.c
+loaded rchat.c
+------------ Map Loading ------------
+trying to load maps/oasago2.aas
+loaded maps/oasago2.aas
+found 80 level items
+-------------------------------------
+33 bots parsed
+58 arenas parsed
+AAS initialized.
+-----------------------------------
+RE_Shutdown( 0 )
+----- R_Init -----
+
+GL_VENDOR: nouveau
+GL_RENDERER: NVC1
+GL_VERSION: 4.3 (Compatibility Profile) Mesa 19.1.4
+GL_EXTENSIONS: GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_depth_clamp GL_NV_fog_distance GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_depth_bounds_test GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_mirror_clamp GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_ATI_texture_mirror_once GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_AMD_performance_monitor GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_EXT_provoking_veGL_MAX_TEXTURE_SIZE: 16384
+GL_MAX_TEXTURE_UNITS_ARB: 8
+
+PIXELFORMAT: color(24-bits) Z(24-bit) stencil(8-bits)
+MODE: 3, 640 x 480 fullscreen hz:N/A
+GAMMA: hardware w/ 0 overbright bits
+rendering primitives: single glDrawElements
+texturemode: GL_LINEAR_MIPMAP_NEAREST
+picmip: 1
+texture bits: 0
+multitexture: enabled
+compiled vertex arrays: enabled
+texenv add: enabled
+compressed textures: disabled
+glsl programs: disabled
+Initializing Shaders
+----- finished R_Init -----
+Loading vm file vm/ui.qvm...
+File "vm/ui.qvm" found in "/opt/openarena/baseoa/pak6-patch088.pk3"
+...which has vmMagic VM_MAGIC_VER2
+Loading 1555 jump table targets
+VM file ui compiled to 1663211 bytes of code (0x7efe8948c000 - 0x7efe896220eb)
+compilation took 0.302360 seconds
+ui loaded in 1451648 bytes on the hunk
+58 arenas parsed
+33 bots parsed
+Loading vm file vm/cgame.qvm...
+File "vm/cgame.qvm" found in "/opt/openarena/baseoa/pak6-patch088.pk3"
+...which has vmMagic VM_MAGIC_VER2
+Loading 1235 jump table targets
+VM file cgame compiled to 2294215 bytes of code (0x7efe881f1000 - 0x7efe884211c7)
+compilation took 0.435003 seconds
+cgame loaded in 4743488 bytes on the hunk
+^3WARNING: Using default sound for sound/items/cl_ammoregen.wav
+^3WARNING: Using default sound for sound/weapons/nailgun/wnalimpd.wav
+^3WARNING: Using default sound for sound/weapons/vulcan/wvulimpd.wav
+^3WARNING: Using default sound for sound/weapons/vulcan/wvulimpl.wav
+^3WARNING: Using default sound for sound/weapons/vulcan/wvulimpm.wav
+^3WARNING: Using default sound for sound/misc/yousuck.wav
+^3Shader models/mapobjects/torch/torchnew has a stage with no image
+stitched 0 LoD cracks
+...loaded 3675 faces, 20 meshes, 99 trisurfs, 195 flares
+WARNING: reused image textures/flares/flarey.tga with mixed glWrapClampMode parm
+WARNING: reused image textures/flares/lava.tga with mixed glWrapClampMode parm
+CL_InitCGame:  1.07 seconds
+11 msec to draw all images
+Com_TouchMemory: 0 msec
+UnnamedPlayer^7 entered the game
+CVARLIST_BEGIN
+     A    cg_teamChatBeep "1"
+     A    cg_chatBeep "1"
+     A    cg_weaponOrder "/1/2/4/3/6/7/8/9/5/"
+     A    cg_weaponBarStyle "0"
+     A    cg_crosshairColorBlue "1.0"
+     A    cg_crosshairColorGreen "1.0"
+     A    cg_crosshairColorRed "1.0"
+     A    cg_ch13size "24"
+     A    cg_ch13 "1"
+     A    cg_ch12size "24"
+     A    cg_ch12 "1"
+     A    cg_ch11size "24"
+     A    cg_ch11 "1"
+     A    cg_ch10size "24"
+     A    cg_ch10 "1"
+     A    cg_ch9size "24"
+     A    cg_ch9 "1"
+     A    cg_ch8size "24"
+     A    cg_ch8 "1"
+     A    cg_ch7size "24"
+     A    cg_ch7 "1"
+     A    cg_ch6size "24"
+     A    cg_ch6 "1"
+     A    cg_ch5size "24"
+     A    cg_ch5 "1"
+     A    cg_ch4size "24"
+     A    cg_ch4 "1"
+     A    cg_ch3size "24"
+     A    cg_ch3 "1"
+     A    cg_ch2size "24"
+     A    cg_ch2 "1"
+     A    cg_ch1size "24"
+     A    cg_ch1 "1"
+     A    cg_differentCrosshairs "0"
+     A    cg_crosshairPulse "1"
+     A    cg_fragmsgsize "1.0"
+     A    cg_music ""
+     A    cg_trueLightning "0.0"
+     A    cg_optimizePrediction "1"
+     A    cg_projectileNudge "0"
+  U  A    cg_cmdTimeNudge "0"
+  U  A    cg_delag "1"
+     A    cg_oldPlasma "1"
+     A    cg_leiSuperGoreyAwesome "0"
+     A    cg_leiBrassNoise "0"
+     A    cg_leiGoreNoise "0"
+     A    cg_leiEnhancement "0"
+     A    cg_oldRocket "1"
+     A    cg_oldRail "0"
+     A    ui_bigFont "0.4"
+     A    ui_smallFont "0.25"
+     A    cg_noProjectileTrail "0"
+     A    cg_noTaunt "0"
+  U  A    cg_scorePlums "1"
+          cg_timescaleFadeSpeed "0"
+          cg_timescaleFadeEnd "1"
+     A    cg_cameraOrbitDelay "50"
+       C  cg_cameraOrbit "0"
+     A    cg_autovertex "0"
+   R      cg_vote_custom_commands ""
+     A    cg_cyclegrapple "1"
+   R      cg_voteflags "767"
+     A    cg_voipTeamOnly "1"
+     A    cg_hitsound "0"
+     A    cg_alwaysWeaponBar "0"
+     A    cg_noVoiceText "0"
+     A    cg_noVoiceChats "0"
+     A    cg_teamChatsOnly "0"
+     A    cg_drawFriend "1"
+          cg_stats "0"
+  UR      teamoverlay "0"
+     A    cg_drawTeamOverlay "0"
+     A    cg_deferPlayers "1"
+     A    cg_forceModel "0"
+     A    cg_teamChatHeight "0"
+     A    cg_teamChatTime "3000"
+          cg_thirdPerson "0"
+       C  cg_thirdPersonAngle "0"
+       C  cg_thirdPersonRange "40"
+       C  cg_tracerlength "100"
+       C  cg_tracerwidth "1"
+       C  cg_tracerchance "0.4"
+       C  cg_footsteps "1"
+          cg_showmiss "0"
+       C  cg_noplayeranims "0"
+          cg_nopredict "0"
+          cg_errordecay "100"
+       C  cg_debugevents "0"
+       C  cg_debugposition "0"
+       C  cg_debuganim "0"
+       C  cg_animspeed "1"
+       C  cg_swingSpeed "0.3"
+     A    cg_bobroll "0.002"
+     A    cg_bobpitch "0.002"
+       C  cg_bobup "0.005"
+     A    cg_runroll "0.005"
+     A    cg_runpitch "0.002"
+       C  cg_centertime "3"
+       C  cg_gunZ "0"
+       C  cg_gunY "0"
+       C  cg_gunX "0"
+     A    cg_railTrailTime "600"
+     A    cg_lagometer "1"
+     A    cg_simpleItems "0"
+     A    cg_crosshairY "0"
+     A    cg_crosshairX "0"
+     A    cg_crosshairHealth "1"
+     A    cg_crosshairSize "24"
+     A    cg_drawRewards "1"
+     A    cg_drawSpeed "0"
+     A    cg_drawAttacker "1"
+     A    cg_drawAmmoWarning "1"
+     A    cg_drawIcons "1"
+     A    cg_draw3dIcons "1"
+     A    cg_drawSnapshot "0"
+     A    cg_drawFPS "0"
+     A    cg_drawTimer "0"
+     A    cg_drawStatus "1"
+     A    cg_draw2D "1"
+     A    cg_gibs "1"
+     A    cg_fov "90"
+     A    cg_zoomfov "22.5"
+     A    cg_drawGun "1"
+          cg_ignore "0"
+          session0 "0 0 1 0 0 0 0"
+          bot_predictobstacles "1"
+          r_debugSurfaceUpdate "1"
+       C  bot_memorydump "0"
+S         g_timestamp "2019-08-12 12:04:48"
+          g_maxNameChanges "50"
+          g_minNameChangePeriod "10"
+     A    g_warningExpire "3600"
+     A    g_maxWarnings "3"
+     A    g_publicAdminMessages "1"
+     A    g_specChat "1"
+     A    g_adminMaxBan "2w"
+     A    g_adminTempBan "2m"
+     A    g_adminNameProtect "1"
+     A    g_adminParseSay "1"
+     A    g_adminLog "admin.log"
+     A    g_admin "admin.dat"
+     A    g_floodMinTime "2000"
+     A    g_floodMaxDemerits "5000"
+          g_spreeDiv "5"
+S         g_altExcellent "0"
+          g_sprees "sprees.dat"
+   R      g_blueTeamClientNumbers "0"
+   R      g_redTeamClientNumbers "0"
+   R      g_humanplayers "1"
+     A    g_mappools "0\maps_dm.cfg\1\maps_tourney.cfg\3\maps_tdm.cfg\4\maps_ctf.cfg\5\maps_oneflag.cfg\6\maps_obelisk.cfg\7\maps_harvester.cfg\8\maps_elimination.cfg\9\maps_ctf.cfg\10\maps_lms.cfg\11\maps_dd.cfg\12\maps_dom.cfg\"
+     A    g_autonextmap "0"
+     A    g_catchup "0"
+S    A    g_lms_mode "0"
+          g_lms_lives "1"
+          g_vampire_max_health "500"
+          g_regen "0"
+          g_vampire "0.0"
+S     L   g_instantgib "0"
+S     L   g_rockets "0"
+     AL   g_runes "0"
+     A    g_awardpushing "1"
+          elimination_lockspectator "0"
+     A    elimination_ctf_oneway "0"
+     A    elimination_nail "0"
+     A    elimination_mine "0"
+     A    elimination_chain "0"
+     A    elimination_plasmagun "200"
+     A    elimination_lightning "300"
+     A    elimination_railgun "20"
+     A    elimination_rocket "50"
+     A    elimination_grenade "100"
+     A    elimination_shotgun "500"
+     A    elimination_machinegun "500"
+      L   g_elimination "0"
+     A    elimination_activewarmup "5"
+     A    elimination_warmup "7"
+S    A    elimination_roundtime "120"
+     A    elimination_grapple "0"
+     A    elimination_bfg "0"
+     A    elimination_startArmor "150"
+     A    elimination_startHealth "200"
+          elimination_selfdamage "0"
+     A    g_spawnprotect "500"
+          g_music ""
+          g_rankings "0"
+     A    g_lagLightning "1"
+     A    g_truePing "0"
+S    A    g_delagHitscan "0"
+ s   A    pmove_float "1"
+ s   A    pmove_msec "11"
+ s   A    pmove_fixed "0"
+          g_smoothClients "1"
+          g_proxMineTimeout "20000"
+S         g_enableBreath "0"
+S         g_enableDust "0"
+          g_cubeTimeout "30"
+S         g_obeliskRespawnDelay "10"
+          g_obeliskRegenAmount "15"
+          g_obeliskRegenPeriod "1"
+          g_obeliskHealth "2500"
+          g_listEntity "0"
+          g_votecustomfile "votecustom.cfg"
+          g_votemapsfile "votemaps.cfg"
+S    A    g_voteMinFraglimit "0"
+S    A    g_voteMaxFraglimit "0"
+S    A    g_voteMinTimelimit "0"
+S    A    g_voteMaxTimelimit "1000"
+S    A    g_voteGametypes "/0/1/3/4/5/6/7/8/9/10/11/12/"
+     A    g_voteBan "0"
+     A    g_voteNames "/map_restart/nextmap/map/g_gametype/kick/clientkick/g_doWarmup/timelimit/fraglimit/shuffle/"
+     A    g_maxVotes "3"
+S    A    g_allowVote "1"
+          g_podiumDrop "70"
+          g_podiumDist "80"
+          g_motdfile "motd.cfg"
+          g_motd ""
+          g_debugAlloc "0"
+          g_debugDamage "0"
+          g_debugMove "0"
+          g_inactivity "0"
+     A    g_respawntime "0"
+          g_forcerespawn "20"
+          g_weaponTeamRespawn "30"
+          g_weaponrespawn "5"
+          g_quadfactor "3"
+          g_knockback "1000"
+          g_damageModifier "0"
+          g_gravityModifier "1"
+          g_gravity "800"
+          g_speed "320"
+S  R      g_needpass "0"
+     A    g_filterBan "1"
+     A    g_banIPs ""
+  U       g_password ""
+     A    g_logsync "0"
+     A    g_log "games.log"
+S    A    g_doWarmup "0"
+     A    g_warmup "20"
+     A    g_teamForceBalance "0"
+     A    g_teamAutoJoin "0"
+     A    g_friendlyFire "0"
+ s        g_synchronousClients "0"
+S    A    capturelimit "8"
+S         voteflags "767"
+S         elimflags "0"
+S    A    videoflags "7"
+S    AL   g_maxGameClients "0"
+S  R      sv_mapname ""
+   R      g_restarted "0"
+   R      gamedate "Jan 28 2012"
+S  R      gamename "baseoa"
+     A C  cm_playerCurveClip "1"
+       C  cm_noCurves "0"
+       C  cm_noAreas "0"
+          cl_downloadName ""
+          net_dropsim ""
+     AL   net_socksPassword ""
+     AL   net_socksUsername ""
+     AL   net_socksPort "1080"
+     AL   net_socksServer ""
+     AL   net_socksEnabled "0"
+     AL   net_mcast6iface ""
+     AL   net_mcast6addr "ff04::696f:7175:616b:6533"
+      L   net_port6 "27960"
+      L   net_port "27960"
+      L   net_ip6 "::"
+      L   net_ip "0.0.0.0"
+     AL   net_enabled "3"
+          ui_singlePlayerActive "0"
+     A    ui_setupchecked "0"
+     A    ui_browserOnlyHumans "0"
+     A    server16 ""
+     A    server15 ""
+     A    server14 ""
+     A    server13 ""
+     A    server12 ""
+     A    server11 ""
+     A    server10 ""
+     A    server9 ""
+     A    server8 ""
+     A    server7 ""
+     A    server6 ""
+     A    server5 ""
+     A    server4 ""
+     A    server3 ""
+     A    server2 ""
+     A    server1 ""
+     A    cg_marks "1"
+     A    cg_drawCrosshairNames "1"
+     A    cg_drawCrosshair "4"
+     A    cg_brassTime "2500"
+     A    ui_browserShowEmpty "1"
+     A    ui_browserShowFull "1"
+     A    ui_browserSortKey "4"
+     A    ui_browserGameType "0"
+     A    ui_browserMaster "0"
+   R      ui_spSelection ""
+     AL   g_spSkill "2"
+     A    g_spVideos ""
+     A    g_spAwards ""
+     A    g_spScores5 ""
+     A    g_spScores4 ""
+     A    g_spScores3 ""
+     A    g_spScores2 ""
+     A    g_spScores1 ""
+   RI     g_botsFile ""
+   RI     g_arenasFile ""
+     A    ui_dom_friendly "0"
+     A    ui_dom_timelimit "30"
+     A    ui_dom_capturelimit "500"
+     A    ui_dd_friendly "0"
+     A    ui_dd_timelimit "30"
+     A    ui_dd_capturelimit "8"
+     A    ui_lms_timelimit "0"
+     A    ui_lms_fraglimit "20"
+     A    ui_ctf_elimination_timelimit "30"
+     A    ui_ctf_elimination_capturelimit "8"
+     A    ui_elimination_timelimit "20"
+     A    ui_elimination_capturelimit "8"
+     A    ui_harvester_friendly "0"
+     A    ui_harvester_timelimit "30"
+     A    ui_harvester_capturelimit "20"
+     A    ui_overload_friendly "0"
+     A    ui_overload_timelimit "30"
+     A    ui_overload_capturelimit "8"
+     A    ui_1fctf_friendly "0"
+     A    ui_1fctf_timelimit "30"
+     A    ui_1fctf_capturelimit "8"
+     A    ui_ctf_friendly "0"
+     A    ui_ctf_timelimit "30"
+     A    ui_ctf_capturelimit "8"
+     A    ui_team_friendly "1"
+     A    ui_team_timelimit "20"
+     A    ui_team_fraglimit "0"
+     A    ui_tourney_timelimit "15"
+     A    ui_tourney_fraglimit "0"
+     A    ui_ffa_timelimit "0"
+     A    ui_ffa_fraglimit "20"
+     AL   s_alCapture "1"
+   R      s_alAvailableDevices "OpenAL Soft
+"
+     AL   s_alDevice ""
+     AL   s_alDriver "libopenal.so.1"
+       C  s_alGraceDistance "512"
+       C  s_alRolloff "2"
+       C  s_alMaxDistance "1024"
+       C  s_alMinDistance "120"
+     A    s_alDopplerSpeed "2200"
+     A    s_alDopplerFactor "1.0"
+     A    s_alSources "96"
+     A    s_alGain "1.0"
+     A    s_alPrecache "1"
+     A    s_useOpenAL "1"
+          s_initsound "1"
+     A    s_muteWhenUnfocused "0"
+     A    s_muteWhenMinimized "0"
+   R      s_backend "OpenAL"
+     A    s_doppler "1"
+   R      s_muted "0"
+     A    s_musicvolume "0.25"
+     A    s_volume "0.8"
+     A    in_joystickThreshold "0.15"
+          in_joystickDebug "0"
+     AL   in_joystick "0"
+     A    in_nograb "0"
+     A    in_mouse "1"
+     A    in_keyboardDebug "0"
+   R      r_availableModes "1600x900 720x400 640x350 640x400 640x480 800x600 1024x768 1152x864"
+     A    r_centerWindow "0"
+     A    r_allowResize "0"
+   R      r_sdlDriver "x11"
+      L   r_allowSoftwareGL "0"
+     A    r_bloom_sky_only "0"
+     A    r_bloom_reflection "0"
+     A    r_bloom_dry "1"
+     A    r_bloom_cascade_dry "0.8"
+     A    r_bloom_cascade_alpha "0.15"
+     A    r_bloom_cascade_intensity "20"
+     A    r_bloom_cascade_blur ".4"
+     A    r_bloom_cascade "0"
+     AL   r_bloom_fast_sample "0"
+     AL   r_bloom_sample_size "256"
+     A    r_bloom_darken "4"
+     A    r_bloom_intensity "1.3"
+     A    r_bloom_diamond_size "8"
+     A    r_bloom_alpha "0.3"
+     A    r_bloom "0"
+     A    r_lensReflectionBrightness "0.5"
+     A    r_lensReflection2 "0"
+     A    r_lensReflection1 "1"
+     A    r_specMode "1"
+     A    r_envMode "1"
+     A    r_flaresDlight "0"
+          r_maxpolyverts "3000"
+          r_maxpolys "600"
+     A    r_screenshotJpegQuality "90"
+     A    r_aviMotionJpegQuality "90"
+     A    r_marksOnTriangleMeshes "0"
+     A    cg_shadows "1"
+       C  r_noportals "0"
+       C  r_lockpvs "0"
+       C  r_drawBuffer "GL_BACK"
+       C  r_offsetunits "-2"
+       C  r_offsetfactor "-1"
+       C  r_clear "0"
+       C  r_shownormals "0"
+       C  r_showsky "0"
+       C  r_showtris "0"
+       C  r_nobind "0"
+       C  r_debugSurface "0"
+       C  r_logFile "0"
+       C  r_verbose "0"
+       C  r_speeds "0"
+       C  r_showcluster "0"
+       C  r_novis "0"
+       C  r_nocull "0"
+       C  r_ignore "1"
+       C  r_drawentities "1"
+       C  r_norefresh "0"
+       C  r_lodscale "5"
+       C  r_measureOverdraw "0"
+       C  r_skipBackEnd "0"
+       C  r_showSmp "0"
+       C  r_flareCoeff "150"
+       C  r_flareFade "7"
+       C  r_flareSize "40"
+       C  r_portalOnly "0"
+          r_lightmap "0"
+       C  r_drawworld "1"
+       C  r_nocurves "0"
+          r_saveFontData "0"
+          r_printShaders "0"
+       C  r_debugSort "0"
+          r_debuglight "0"
+          r_showImages "0"
+     A    r_anaglyphMode "0"
+       C  r_directedScale "1"
+       C  r_ambientScale "0.6"
+     A    r_primitives "0"
+     A    r_railSegmentLength "32"
+     A    r_railCoreWidth "6"
+     A    r_railWidth "16"
+     A    r_facePlaneCull "1"
+     A    r_gamma "1"
+     AL   r_swapInterval "0"
+     A    r_textureMode "GL_LINEAR_MIPMAP_NEAREST"
+     A    r_finish "0"
+     A    r_dlightBacks "1"
+     A    r_dynamiclight "1"
+     A    r_drawSun "0"
+     A    r_fastsky "0"
+     A    r_ignoreGLErrors "1"
+     A    r_stereoSeparation "64"
+     A    r_zproj "64"
+       C  r_znear "4"
+     A    r_flares "0"
+     A    r_lodbias "0"
+     A C  r_lodCurveError "250"
+      LC  r_singleShader "0"
+      L   r_mapOverBrightBits "2"
+      LC  r_fullbright "0"
+     AL   r_monolightmaps "0"
+     AL   r_greyscale "0"
+     AL   r_ignoreFastPath "1"
+     AL   r_stereoEnabled "0"
+     AL   r_smp "0"
+     AL   r_subdivisions "4"
+     AL   r_simpleMipMaps "1"
+     AL   r_customPixelAspect "1"
+     AL   r_customheight "1024"
+     AL   r_customwidth "1600"
+     A    r_noborder "0"
+     A    r_fullscreen "1"
+     AL   r_mode "3"
+     AL   r_ignorehwgamma "0"
+     AL   r_overBrightBits "1"
+     AL   r_ext_multisample "0"
+     AL   r_depthbits "0"
+     AL   r_stencilbits "8"
+     AL   r_colorbits "0"
+     AL   r_texturebits "0"
+     AL   r_detailtextures "1"
+      L   r_colorMipLevels "0"
+     AL   r_roundImagesDown "1"
+     AL   r_picmip "1"
+     AL   r_ext_vertex_shader "0"
+     AL   r_postprocess "none"
+     AL   r_ext_max_anisotropy "2"
+     AL   r_ext_texture_filter_anisotropic "0"
+     AL   r_ext_texture_env_add "1"
+     AL   r_ext_compiled_vertex_array "1"
+     AL   r_ext_multitexture "1"
+     AL   r_ext_compressed_textures "0"
+     AL   r_allowExtensions "1"
+          r_uiFullScreen "0"
+  UR      cl_guid "FE217F6EF9F560524608DBBF3ABB3D3D"
+       C  graphshift "0"
+       C  graphscale "1"
+       C  graphheight "32"
+       C  debuggraph "0"
+       C  timegraph "0"
+   R      cg_stereoSeparation "0"
+     A    cg_viewsize "100"
+  U  AL   cl_voip "1"
+     A    cl_voipShowMeter "1"
+     A    cl_voipVADThreshold "0.25"
+     A    cl_voipUseVAD "0"
+     A    cl_voipCaptureMult "2.0"
+     A    cl_voipGainDuringCapture "0.2"
+          cl_voipSendTarget "all"
+          cl_voipSend "0"
+     A    cl_mumbleScale "0.0254"
+     AL   cl_useMumble "0"
+  U  A    cg_predictItems "1"
+  U       password ""
+  U  A    cl_anonymous "0"
+  U  A    sex "male"
+  U       teamtask "0"
+  U  A    handicap "100"
+  U  A    color2 "5"
+  U  A    color1 "4"
+S    A    g_blueTeam "Pagans"
+S    A    g_redTeam "Stroggs"
+  U  A    team_headmodel "*james"
+  U  A    team_model "james"
+  U  A    headmodel "sarge"
+  U  A    model "sarge"
+  U  A    snaps "20"
+  U  A    rate "25000"
+  U  A    name "UnnamedPlayer"
+          cl_gamename "openarena"
+     A    cl_consoleHeight "0.5"
+     A    cl_consoleColorAlpha "0.8"
+     A    cl_consoleColorBlue "0"
+     A    cl_consoleColorGreen "0"
+     A    cl_consoleColorRed "1"
+     A    cl_consoleType "0"
+     A    cl_consoleKeys "~ ` 0x7e 0x60"
+     A    cl_guidServerUniq "1"
+     A    cl_lanForcePackets "1"
+     A    cl_maxPing "800"
+   R      cl_motdString ""
+     A    m_filter "0"
+     A    m_side "0.25"
+     A    m_forward "0.25"
+     A    m_yaw "0.022"
+     A    m_pitch "0.022"
+     A    cg_autoswitch "2"
+          cl_serverStatusResendTime "750"
+     A    r_inGameVideo "1"
+          cl_conXOffset "0"
+     A    cl_cURLLib "libcurl.so.4"
+     A    cl_allowDownload "0"
+          cl_showmouserate "0"
+     A    cl_mouseAccelOffset "5"
+     A    cl_mouseAccelStyle "0"
+     A    cl_freelook "1"
+     A    cl_mouseAccel "0"
+     A    sensitivity "5"
+     A    cl_run "1"
+     A    cl_packetdup "1"
+     A    cl_maxpackets "30"
+          cl_anglespeedkey "1.5"
+          rconAddress ""
+          cl_forceavidemo "0"
+     A    cl_aviMotionJpeg "1"
+     A    cl_aviFrameRate "25"
+     A    cl_autoRecordDemo "0"
+     A    cl_timedemoLog ""
+          activeAction ""
+          cl_freezeDemo "0"
+          cl_showTimeDelta "0"
+          cl_showSend "0"
+          cl_shownet "0"
+     A    cl_timeNudge "0"
+          cl_timeout "200"
+          cl_motd "1"
+          cl_noprint "0"
+          cl_debugMove "0"
+          cl_nodelta "0"
+          scr_conspeed "3"
+          con_notifytime "3"
+       C  bot_interbreedwrite ""
+       C  bot_interbreedcycle "20"
+       C  bot_interbreedbots "10"
+       C  bot_interbreedchar ""
+S         bot_minplayers "0"
+          bot_challenge "0"
+          bot_rocketjump "1"
+          bot_grapple "0"
+       C  bot_report "0"
+       C  bot_pause "0"
+          bot_nochat "0"
+          bot_fastchat "0"
+       C  bot_testclusters "0"
+       C  bot_testsolid "0"
+          bot_testrchat "0"
+          bot_testichat "0"
+          bot_reloadcharacters "0"
+       C  bot_thinktime "100"
+       C  bot_saveroutingcache "0"
+          bot_aasoptimize "0"
+          bot_forcewrite "0"
+          bot_forcereachability "0"
+          bot_forceclustering "0"
+       C  bot_visualizejumppads "0"
+          bot_reachability "0"
+          bot_groundonly "1"
+          bot_maxdebugpolys "2"
+       C  bot_debug "0"
+       C  bot_developer "0"
+      L   bot_enable "1"
+    I     sv_flatline "QuakeArena-1"
+    I     sv_heartbeat "QuakeArena-1"
+     A    sv_banFile "serverbans.dat"
+          sv_public "0"
+     A    sv_lanForceRate "1"
+   R      sv_mapChecksum "-811242028"
+          sv_killserver "0"
+          sv_padPackets "0"
+          sv_showloss "0"
+          sv_reconnectlimit "3"
+     A    sv_master5 ""
+     A    sv_master4 ""
+     A    sv_master3 ""
+     A    sv_master2 ""
+          sv_master1 "dpmaster.deathmask.net"
+S    A    sv_dlURL ""
+S         sv_allowDownload "0"
+          nextmap "map_restart 0"
+          sv_zombietime "2"
+          sv_timeout "200"
+ s   A    sv_fps "20"
+          sv_privatePassword ""
+          rconPassword ""
+ s R      sv_referencedPakNames "baseoa/pak6-patch088 baseoa/pak6-patch085 baseoa/pak6-misc"
+ s R      sv_referencedPaks "-693262601 -633993734 1197836179 "
+ s R      sv_pakNames "pak6-patch088 pak6-patch085 pak6-misc pak5-TA pak4-textures pak2-players pak2-players-mature pak1-maps pak0"
+ s R      sv_paks "-693262601 -633993734 1197836179 553326033 1886599373 1807528105 267250180 1809027058 -1059476049 "
+ s    L   sv_voip "1"
+ s        sv_pure "1"
+ s R      sv_serverid "5566"
+S    A    sv_floodProtect "1"
+S    A    sv_maxPing "0"
+S    A    sv_minPing "0"
+S    A    sv_maxRate "0"
+S    A    sv_minRate "0"
+S    AL   sv_maxclients "8"
+S    A    sv_hostname "noname"
+S         sv_privateClients "0"
+S  R      mapname "oasago2"
+S         sv_keywords ""
+          sv_dorestart "0"
+S U   L   g_gametype "0"
+S    A    timelimit "0"
+S    A    fraglimit "20"
+S    A    dmflags "0"
+     A    vm_ui "2"
+     A    vm_game "2"
+     A    vm_cgame "2"
+    I     net_qport "14610"
+          showdrop "0"
+          showpackets "0"
+          username "braph"
+          arch "linux x86_64"
+S   I     protocol "71"
+S  R      version "ioq3+oa 1.36_SVN1910M linux-x86_64 Dec 25 2011"
+     A    com_introplayed "0"
+     A    com_busyWait "0"
+   R      com_abnormalExit "0"
+     A    com_maxfpsMinimized "0"
+   R      com_minimized "0"
+     A    com_maxfpsUnfocused "0"
+   R      com_unfocused "0"
+     A    com_ansiColor "0"
+          com_buildScript "0"
+   R      cl_running "1"
+   R      sv_running "1"
+       C  sv_packetdelay "0"
+       C  cl_packetdelay "0"
+   R      sv_paused "0"
+   R      cl_paused "0"
+       C  com_cameraMode "0"
+       C  timedemo "0"
+          com_speeds "0"
+       C  com_showtrace "0"
+       C  fixedtime "0"
+ s     C  timescale "1"
+          logfile "0"
+     A    com_blood "1"
+     A    com_maxfps "85"
+     A    com_altivec "0"
+     AL   com_hunkMegs "128"
+      L   dedicated "0"
+      L   r_intensity "1"
+     AL   r_vertexLight "0"
+    I     journal "0"
+ s  I     fs_game ""
+    I     fs_homepath "/home/braph//.openarena"
+    I     fs_basegame ""
+    I     fs_basepath "/opt/openarena"
+          fs_debug "0"
+    I     com_homepath ""
+    I     com_basegame "baseoa"
+   R      com_standalone "0"
+          developer "0"
+     AL   com_zoneMegs "24"
+ s R      sv_cheats "1"
+
+707 total cvars
+707 cvar indexes
+----- Server Shutdown (Server quit) -----
+==== ShutdownGame ====
+AAS shutdown.
+---------------------------
+----- Client Shutdown (Client quit) -----
+OpenAL capture device closed.
+RE_Shutdown( 1 )
+-----------------------
+total 0, hsize 1021, zero 1021, min 0, max 0
+total 3810, hsize 1021, zero 67, min 0, max 15
+total 0, hsize 1021, zero 1021, min 0, max 0
+total 9749, hsize 1021, zero 1, min 0, max 30
+total 0, hsize 1021, zero 1021, min 0, max 0
+total 3810, hsize 1021, zero 67, min 0, max 15
+total 0, hsize 1021, zero 1021, min 0, max 0
+total 4966, hsize 1021, zero 31, min 0, max 19

@@ -1,0 +1,486 @@
+{
+ "label": "stupidctf.tk",
+ "variables": {
+  "hud_clockx": {
+   "name": "hud_clockx",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "273"
+  },
+  "hud_clocky": {
+   "name": "hud_clocky",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "100"
+  },
+  "hud_clockw": {
+   "name": "hud_clockw",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "22"
+  },
+  "hud_clockh": {
+   "name": "hud_clockh",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "22"
+  },
+  "hud_clockbg": {
+   "name": "hud_clockbg",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "0xEEEEEE33"
+  },
+  "hud_clockfg": {
+   "name": "hud_clockfg",
+   "description": "Cvars to customize the clock. x y are coords, w and h are font width and height, fg is foreground color (text color) and bg is background color. Format for the latter two is 0xRRGGBBAA in hex. AA means alpha, the opaqueness of the element (text or background).\nNote: you have to set /cg_drawTimer 2 to enable the Big White Clock cvars!\nDon't forget to use /seta and /writeconfig q3config.cfg!\n\nA clock example: \n\n\nAnother clock: \n\n\nThe respective hud vars:\n\nset    hud_clockbg  \"0x2299ff4b\"\nset    hud_clockfg  \"0xffffffff\"\nset    hud_clocky   \"400\"\nset    hud_clockx   \"270\"\nset    hud_clockh   \"28\"\nset    hud_clockw   \"24\"",
+   "default": "0xFFFFDDEE"
+  },
+  "hud_ammowarningy": {
+   "name": "hud_ammowarningy",
+   "description": "The place of \"LOW AMMO WARNING\" and \"OUT OF AMMO\" text on the oordinate.",
+   "default": "114"
+  },
+  "cg_drawTimer": {
+   "name": "cg_drawTimer",
+   "description": "/cg_drawTimer 2 enables Big White Clock cvars, see hud_clock cvars!\n\n    Sets the Y position of the timer and makes it bigger. When you pick up items you don't want to look at the top right corner every time! Move it below the top flagstatus icons! (for example /cg_drawTimer 105). Or between the flags: /cg_drawtimer 2. etc\n    -1 to hides the timer.\n    In baseoa it sets the timer's visibility (on/off 1/0).",
+   "default": "1"
+  },
+  "cg_enemyHeadColor": {
+   "name": "cg_enemyHeadColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0x55DD33"
+  },
+  "cg_enemyTorsoColor": {
+   "name": "cg_enemyTorsoColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0x66FF33"
+  },
+  "cg_enemyLegsColor": {
+   "name": "cg_enemyLegsColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0x88DD00"
+  },
+  "": {
+   "name": "",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": ""
+  },
+  "cg_teamHeadColor": {
+   "name": "cg_teamHeadColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0xFFFFFF"
+  },
+  "cg_teamTorsoColor": {
+   "name": "cg_teamTorsoColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0xFFE0FF"
+  },
+  "cg_teamLegsColor": {
+   "name": "cg_teamLegsColor",
+   "description": "Sets color of enemy model's head/torso/leg and team model's head/torso/leg respectively.\nSee detailed help on these cvars!",
+   "default": "0xFFFFFF"
+  },
+  "cg_teamModel": {
+   "name": "cg_teamModel",
+   "description": "Sets own team model. See detailed help for this cvar!",
+   "default": "major/pm"
+  },
+  "cg_enemyModel": {
+   "name": "cg_enemyModel",
+   "description": "Sets enemy model. See detailed help for this cvar!",
+   "default": ""
+  },
+  "cg_2dShadowAlpha": {
+   "name": "cg_2dShadowAlpha",
+   "description": "The 2d texts' alpha. A float. 0 means no shadow.",
+   "default": "1.00"
+  },
+  "cg_drawVote": {
+   "name": "cg_drawVote",
+   "description": "Moves the callvote text on the y axis. 0 = top, 480 = bottom. Move it so the demorecording text does not overwrite the callvote text!\n Alternatively you can use a customized client and the annoying RECORDING text will not show up. Download it from here!",
+   "default": "20"
+  },
+  "hud_ammox": {
+   "name": "hud_ammox",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": "Start typing the cvarname and press [TAB] to see!"
+  },
+  "hud_ammoy": {
+   "name": "hud_ammoy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammow": {
+   "name": "hud_ammow",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammoh": {
+   "name": "hud_ammoh",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammog": {
+   "name": "hud_ammog",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammoix": {
+   "name": "hud_ammoix",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammoiy": {
+   "name": "hud_ammoiy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_ammois": {
+   "name": "hud_ammois",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpx": {
+   "name": "hud_hpx",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpy": {
+   "name": "hud_hpy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpw": {
+   "name": "hud_hpw",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hph": {
+   "name": "hud_hph",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpg": {
+   "name": "hud_hpg",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armorx": {
+   "name": "hud_armorx",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armory": {
+   "name": "hud_armory",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armorw": {
+   "name": "hud_armorw",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armorh": {
+   "name": "hud_armorh",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armorg": {
+   "name": "hud_armorg",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armorix": {
+   "name": "hud_armorix",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armoris": {
+   "name": "hud_armoris",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpix": {
+   "name": "hud_hpix",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_armoriy": {
+   "name": "hud_armoriy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_hpiy": {
+   "name": "hud_hpiy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_flagx": {
+   "name": "hud_flagx",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_flagy": {
+   "name": "hud_flagy",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "hud_flagis": {
+   "name": "hud_flagis",
+   "description": "Cvars to customize the statusbar elements. x y are coords, w and h are font widths and font heights, g is gap between numbers, i refers to icon, s stands for size.\nThe hp, armor, ammo, the flag (in the hud when you have it) and the icons can be moved and resized with these. Upper left corner is at x=0, y=0; Bottom right corner is at x=640, y=480 irrespectively of actual screen resolution!Don't forget to save the values in your autoexec.cfg or use /seta cvarname value followed by /writeconfig q3config.cfg!\nTip: start OA from command line, type hud_TAB, the autocompleted hud_ cvars will appear in your terminal, copypaste the values from there (after removing the equal signs and adding 'set' in front of them ofc)!\n\nIt is advisable to disable your model's head with cg_statusBarStyle as you can't move it!\n\nYou can try some preconfigured statusbars:\n/exec hud1 - Start from this one if you played too much AS!\n/exec hud2\n/exec hud3\n/exec hud4\n/exec hud5\n/exec hud6 - Start from this if you prefer how cute and unobtrusive this one is!\n/exec huddefault - To revert back to defaults.\n\nTip: You can use one of the preconfigureds as a skeleton and modify only the settings you don't like!\n\nNote: Pick a custom value for cg_statusBarStyle if you want to configure the statusbar in instantgib! Default 0 will draw the default insta statusbar!\n\nPs: If you managed to set up a cool looking and useful statusbar please send me the respective cvars to make it available for everyone with a /exec yourstatusbarname.cfg in next update! Paste the cvars here!",
+   "default": null
+  },
+  "cg_crosshairAspectRatio": {
+   "name": "cg_crosshairAspectRatio",
+   "description": "Crosshairs are not eggshaped by default anymore when using a weird resolution.\nThis cvar helps you if you prefer the good old 081ish eggshaped xhairs (i do!). The value is a float - you can set custom egginess - ie: 1.5 draws an egg. 0.5 an egg on its side.",
+   "default": "1"
+  },
+  "cg_crossHairHealth": {
+   "name": "cg_crossHairHealth",
+   "description": "With 2, the crosshair matches your HUD health color, otherwise it is white unless you set it with cg_crossHairColorRed and co.",
+   "default": "0 coming from 081 and below, 1 from 085 (?)"
+  },
+  "s_ambient": {
+   "name": "s_ambient",
+   "description": "The washing machine at mkbase, the torches at sago, the horses at cp1, and all the annyoing looping ambient sounds can be disabled with this one.",
+   "default": "1"
+  },
+  "cg_scoreBoardAcc": {
+   "name": "cg_scoreBoardAcc",
+   "description": "By default your individual weapon accuracies are displayed at the bottom of the screen when the scoreboard is visible. It can be disabled with this one.\n\nNote: If you are 'following' someone, the accuracy is not yours but the player's you spectate (as it should be)!",
+   "default": "1"
+  },
+  "cg_accBoardTint": {
+   "name": "cg_accBoardTint",
+   "description": "The little accuracyboard's (when you press +acc) background's tint. ie: how black or how white it should be. 0 is totally black, 1 white. (the text is still white though, careful with whitening)\n\tSee also: cg_accBoardAlpha",
+   "default": "0.14"
+  },
+  "cg_flagStatusStyle": {
+   "name": "cg_flagStatusStyle",
+   "description": "When the flag is taken (not in its place) you can see it displayed on the top of the screen. Right now with this cvar you can set the fontsize of your flag carrier's name health armor and location,\n    later the style will be settable too.",
+   "default": "0"
+  },
+  "cg_accBoardAlpha": {
+   "name": "cg_accBoardAlpha",
+   "description": "The accboard's (when you press +acc) background's alpha. 0 means totally transparent, 1 means totally opaque, solid cg_accBoardTint color. It's a float (ie 0.5 means half-transparent).\n\nNote: this settign does not affect the scoreboard accboard. (because with large alpha value and small tint it looked better than the weaponbar:) will add weaponbarstyles with those settings instead!)",
+   "default": "0.81"
+  },
+  "cg_teamOverlayHealthBar": {
+   "name": "cg_teamOverlayHealthBar",
+   "description": "Right now it's Whether to draw healthbars on names in teamoverlay or not. Will be more barstyles later.",
+   "default": "1"
+  },
+  "cg_teamOverlayFontSizeOffset": {
+   "name": "cg_teamOverlayFontSizeOffset",
+   "description": "Increases or decreases the TeamOverlay font size. (positive value to increase from default, negative to decrease).\n    Unfortunately it collides with the flagstatus icons at the top with just a slight increase and they are not repositionable yet:/\n    Move it it with /cg_drawTeamoverlay <value> if you want bigger overlaytext!",
+   "default": "0"
+  },
+  "cg_weaponBobbing": {
+   "name": "cg_weaponBobbing",
+   "description": "If it is set to 1 (the default OA and mod behaviour) your weapons will swing and sway and bob in the bottom of your screen like MUH DICK. Now some people don't like being reminded to muh swinging dick on their screen\n    while playing so they prefer disabling it with 0. (You can completely disable the gun with /cg_drawGun a baseoa setting)\n    (Exuce me, i'm being tired writing all this list for this mod of a dead game no one will read.)",
+   "default": "1"
+  },
+  "cg_enemyRail": {
+   "name": "cg_enemyRail",
+   "description": "The color of all enemy rail trails will be forced to the color secified by this cvar. Single digit numbers only force the CORE of the trail! Use double digits to force the swirl/disks (depending on /cg_railstyle) too!\nFor example /cg_enemyRail 62 will force the swirl/disk yellow (6) and the core green (2)! (yes yellow and green because of the railcolor palette, see below)\nUse 0 to skip forcing either the swirl or the core! Like this: /cg_enemyRail 40; this will only force the enemy's secondary color (the swirl or the disk).\nSee cg_teamRail too!",
+   "default": "0"
+  },
+  "cg_crossHairPulse": {
+   "name": "cg_crossHairPulse",
+   "description": "The crosshair pulses (grows and shrinks back to original value) upon picking up an item.",
+   "default": "1"
+  },
+  "cg_friendSize": {
+   "name": "cg_friendSize",
+   "description": "The size of the friend-triangle. The Mod default is 14 right now. It means if you are using 0 (0 means mod default setting in general in fm) it results in a size of 14. OA default is size 10, and it was like that in fm until now!\nMax allowed size is 30\n\nAt genius you can see your mate's position thru the walls for more teamplay, increasing the size might help if your mates are too far away!",
+   "default": "0 (defaults to 14)"
+  },
+  "cg_teamRail": {
+   "name": "cg_teamRail",
+   "description": "Forces everyone's railcolor in your team to specified color.\nAccepts the same values as cg_enemyRail (see there!) but affects your team's (and yours) colors\n\nA good practice for competitiveness could be if you force enemy's rail fully, ie: /cg_enemyRail 76 (white, yellow core) and your \nteam's /cg_teamRail 50 only partially, so you can see immeditaly who is railing there (or was a few seconds ago with eg: /cg_railTrailTime 3000\nYou could agree with your team to use different /color1 vars, as that setting defines the railcore color.\n\nYou can even go as far as forcing enemy rail's color partially, (THE CORE) to an easy to see color like yellow /cg_enemyRail 6 and leave their\nswirls or disks unforced! it means their /color2 will be used! If they are using different /color2's each, you can see immediately who fired that shot!\nForce your team's railcore to a more faint color, like red or blue (1, 4) - more easy to distinguish - and leave the swirl to their /color2.\n\nThe colorpalette does not match oa's naming and console color convention, but its railcolor palette. Those you use for your /color1 and /color2. weirdly, \nthey are different:/ and went with those colors in the mod to keep it baseoa friendly.\n\n\n\n\n    1:\tblue\t(001)\n    2:\tgreen\t(010)\n    3:\tcyan\t(011)\n    4:\tred\t(100)\n    5:\tpurple\t(101)\n    6:\tyellow\t(110)\n    7:\twhite\t(111)\n\n\nIt is actually a 3bit RGB color. The highest bit is red, the mid is green, the lowest bit is blue\nFor example you get purple by adding red and blue: binay 101 = 5; cyan is green+blue: 011 = 3;\nYes, could have gone with full rgb notation (ie: #ff7700) but at the end of the day people force green or yellow or something simple, don't they?",
+   "default": "0"
+  },
+  "fm_noAutoJoin": {
+   "name": "fm_noAutoJoin",
+   "description": "Even if the server has g_teamAutoJoin enabled - it does sometimes at stupid - you won't autojoin upon connecting. You will join spec. but only if you have the mod loaded already (ie: coming from another          \n:F server in same mod folder)",
+   "default": "0"
+  },
+  "cg_railStyle": {
+   "name": "cg_railStyle",
+   "description": "The rail trail style is selectable from preconfigured styles. The core in general is fatter now, more easy to see, not that puny anymore.\n\n    1 similar to baseoa's /cg_oldrail 0, but nonmippable and the core is much stronger.\n    2 same as 1, but the swirl is more emphasized. it's a good choice if you don't force swirl color for your team!\n    3 this is almost like baseoa with oldrail at 0. puny core with swirl, picmippable. (the swirl is not!)\n    4 only the core; but the new strong one.\n    5 mippable core only, and the old one from baseoa. exactly like cg_oldrail 1 in baseoa\n    6 the new fat core with raildiscs like in old q3. this too might be a good choice: force only the core \n      for your team or even for enemy! to distinguish between players but still see if the rail is from your team or enemy!\n      play with /r_railWidth to set disk width!\n    7 same as 6 but mipmapable.",
+   "default": "6"
+  },
+  "cg_crossHairColorRed": {
+   "name": "cg_crossHairColorRed",
+   "description": "Crosshairs are now colorizable 0.8.8 style.\n    It does not have the UI, only the cvars. Connect to a 0.8.8 server if you prefer UI configuring! Than you must play with the sliders in UI and get the respective values from your resulting q3config.cfg,\n    but sadly you can't do it because you don't know what and where your q3config is. (or just let it autosave if you are luckily in the same mod folder! (CTF))\n    Search for q3config.cfg on your storage!\n    Yet at the same time if you are reading this, there is a really good chance you know exactly what's your q3config is so you don't need the UI to set it anyway!\n    \n    This is the RED component of the crosshair. see also cg_crossHairColorGreen and cg_crossHairColorBlue\n    \n    It accepts a float in range of 0-1:\n    For example /cg_crossHairColorRed 0.33 for a third fullness of red; red 1 green 0.5 blue 1 results in a pink xhair. You can figure out the others. It's basically RGB with numbers between [0-1]",
+   "default": "1"
+  },
+  "cg_crossHairColorGreen": {
+   "name": "cg_crossHairColorGreen",
+   "description": "The GREEN component of crosshair. See cg_crossHairColorRed for full description!",
+   "default": "1"
+  },
+  "cg_crossHairColorBlue": {
+   "name": "cg_crossHairColorBlue",
+   "description": "The BLUE component of crosshair. See cg_crossHairColorRed for full description!",
+   "default": "1"
+  },
+  "cg_motdTime": {
+   "name": "cg_motdTime",
+   "description": "This many seconds will the MOTD on the right side of the screen displayed in spec. 0 means the default 90 seconds, can't set values lower than 3 (at least just skim through the current message of the day, retard! not you, who is reading this! they: \"what? railjump is on??\" \"wtf no rocketdamage??\" \"how change back old rail?\" \"font size big how to small??\" \"why someone dark model!??11\" \"how jump bridge?\")",
+   "default": "0"
+  },
+  "cg_drawReady": {
+   "name": "cg_drawReady",
+   "description": "The \"Majority of players should be ready you can ready blahblah\" text when the game is in waiting for /ready state. Remove it completely with -1, 1 is a short version. 0 is mod default: the long\n    annoying verbose format",
+   "default": "0"
+  },
+  "cg_teamSound": {
+   "name": "cg_teamSound",
+   "description": "Your team's players' sound will be forced to this model's sound. Every 081 oa model's sounds are available. Tip: set male sound for enemy, female for your team to easily distinguish them.\n    Note: You have to be in-game, does not work in spec!",
+   "default": "Major"
+  },
+  "cg_zoomTime": {
+   "name": "cg_zoomTime",
+   "description": "The time the animation takes to switch from normal fov (cg_fov) to zoomfov (cg_zoomfov) in milliseconds when pressing the zoom +button\n    Old 081 baseoa setting is 150 ms\n    Use small values for immediate zoom without distracting animation.",
+   "default": "0, means 100ms"
+  },
+  "cg_hitBeepStyle": {
+   "name": "cg_hitBeepStyle",
+   "description": "0 is the moddefault multitonal hitbeep, leave it at this value. the damage thresholds are: >=85, >=60, >=35, >=15. You can change the pitch of the hit beep with values 2-6.\n    2 is default 081 baseoa beep, others are diff pitches.",
+   "default": "0"
+  },
+  "fm_teamChatBeep": {
+   "name": "fm_teamChatBeep",
+   "description": "Changes the teamchat notifier sound. See fm_chatBeep for available sounds.",
+   "default": "3"
+  },
+  "fm_voteBeep": {
+   "name": "fm_voteBeep",
+   "description": "You hear this sound when someone votes. See fm_chatBeep for available sounds. Leave it as default, it is a nice little coin sound. Baseoa uses the same ones for chat and votes - the horrible votespams,\n    if you remember. Votespams are a minor annoyance with 6.",
+   "default": "6"
+  },
+  "fm_chatTime": {
+   "name": "fm_chatTime",
+   "description": "The display time for each chat msgs in milliseconds. Mod default is 0, it is a special value, means 12000ms. Very Small or negative values are hiding the chat!",
+   "default": "0"
+  },
+  "cg_weaponBarStyle": {
+   "name": "cg_weaponBarStyle",
+   "description": "Weapon bar style. Default is 0 which means style 6. It is a horizontal weaponbar at the bottom. Change to 5 for slightly bigger numbers if you have small screen! You can move the bar vertically. (see cg_weaponBarOffsetY)!\n    3 is a vertical bar on the left side of the screen, might consider that one too. 1 is pimped 081baseoa (you can see the ammo left). Valid values are 0-6. Out of range values hide the bar.",
+   "default": "0"
+  },
+  "fm_consoleTime": {
+   "name": "fm_consoleTime",
+   "description": "Console msgs are displayed for [value] milliseconds. If you leave it at 0 it will result console msgs shown for 5 seconds. Use negative value to disable the console.",
+   "default": "0 = 5000"
+  },
+  "fm_chatFontSize": {
+   "name": "fm_chatFontSize",
+   "description": "Change the font size of chat with this setting! If you leave it at 0 it results in about a default font size of 9.",
+   "default": "0"
+  },
+  "fm_consoleFontSize": {
+   "name": "fm_consoleFontSize",
+   "description": "Console font size.",
+   "default": "0"
+  },
+  "fm_teamChatFontSize": {
+   "name": "fm_teamChatFontSize",
+   "description": "Font size of team chat. see fm_chatFontSize",
+   "default": "0"
+  },
+  "fm_dropTime": {
+   "name": "fm_dropTime",
+   "description": "The display time of that little flagdrop-notification text in milliseconds. Use a negative value if you don't like it.",
+   "default": "0 = 1.6sec"
+  },
+  "cg_statusBarStyle": {
+   "name": "cg_statusBarStyle",
+   "description": "The Statusbar (your ammo, hp, armor). 4 is strongly recommended as it removes the unnecessary clutter: the hp bubble, the armor icon and the HEAD. You know the first number is the ammo, second is hp third is armor.\n    And why would anyone want to see their HEAD displayed all the time during the game?!\n    3 only removes the head\n    1 to get back to ugly 081baseoa.\n    Will be more statusbar styles soon.",
+   "default": "0 ( = mod default: 2)"
+  },
+  "cg_statusTeamBackground": {
+   "name": "cg_statusTeamBackground",
+   "description": "0-5 that red or blue rectangle obscuring the statusbar. You dont need it if you remember which team you joined. (or use 2, 3 or 4, they are less annoying)\n    1 draws a line above hp and armor with the team's color you are in.\n    2 draws a bar at the bottom of the screen with the repsective teamcolor\n    3 no background\n    4 a baseoaish background, very faint\n    5 a baseoaish background but still not as opaque, more opaque than 4",
+   "default": "0"
+  },
+  "cg_drawHolyShit": {
+   "name": "cg_drawHolyShit",
+   "description": "Draws a little holy shit icon in the middle of your screen when shit happens with you or you cause some shit. Obscuring the view can be annoying, so you can disable it with -1.",
+   "default": "0"
+  },
+  "cg_pusherDisplayTime": {
+   "name": "cg_pusherDisplayTime",
+   "description": "At the right side of the screen you can see who pushed you with railgun (this one is particularly useful for :F insta players so they know who the  was, but it  useful for real CTF too. It is an information;\n    you know what your mate is up to (he is pushing right now, with railgun). The more info the merrier. The display time in milliseconds is settable with this cvar. 0 is moddefault, means 5300 ms.",
+   "default": "0 (= 5300ms)"
+  },
+  "fm_chatBeep": {
+   "name": "fm_chatBeep",
+   "description": "Changes the chat notifier sound. 0 is mod default, the same sound as baseoa's beep but not that loud. The old baseoa beep is 9. I recommend 2, because i don't like baseoa beep, annoying. 11 is also baseoa but even more silent.\n    Selectable Values are from 0 to 12. -1 is no beep as usual in the mod.",
+   "default": "0"
+  },
+  "cg_drawPusher": {
+   "name": "cg_drawPusher",
+   "description": "Displaying the name of pusher can be disabled with this one (-1)",
+   "default": "0"
+  },
+  "cg_damagePlum": {
+   "name": "cg_damagePlum",
+   "description": "The amount of damage you caused with your shot will pop out as respective numbers from the enemy. Useful and cool, leave it at 1!",
+   "default": "1"
+  },
+  "cg_weaponBarOffsetY": {
+   "name": "cg_weaponBarOffsetY",
+   "description": "This one moves the weaponbar's vertical position. Negative numbers move it upwards, positive ones downwards. 0 leaves it at moddefault place. See cg_weaponBarStyle too!",
+   "default": "0"
+  },
+  "cg_drawAntiCampPosY": {
+   "name": "cg_drawAntiCampPosY",
+   "description": "Move the anticamp warning msg you see all the time at insta vertically with this one.",
+   "default": "0"
+  },
+  "cg_centerPrintFontSizeOffset": {
+   "name": "cg_centerPrintFontSizeOffset",
+   "description": "Changes the centerprint message's font size. Increase with positive values. 0 leaves it at default size.",
+   "default": "0"
+  },
+  "cg_flagDropSound": {
+   "name": "cg_flagDropSound",
+   "description": "You can change the sound you hear when your flag carrier goes down (or /dropflags it deliberately or /kills self). The default is pretty good now, leave it at 0. (Thx f:x3r for the 50+ souds)\n    Available sounds are 0-4, -1 disables it (no flagsound at all).",
+   "default": "0"
+  },
+  "cg_flagDropSoundEnemy": {
+   "name": "cg_flagDropSoundEnemy",
+   "description": "Same as cg_flagDropSound but changes the sound played when the enemy carrier drops the flag. 0 is a good choice for this one too.",
+   "default": "0"
+  },
+  "cg_matchEndSound": {
+   "name": "cg_matchEndSound",
+   "description": "That 3 bell rings at the end of the game. Can be disabled by a negative number. It can be useful when you are sitting out a map you find boring with reduced volume to notify you it's over.",
+   "default": "0"
+  },
+  "cg_enemyAlwaysGreen": {
+   "name": "cg_enemyAlwaysGreen",
+   "description": "You can force the enemy's skin to an easy to see bright green color:\n/cg_enemyAlwaysGreen 1 : enemy green / own team red or blue, depends on actual team\n/cg_enemyAlwaysGreen 2 : enemy green / own team white\n/cg_enemyAlwaysGreen 3 : enemy green / own team pink\n/cg_enemyAlwaysGreen 4 : enemy white, your team's color is your actual teamcolor\n/cg_enemyAlwaysGreen 5 : enemy pink, your team white\n    Note: You have to be in-game, does not work in spec!",
+   "default": "0"
+  },
+  "cg_forceSound": {
+   "name": "cg_forceSound",
+   "description": "Force the sounds the players make depending on their team!\n    This cvar enables forcing, see cg_enemySound cg_teamSound  and cg_mySound for picking a model's sound.\n    Note: You have to be in-game, does not work in spec!",
+   "default": "0"
+  },
+  "cg_forceEnemyFootSteps": {
+   "name": "cg_forceEnemyFootSteps",
+   "description": "Force the enemy's footsteps to either:\n1 Mech. Skelebot, Smarine and maybe someone else uses this one. This is a good choice\n2 Flesh. Gargoyle makes these footstep sounds when walking, a really good choice imo. Somewhat reminds me of Keel.\n3 Energy. Ayumi's energy skates. No\n4 Boots. This one is sarge's - and everyone else who wears boots xd - boots sound. Not a good choice if your own team model wears boots too! Boot this one!\n5 Normal. The normal boots sound?\n\nA really important setting for proper playing, only a few players set it though:/\nHave an edge and set it! They will wonder how could you know it was an enemy behind that corner. And you just say: f*ck you man, l2cfg!\n    Note: You have to be in-game, does not work in spec!",
+   "default": "0"
+  },
+  "cg_mySound": {
+   "name": "cg_mySound",
+   "description": "Forces your sound to this model's sound.",
+   "default": "Assassin"
+  },
+  "cg_enemySound": {
+   "name": "cg_enemySound",
+   "description": "Enemy players' sound will be forced to this model's sound. Every 081 oa model's sounds are available. Tip: set male sound for enemy, female for your team to easily distinguish them.\n    Note: You have to be in-game, does not work in spec!",
+   "default": "Beret"
+  }
+ },
+ "commands": {}
+}
