@@ -1,6 +1,6 @@
 **STILL BETA, DONT FORGET TO MAKE BACKUPS OF FILES YOU ARE EDITING!**
 
-[Screenshot](http://pixelbanane.de/yafu/3928700682/oaconf.png)
+![Screenshot](http://pixelbanane.de/yafu/3928700682/oaconf.png)
 
 Description
 ===========
