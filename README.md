@@ -24,9 +24,9 @@ Variable defaults, types and flags have been extracted from [Openarena Gamecode]
 
 Bugs / Todo
 ===========
-- The failmod color palette is not 100% exact, since it was put together by using a color picker. (see [q3/q3colors.py](../blob/master/q3/q3colors.py))
+- The failmod color palette is not 100% exact, since it was put together by using a color picker. (see [q3/q3colors.py](./q3/q3colors.py))
   Bugging failgun about putting the hexcodes for the color palette online may help :)
-- Special characters are not right yet [q3/q3specialchars.py](../blob/master/q3/q3specialchars.py)
+- Special characters are not right yet [q3/q3specialchars.py](./q3/q3specialchars.py)
 
 
 Contribute
