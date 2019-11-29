@@ -38,4 +38,4 @@ Contribute
 
 Open an issue or a pull request.
 
-You may also want to have a look at the [definitions file](../blob/master/config_data/oaconfigurator/make.py).
+You may also want to have a look at the [definitions file](./config_data/oaconfigurator/make.py).
