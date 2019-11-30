@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 import sys, re, os, signal, hashlib
 
@@ -19,14 +20,14 @@ debug = lambda *a,**kw: print(*a, **kw)
 
 RE               = re.compile
 QT_MAX_INT       = ((1<<31)-1)
-is_int           = RE(r'[+-]?\d+').fullmatch
-is_float         = RE(r'[+-]?\d+\.\d+').fullmatch
-is_float_list    = RE(r'(:?[+-]?\d+\.\d+(:?\s+|$))+').fullmatch
+is_int           = RE(r'^[+-]?\d+$').match
+is_float         = RE(r'^[+-]?\d+\.\d+$').match
+is_float_list    = RE(r'^(:?[+-]?\d+\.\d+(:?\s+|$))+$').match
 FMT_COLOR        = '<span style="color:%s">%s</span>'
 prefix_dict      = dict(SETTINGS['prefixes'])
 prefix_re        = RE('^(%s)' % '|'.join(prefix_dict.keys()))
 capitalize_re    = RE(' .|_.')
-capitalize       = lambda s: capitalize_re.sub(lambda m: ' '+m[0][1].upper(), s)
+capitalize       = lambda s: capitalize_re.sub(lambda m: ' '+m.group(0)[1].upper(), s)
 q3colors         = Q3Colors()
 q3colors.addPalette(Q3Colors.QUAKE_PALETTE)
 q3colors.addPalette(Q3Colors.FAILMOD_PALETTE)
@@ -34,7 +35,7 @@ monospace = QFont('Monospace', 10)
 
 def varname_reformat(varname):
     ''' Make a variable name more readable '''
-    varname = prefix_re.sub(lambda m: '(%s) ' % prefix_dict[m[0]], varname, 1)
+    varname = prefix_re.sub(lambda m: '(%s) ' % prefix_dict[m.group(0)], varname, 1)
     varname = capitalize(varname)
     return varname
 
@@ -228,7 +229,7 @@ class VariableWidget(QWidget):
 
 class VariableList(QListWidget):
     def __init__(self, q3config):
-        super().__init__()
+        super(VariableList, self).__init__()
         self.q3config = q3config
         self.setStyleSheet("QListWidget {padding: 0;} QListWidget::item { margin: 0 7px; padding: 0; }");
         self.search = self.prefix = ''
@@ -287,7 +288,7 @@ class VariableList(QListWidget):
 
 class VariablesView(QWidget):
     def __init__(self, q3config):
-        super().__init__()
+        super(VariablesView, self).__init__()
         self.q3config     = q3config
         self.edtSearch    = edtSearch   = QLineEdit()
         self.cmbCategory  = cmbCategory = QComboBox()

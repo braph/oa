@@ -5,26 +5,24 @@ from __future__ import print_function
 import re, socket
 
 class Q3PlayerInfo:
-    __slots__ = ('score', 'ping', 'captures', 'name')
+    __slots__ = 'score', 'ping', 'captures', 'name'
     def __init__(self, score, ping, captures, name):
-        self.score, self.ping, self.captures, self.name = (score, ping, captures, name)
+        self.score, self.ping, self.captures, self.name = score, ping, captures, name
 
-'''
-ServerInfo.status = {
-    'game':             'CTF',
-    'maxPing':          '550',
-    'voip':             '1',
-    'g_humanplayers':   '8',
-    'g_needpass':       '0',
-    'pure':             '1',
-    'gametype':         '4',
-    'sv_maxclients':    '25',
-    'clients':          '9',
-    'mapname':          'oasago2',
-    'hostname':         '  ^1:F ^7normal ctf for stupids',
-    'protocol':         '71'
-  }
-'''
+# ServerInfo.status = {
+#     'game':             'CTF',
+#     'maxPing':          '550',
+#     'voip':             '1',
+#     'g_humanplayers':   '8',
+#     'g_needpass':       '0',
+#     'pure':             '1',
+#     'gametype':         '4',
+#     'sv_maxclients':    '25',
+#     'clients':          '9',
+#     'mapname':          'oasago2',
+#     'hostname':         '  ^1:F ^7normal ctf for stupids',
+#     'protocol':         '71'
+#   }
 
 # TODO
 # 76 50 "^31 ^7bARB"
@@ -36,12 +34,18 @@ class Q3ServerInfo:
     GETINFO   = PREAMBLE + 'getinfo\n'.encode('ASCII')
     GETSTATUS = PREAMBLE + 'getstatus\n'.encode('ASCII')
 
-    __slots__ = ('ip', 'port', 'info', 'status', 'players')
+    __slots__ = 'ip', 'port', 'info', 'status', 'players'
     def __init__(self, ip, port):
         self.ip, self.port = ip, port
         self.info    = {}
         self.status  = {}
         self.players = []
+
+    def getIp(self):
+        return self.ip
+
+    def getPort(self):
+        return self.port
 
     def query(self):
         try:
@@ -56,7 +60,7 @@ class Q3ServerInfo:
 
             self.decodeInfo(getinfo_response)
             self.decodeStatus(getstatus_response)
-            print(getinfo_response)
+            #print(getinfo_response)
             #print(getstatus_response)
         except Exception as e:
             print(self.ip, self.port, e)
@@ -71,7 +75,7 @@ class Q3ServerInfo:
         for i in range(0, len(info), 2):
             result[info[i]] = info[i+1]
         self.info = result
-        print(self.info)
+        #print(self.info)
 
     def decodeStatus(self, data):
         if data[:4] != Q3ServerInfo.PREAMBLE:
@@ -80,7 +84,7 @@ class Q3ServerInfo:
         status = status.replace('statusResponse\n\\', '')
         status, playerstatus = status.split('\n', 1)
         status = status.split('\\')
-        print(repr(playerstatus))
+        #print(repr(playerstatus))
 
         result = {}
         for i in range(0, len(status), 2):
@@ -90,7 +94,7 @@ class Q3ServerInfo:
         self.players = []
         for p in playerstatus.split('\n'):
             if p:
-                print(p)
+                #print(p)
                 score, ping, captures_and_name = p.split(' ', 2)
                 captures_and_name = captures_and_name.strip('"')
                 captures, name = captures_and_name.split(' ', 1)

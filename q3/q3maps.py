@@ -40,6 +40,5 @@ class Q3Maps:
             with zipfile.ZipFile(pk3) as zf:
                 return zf.read(filename)
         except:
-            print('Levelshot not found:', mapname)
             return None
 

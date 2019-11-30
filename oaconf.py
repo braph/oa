@@ -21,7 +21,7 @@ def dialog_critical(widget, title, text):
 
 class ConfigFileView(QTabWidget):
     def __init__(self, q3config, filename):
-        super().__init__()
+        super(ConfigFileView, self).__init__()
         self.q3config   = q3config
         self.filename   = filename
         self.hash       = self.getConfigHash()
@@ -188,8 +188,8 @@ if __name__ == '__main__':
 
     window = MainWindow()
 
-    try:    window.config_file_tabs.addConfigFileView('/tmp/foo.cfg')
-    except: pass
+    window.config_file_tabs.addConfigFileView('/tmp/foo.cfg')
+    #except: pass
 
     signal.signal(signal.SIGINT, signal.SIG_DFL)
     app.exec_()

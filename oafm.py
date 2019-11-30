@@ -24,7 +24,7 @@ SERVERLIST = [
 ]
 
 # _______________________________ Main stuff __________________________________
-OPTIONS = { 'binary': '/usr/bin/openarena' }
+OPTIONS  = { 'binary': '/usr/bin/openarena' }
 q3path   = Q3Path()
 q3maps   = Q3Maps()
 q3colors = Q3Colors()
@@ -49,8 +49,15 @@ def bold(s):      return '<b>' + s + '</b>'
 def monospace(s): return '<span font-family="Mono">' + s + '</span>'
 
 class ServerInfoRow():
+    renderer_text = Gtk.CellRendererText()
+    blackrenderer = Gtk.CellRendererText(background='#AAA', foreground='#FFF')
+
+    '''
+    Holds the widgets for a server row in Gtk.TreeView
+    '''
+
     def __init__(self, ip, port):
-        self.ip, self.port      = ip, port
+        self.needs_redraw       = False
         self.serverinfo         = Q3ServerInfo(ip, port)
         self.mapimage           = Gtk.Image.new()
         self.mapimageframe      = Gtk.Frame()
@@ -65,38 +72,42 @@ class ServerInfoRow():
         self.connect_button.set_opacity(0.0)
         self.mapimagecontainer.add_overlay(self.connect_button)
 
-        def focus_in(eventbox, event):
-            self.connect_button.set_opacity(0.5)
-        def focus_out(eventbox, event):
-            self.connect_button.set_opacity(0.0)
-        def connect(*_):
-            os.spawnvp(os.P_NOWAIT, OPTIONS['binary'],
-                [ OPTIONS['binary'], '+set', 'fs_game', 'CTF', '+connect', '%s:%s' % (self.ip, self.port)])
-
-        self.connect_button.connect('clicked', connect)
-        self.mapimageeventbox.connect('enter-notify-event', focus_in)
-        self.mapimageeventbox.connect('leave-notify-event', focus_out)
+        self.connect_button.connect('clicked', self.connect)
+        self.mapimageeventbox.connect('enter-notify-event', self.connect_focus_in)
+        self.mapimageeventbox.connect('leave-notify-event', self.connect_focus_out)
         self.mapimageeventbox.add(self.mapimagecontainer)
 
         self.info_tree_view     = Gtk.TreeView()
         self.player_tree_view   = Gtk.TreeView()
         self.info_tree_view.get_selection().set_mode(Gtk.SelectionMode.NONE)
         self.player_tree_view.get_selection().set_mode(Gtk.SelectionMode.NONE)
-        self.renderer_text      = Gtk.CellRendererText()
         #self.info_tree_view.set_sensitive(False)
         #self.player_tree_view.set_sensitive(False)
 
-    def update(self):
-        info            = self.serverinfo.info
-        status          = self.serverinfo.status
-        renderer_text   = self.renderer_text
+    def connect_focus_in(self, eventbox, event):
+        self.connect_button.set_opacity(0.5)
+
+    def connect_focus_out(self, eventbox, event):
+        self.connect_button.set_opacity(0.0)
+
+    def connect(self, *_):
+        os.spawnvp(os.P_NOWAIT, OPTIONS['binary'],
+            [ OPTIONS['binary'], '+set', 'fs_game', 'CTF', '+connect', '%s:%s' % (
+                self.serverinfo.getIp(), self.serverinfo.getPort())
+            ])
+
+    def draw(self):
+        self.needs_redraw = False
+        info              = self.serverinfo.info
+        status            = self.serverinfo.status
+        renderer_text     = ServerInfoRow.renderer_text
 
         # ======================= Image =======================================
         self.mapimage.clear()
         mapname = self.serverinfo.status.get('mapname', None)
         if mapname is not None:
             mapimagedata = q3maps.getLevelshot(mapname)
-            if mapimagedata is not None: # TODO
+            if mapimagedata is not None:
                 pbloader = GdkPixbuf.PixbufLoader()
                 pbloader.set_size(300, 200)
                 pbloader.write(mapimagedata)
@@ -104,9 +115,11 @@ class ServerInfoRow():
                 pixbuf = pbloader.get_pixbuf()
                 #pixbuf.scale_simple(300, 300, Gdk.INTERP_LINEAR)
                 self.mapimage.set_from_pixbuf(pixbuf)
+            else:
+                print('Levelshot not found:', mapname)
 
         # ====================== Serverdata ===================================
-        ## g_locked [01] | g_rockets[01] | g_instantgib [01] | g_humanplayers
+        # g_locked [01] | g_rockets[01] | g_instantgib [01] | g_humanplayers
         info_list = Gtk.ListStore(str, str)
         hostname = status.get('sv_hostname', '')
         hostname = q3colors.toHtml(hostname)
@@ -136,19 +149,56 @@ class ServerInfoRow():
             player_list.append([player.score, player.ping, player.captures, name])
         for col in self.player_tree_view.get_columns():
             self.player_tree_view.remove_column(col)
-        blackrenderer = Gtk.CellRendererText()
-        blackrenderer.set_property('background', '#AAA')
-        blackrenderer.set_property('foreground', '#FFF')
+        blackrenderer = ServerInfoRow.blackrenderer
         col_score    = Gtk.TreeViewColumn('Score',  blackrenderer, text=0)
         col_ping     = Gtk.TreeViewColumn('Ping',   blackrenderer, text=1)
         col_captures = Gtk.TreeViewColumn('Capt.',  blackrenderer, text=2)
-        col_name     = Gtk.TreeViewColumn('Player',   blackrenderer, markup=3)
+        col_name     = Gtk.TreeViewColumn('Player', blackrenderer, markup=3)
         col_name.set_min_width(200)
         self.player_tree_view.append_column(col_name)
         self.player_tree_view.append_column(col_score)
         self.player_tree_view.append_column(col_captures)
         self.player_tree_view.append_column(col_ping)
         self.player_tree_view.set_model(player_list)
+
+class Updater:
+    def __init__(self, rows):
+        self.rows     = rows
+        self.interval = 5
+
+    def start(self):
+        self.running = True
+        # Network code is independent of GUI-stuff, use threads for that
+        threading.Thread(target=self.fetch_data).start()
+        # For drawing GUIs use GLib timeouts
+        GLib.timeout_add_seconds(1, self.draw_rows)
+
+    def stop(self):
+        self.running = False
+
+    def fetch_row_data(self, row):
+        try:
+            row.serverinfo.query()
+            row.needs_redraw = True
+        except:
+            pass
+
+    def fetch_data(self):
+        while self.running:
+            threads = []
+            for r in self.rows:
+                thr = threading.Thread(target=self.fetch_row_data, args=(r,))
+                thr.start()
+                threads.append(thr)
+            while threads:
+                threads.pop().join()
+            time.sleep(self.interval)
+
+    def draw_rows(self):
+        for r in self.rows:
+            if r.needs_redraw:
+                r.draw()
+        return self.running 
 
 class ServerWindow(Gtk.Window):
     def __init__(self):
@@ -162,37 +212,20 @@ class ServerWindow(Gtk.Window):
         servers_grid.set_row_spacing(10)
         rows = []
         for i, server in enumerate(SERVERLIST, 1):
-            sir = ServerInfoRow(server[0], server[1])
-            rows.append(sir)
-            servers_grid.attach(sir.mapimageeventbox,   1, i, 1, 1)
-            servers_grid.attach(sir.info_tree_view,     3, i, 1, 1)
-            servers_grid.attach(sir.player_tree_view,   2, i, 1, 1)
+            r = ServerInfoRow(server[0], server[1])
+            rows.append(r)
+            servers_grid.attach(r.mapimageeventbox,   1, i, 1, 1)
+            servers_grid.attach(r.player_tree_view,   2, i, 1, 1)
+            servers_grid.attach(r.info_tree_view,     3, i, 1, 1)
 
-        def fetch_data(rows):
-            while True:
-                threads = []
-                for r in rows:
-                    thr = threading.Thread(target=r.serverinfo.query)
-                    thr.start()
-                    threads.append(thr)
-                    time.sleep(0.3)
-                while threads:
-                    threads.pop().join()
-                time.sleep(5)
-
-        def update_rows(rows):
-            for r in rows: r.update()
-            return True
-
-        threading.Thread(target=fetch_data, args=(rows,)).start()
-        GLib.timeout_add_seconds(1, update_rows, rows)
+        self.updater = Updater(rows)
+        self.updater.start()
 
         scrolled = Gtk.ScrolledWindow()
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         scrolled.add(servers_grid)
 
-
-        # ___________ ACTIONS ________________
+        # ========================= Menu Bar ==================================
         menubar = Gtk.MenuBar()
         button_settings = Gtk.MenuItem(label='Settings')
         button_about    = Gtk.MenuItem(label='About')
@@ -200,10 +233,15 @@ class ServerWindow(Gtk.Window):
         menubar.add(button_about)
         button_about.connect('button-press-event', lambda *_: AboutWindow().show_all())
 
-        box.pack_start(menubar,     False, False, 0)
-        box.pack_start(scrolled,    True, True, 0)
+        box.pack_start(menubar,  False, False, 0)
+        box.pack_start(scrolled, True, True, 0)
         self.add(box)
 
+        self.connect('delete-event', self.on_destroy)
+
+    def on_destroy(self, *_):
+        self.updater.stop()
+        return False
 
 class AboutWindow(Gtk.Window):
     def __init__(self):
@@ -221,22 +259,20 @@ class AboutWindow(Gtk.Window):
         # =====================================================================
 
         # =====================================================================
-        grayrenderer = Gtk.CellRendererText()
-        grayrenderer.set_property('background', '#AAA')
-        grayrenderer.set_property('foreground', '#FFF')
-        grayrenderer.set_property('font', 'Monospace 20px')
-
+        sponsor_renderer = Gtk.CellRendererText(
+            background='#AAA',
+            foreground='#FFF',
+            font='Monospace 20px')
         sponsors = ['Unnamed Player', '^4Player^7, ^2Unnamed']
-        sponsors_tree = Gtk.TreeView()
         sponsors_list = Gtk.ListStore(str)
-        sponsors_tree.set_model(sponsors_list)
-        for sponsor in sponsors:
-            sponsor = Q3SpecialChars.toUTF8(sponsor)
-            sponsor = q3colors.toHtml(sponsor)
-            sponsor = markup_fix(sponsor)
-            sponsors_list.append([sponsor])
-        sponsors_tree.append_column(Gtk.TreeViewColumn("Sponsors", grayrenderer, markup=0))
+        for _ in sponsors:
+            _ = Q3SpecialChars.toUTF8(_)
+            _ = q3colors.toHtml(_)
+            _ = markup_fix(_)
+            sponsors_list.append([_])
+        sponsors_tree = Gtk.TreeView(model=sponsors_list)
         sponsors_tree.get_selection().set_mode(Gtk.SelectionMode.NONE)
+        sponsors_tree.append_column(Gtk.TreeViewColumn("Sponsors", sponsor_renderer, markup=0))
         box.pack_start(sponsors_tree, True, True, 0)
         # =====================================================================
 

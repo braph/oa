@@ -1,18 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from sys import intern as _
+try:    from sys import intern
+except: pass #Python2
 
 SETTINGS = {
-    _('color.special'):        'orange',
-    _('color.int'):            'blue',
-    _('color.float'):          'blue',
-    _('color.bool.true'):      'green',
-    _('color.bool.false'):     'red',
-    _('color.maybe.int'):      'blue',
-    _('color.maybe.float'):    'blue',
-    _('background.invalid'):   '#FFBBBB',
-    _('prefixes'): [
+    intern('color.special'):        'orange',
+    intern('color.int'):            'blue',
+    intern('color.float'):          'blue',
+    intern('color.bool.true'):      'green',
+    intern('color.bool.false'):     'red',
+    intern('color.maybe.int'):      'blue',
+    intern('color.maybe.float'):    'blue',
+    intern('background.invalid'):   '#FFBBBB',
+    intern('prefixes'): [
         # Order as shown in GUI
         ('cl_',          'Client'),
         ('cg_',          'Client Game'),

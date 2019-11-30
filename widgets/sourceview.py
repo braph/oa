@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 import sys, re, os, signal, hashlib
 
@@ -23,7 +24,7 @@ def entities(s):
 
 class SourceView(QWidget):
     def __init__(self, q3config):
-        super().__init__()
+        super(SourceView, self).__init__()
         self.q3config  = q3config
         self.edtSource = QTextEdit()
         self.edtSource.setFont(QFont('Monospace', 10))

@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 
 # TODO
 
@@ -9,7 +10,7 @@ from PyQt5.QtWidgets        import *
 
 class BindingsView(QWidget):
     def __init__(self, q3config):
-        super().__init__()
+        super(BindingsView, self).__init__()
         self.q3config = q3config
         l = QHBoxLayout()
 
