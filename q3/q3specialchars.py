@@ -9,10 +9,32 @@ The idea was to translate Quake III special characters to Unicode characters,
 but Unicode lacks symbols like `Upper one quarter block` (`Lower one quarter block` does exist, though).
 '''
 
+# ᑕ Good site of unicode overview: ᑐ
+# http://xahlee.info/comp/unicode_braille.html
+# TODO:
+# - Change raw unicode to \uXXXX
+# - Test assert(toUTF(toQ3Ascii(...)) == ...)
+
 class Q3SpecialChars:
     '''
     Conversion of control characters to UTF8 in Quake III strings
     '''
+
+    # 16 columns X 16 rows, like in pak0.pk3:/gfx/2d/bigchars.tga
+    CHARACTERS = [
+        #0   1   2   3   4   5   6   7   8   9   A   B    C   E   E   F
+        '🞍','▟','▀','▙','█',' ','█','▜','█','▛','▁','⬛',' ','▶',' ',' ',
+        '[',']','𐑩',' ','𐑪',' ',' ',' ','𐑧','▬','𐑨',' ' ,'𝅍',' ',' ',' ',
+        # ASCII 
+        ' ','!','"','#','$','%','&',"'",'(',')','*','+',',','-','.','/',
+        '0','1','2','3','4','5','6','7','8','9',':',';','<','=','>','?',
+        '@','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
+        'P','Q','R','S','T','U','V','W','X','Y','Z','[','\\',']','^','_',
+        '`','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
+        'p','q','r','s','t','u','v','w','x','y','z','{','|','}','"','⇠'
+    ]
+
+
 
     CHARACTERS = [
        None,  # 0x00 |
@@ -67,14 +89,20 @@ class Q3SpecialChars:
         q3ascii = ''
         for c in str:
             if c in Q3SpecialChars.CHARACTERS:
-                q3ascii += chr(Q3SpecialChars.index(c))
+                q3ascii += chr(Q3SpecialChars.CHARACTERS.index(c))
             elif c == Q3SpecialChars.CHAR_7F:
                 q3ascii += chr(0x7F)
             else:
                 q3ascii += c
         return q3ascii
 
+
 if __name__ == '__main__':
+    s = ''
+    for i in range(0, 256):
+        s += chr(i)
+    assert s == Q3SpecialChars.toQ3Ascii(Q3SpecialChars.toUTF8(s))
+
     bunny = '\x1b\x13\x02\x03bunny\x01\x02\x13\x1b'
     print(repr(bunny), '->', Q3SpecialChars.toUTF8(bunny))
 
